@@ -226,6 +226,32 @@
   }
   .closing a:hover{ color:var(--brass); border-color:var(--brass); }
 
+  /* ---------- contact footer ---------- */
+  footer#contact{ border-top:1px solid var(--wall-line); padding:44px 0 60px; }
+  footer#contact .wrap-wide{ display:flex; flex-direction:column; align-items:center; gap:26px; text-align:center; }
+  .footer-head h2{
+    font-family:var(--font-display); font-weight:400; font-style:italic;
+    font-size:1.9rem; margin:0; color:var(--paper);
+  }
+  .contact-form{ display:flex; flex-direction:column; gap:14px; max-width:440px; width:100%; text-align:left; }
+  .contact-form label{
+    display:flex; flex-direction:column; gap:6px;
+    font-family:var(--font-mono); font-size:.78rem; text-transform:uppercase; letter-spacing:.08em;
+    color:var(--paper-dim);
+  }
+  .contact-form input, .contact-form textarea{
+    font-family:var(--font-body); font-size:1rem; color:var(--paper); background:var(--wall);
+    border:1px solid var(--wall-line); border-radius:2px; padding:.6em .8em; resize:vertical;
+  }
+  .contact-form input:focus, .contact-form textarea:focus{ outline:none; border-color:var(--brass-dim); }
+  .contact-form button{
+    align-self:center; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.1em;
+    font-size:.88rem; background:var(--brass); color:var(--black); border:none; padding:.8em 1.6em;
+    border-radius:2px; cursor:pointer; transition:background .2s ease;
+  }
+  .contact-form button:hover{ background:#dcb968; }
+  .hp-field{ position:absolute; left:-9999px; width:1px; height:1px; opacity:0; pointer-events:none; }
+
   @media (prefers-reduced-motion:no-preference){
     .exhibit-block{ animation:fade-up .6s ease both; }
   }
@@ -603,8 +629,20 @@
   </div>
 </section>
 
-<div class="closing">
+<footer id="contact">
   <div class="wrap-wide">
+    <div class="footer-head">
+      <h2>Let's bring history to life together.</h2>
+    </div>
+    <form class="contact-form" action="https://formspree.io/f/xaqrneny" method="POST">
+      <label>Name<input type="text" name="name" autocomplete="name" required></label>
+      <label>Email<input type="email" name="email" autocomplete="email" required></label>
+      <label>Message<textarea name="message" rows="3" minlength="15" required></textarea></label>
+      <input type="hidden" name="_subject" value="New message from petermcguire.info">
+      <input type="hidden" name="_next" value="/exhibits.html">
+      <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit">Send</button>
+    </form>
     <span class="eyebrow">Next</span>
     <div class="closing-links">
       <a href="#built-to-protect">↑ Back to Built to Protect</a>
@@ -612,7 +650,7 @@
       <a href="/">Home</a>
     </div>
   </div>
-</div>
+</footer>
 
 <!-- lightbox targets -->
 <a href="#_" id="lb-jacket-photo" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="img/jacket.jpg" alt=""></a>
