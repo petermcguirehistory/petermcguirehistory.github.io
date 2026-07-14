@@ -51,7 +51,7 @@ url_tokens = {
 }
 
 # DNS confirmed pointed at GitHub Pages 2026-07-14 -- CNAME restored.
-WRITE_CNAME = False
+WRITE_CNAME = True
 CUSTOM_DOMAIN = "petermcguire.info"
 
 # bold brass "P" monogram on a dark rounded square, matching the site's own
