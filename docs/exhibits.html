@@ -103,6 +103,10 @@
 
   .commentary{ max-width:700px; }
   .commentary p{ color:var(--paper-dim); font-size:1.12rem; margin:0 0 1.1em; }
+
+  /* ---------- centered variant: first/last text section of each part ---------- */
+  section.centered .section-head{ text-align:center; }
+  section.centered .commentary{ text-align:center; margin-left:auto; margin-right:auto; }
   .commentary p:last-child{ margin-bottom:0; }
   .commentary b{ color:var(--paper); font-weight:600; }
 
@@ -295,7 +299,7 @@
   </div>
 </header>
 
-<section id="big-idea">
+<section id="big-idea" class="centered">
   <div class="wrap-wide">
     <div class="section-head">
       <h2>Enriching the museum experience</h2>
@@ -439,7 +443,7 @@
   </div>
 </section>
 
-<section id="install-outcome">
+<section id="install-outcome" class="centered">
   <div class="wrap-wide">
     <div class="section-head">
       <h2>The completed experience</h2>
@@ -477,7 +481,7 @@
   </div>
 </header>
 
-<section id="std-big-idea">
+<section id="std-big-idea" class="centered">
   <div class="wrap-wide">
     <div class="section-head">
       <h2>A history feminism used, then buried</h2>
@@ -614,7 +618,7 @@
   </div>
 </section>
 
-<section id="std-outcome">
+<section id="std-outcome" class="centered">
   <div class="wrap-wide">
     <div class="section-head">
       <h2>Interpreting a messy history</h2>
