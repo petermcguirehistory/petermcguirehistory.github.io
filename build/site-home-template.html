@@ -117,7 +117,8 @@
 
   /* ---------- hero ---------- */
   .hero{ padding:clamp(64px,12vw,140px) 0 clamp(24px,4vw,48px); text-align:center; }
-  .hero .eyebrow{ display:block; margin-bottom:1.4em; }
+  .hero .eyebrow{ display:inline-flex; align-items:center; justify-content:center; gap:8px; margin-bottom:1.4em; }
+  .co-map{ width:26px; height:auto; flex:none; }
   .hero h1{
     font-family:var(--font-display);
     font-weight:400;
@@ -394,7 +395,13 @@
 
 <header class="hero" id="top">
   <div class="wrap">
-    <span class="eyebrow">Denver, Colorado</span>
+    <span class="eyebrow">
+      <svg class="co-map" viewBox="0 0 68 50" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true">
+        <rect x="3" y="3" width="62" height="44" rx="1"/>
+        <circle cx="41" cy="19" r="3" fill="currentColor" stroke="none"/>
+      </svg>
+      Denver, Colorado
+    </span>
     <h1>Peter McGuire</h1>
     <p class="role">Public Historian &amp; Educator</p>
     <p class="dek">I turn artifacts, archives, and the occasional ghost into memorable learning experiences.</p>
