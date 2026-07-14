@@ -1,0 +1,2619 @@
+[
+  {
+    "id": "home.root.a1.p-mcguire",
+    "file": "site-home-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [
+      "nav-name"
+    ],
+    "text": "P. McGuire"
+  },
+  {
+    "id": "home.root.a2.exhibits",
+    "file": "site-home-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [],
+    "text": "Exhibits"
+  },
+  {
+    "id": "home.root.a3.timeline",
+    "file": "site-home-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [],
+    "text": "Timeline"
+  },
+  {
+    "id": "home.root.a4.more",
+    "file": "site-home-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [],
+    "text": "More"
+  },
+  {
+    "id": "home.root.a5.contact",
+    "file": "site-home-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [],
+    "text": "Contact"
+  },
+  {
+    "id": "home.top.span1.permanent-collection-denver-colorado",
+    "file": "site-home-template.html",
+    "section": "top",
+    "tag": "span",
+    "classes": [
+      "eyebrow"
+    ],
+    "text": "Permanent Collection · Denver, Colorado"
+  },
+  {
+    "id": "home.top.h11.peter-mcguire",
+    "file": "site-home-template.html",
+    "section": "top",
+    "tag": "h1",
+    "classes": [],
+    "text": "Peter McGuire"
+  },
+  {
+    "id": "home.top.p1.public-historian-exhibit-developer",
+    "file": "site-home-template.html",
+    "section": "top",
+    "tag": "p",
+    "classes": [
+      "role"
+    ],
+    "text": "Public Historian & Exhibit Developer"
+  },
+  {
+    "id": "home.top.p2.i-build-object-based",
+    "file": "site-home-template.html",
+    "section": "top",
+    "tag": "p",
+    "classes": [
+      "dek"
+    ],
+    "text": "I build object-based exhibits and digital storytelling that turn artifacts, archives, and the occasional ghost into public education people remember. MA candidate in Public History, CU Denver — Certified Interpretive Guide."
+  },
+  {
+    "id": "home.top.a1.view-exhibits",
+    "file": "site-home-template.html",
+    "section": "top",
+    "tag": "a",
+    "classes": [
+      "btn",
+      "btn-primary"
+    ],
+    "text": "View Exhibits"
+  },
+  {
+    "id": "home.top.a2.download-cv",
+    "file": "site-home-template.html",
+    "section": "top",
+    "tag": "a",
+    "classes": [
+      "btn",
+      "btn-ghost"
+    ],
+    "text": "Download CV"
+  },
+  {
+    "id": "home.exhibits.span1.current-exhibits",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "span",
+    "classes": [
+      "eyebrow"
+    ],
+    "text": "Current Exhibits"
+  },
+  {
+    "id": "home.exhibits.h21.two-ways-into-the",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "h2",
+    "classes": [],
+    "text": "Two ways into the past"
+  },
+  {
+    "id": "home.exhibits.p1.one-built-for-hands",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "p",
+    "classes": [],
+    "text": "One built for hands and one built for screens — both built around a single interpretive idea."
+  },
+  {
+    "id": "home.exhibits.span2.denver-firefighters-museum-2026",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "span",
+    "classes": [
+      "plate"
+    ],
+    "text": "Denver Firefighters Museum, 2026"
+  },
+  {
+    "id": "home.exhibits.h31.built-to-protect",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "h3",
+    "classes": [],
+    "text": "Built to Protect"
+  },
+  {
+    "id": "home.exhibits.p2.why-does-gear-change",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "p",
+    "classes": [
+      "subtitle"
+    ],
+    "text": "Why does gear change over time?"
+  },
+  {
+    "id": "home.exhibits.p3.an-object-based-gallery",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "p",
+    "classes": [],
+    "text": "An object-based gallery on 150 years of firefighter safety gear, built as an educational intern. Visitors try on real gear across eras — the adult panels cover OSHA history and Heather Larson, the department's first female captain."
+  },
+  {
+    "id": "home.exhibits.dt1.role",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "dt",
+    "classes": [],
+    "text": "Role"
+  },
+  {
+    "id": "home.exhibits.dd1.concept-content-design-install",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "dd",
+    "classes": [],
+    "text": "Concept, content, design, install"
+  },
+  {
+    "id": "home.exhibits.dt2.audience",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "dt",
+    "classes": [],
+    "text": "Audience"
+  },
+  {
+    "id": "home.exhibits.dd2.families-k-8-school",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "dd",
+    "classes": [],
+    "text": "Families, K–8 school groups, general visitors"
+  },
+  {
+    "id": "home.exhibits.dt3.timeframe",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "dt",
+    "classes": [],
+    "text": "Timeframe"
+  },
+  {
+    "id": "home.exhibits.dd3.2026-educational-internship",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "dd",
+    "classes": [],
+    "text": "2026, educational internship"
+  },
+  {
+    "id": "home.exhibits.dt4.platform",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "dt",
+    "classes": [],
+    "text": "Platform"
+  },
+  {
+    "id": "home.exhibits.dd4.corner-installation-gear-try",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "dd",
+    "classes": [],
+    "text": "Corner installation — gear try-on stations + five adult panels"
+  },
+  {
+    "id": "home.exhibits.span3.universal-design-for-learning",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "span",
+    "classes": [
+      "-udl",
+      "ped-chip"
+    ],
+    "text": "Universal Design for Learning"
+  },
+  {
+    "id": "home.exhibits.span4.object-based-learning",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "span",
+    "classes": [
+      "-obl",
+      "ped-chip"
+    ],
+    "text": "Object-Based Learning"
+  },
+  {
+    "id": "home.exhibits.span5.edge",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "span",
+    "classes": [
+      "-edge",
+      "ped-chip"
+    ],
+    "text": "EDGE"
+  },
+  {
+    "id": "home.exhibits.span6.arcgis-storymaps-cu-denver",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "span",
+    "classes": [
+      "plate"
+    ],
+    "text": "ArcGIS StoryMaps, CU Denver, 2026"
+  },
+  {
+    "id": "home.exhibits.h32.speaking-through-the-dead",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "h3",
+    "classes": [],
+    "text": "Speaking Through the Dead"
+  },
+  {
+    "id": "home.exhibits.p4.what-is-feminist-about",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "p",
+    "classes": [
+      "subtitle"
+    ],
+    "text": "What is feminist about ghosts?"
+  },
+  {
+    "id": "home.exhibits.p5.a-digital-exhibit-tracing",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "p",
+    "classes": [],
+    "text": "A digital exhibit tracing Spiritualism's role in the 1848 origins of American feminism — from Amy Post's parlor to the movement's own erasure of the women who built it. Includes an interactive social-network graph visitors can redraw in real time."
+  },
+  {
+    "id": "home.exhibits.dt5.role",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "dt",
+    "classes": [],
+    "text": "Role"
+  },
+  {
+    "id": "home.exhibits.dd5.research-concept-design-build",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "dd",
+    "classes": [],
+    "text": "Research, concept, design, build"
+  },
+  {
+    "id": "home.exhibits.dt6.audience",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "dt",
+    "classes": [],
+    "text": "Audience"
+  },
+  {
+    "id": "home.exhibits.dd6.classmates-plus-the-general",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "dd",
+    "classes": [],
+    "text": "Classmates, plus the general public via ArcGIS"
+  },
+  {
+    "id": "home.exhibits.dt7.timeframe",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "dt",
+    "classes": [],
+    "text": "Timeframe"
+  },
+  {
+    "id": "home.exhibits.dd7.spring-2026-survey-of",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "dd",
+    "classes": [],
+    "text": "Spring 2026, Survey of Feminist Thought"
+  },
+  {
+    "id": "home.exhibits.dt8.platform",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "dt",
+    "classes": [],
+    "text": "Platform"
+  },
+  {
+    "id": "home.exhibits.dd8.arcgis-storymaps-custom-flourish",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "dd",
+    "classes": [],
+    "text": "ArcGIS StoryMaps + custom Flourish embeds"
+  },
+  {
+    "id": "home.exhibits.span7.universal-design-for-learning",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "span",
+    "classes": [
+      "-udl",
+      "ped-chip"
+    ],
+    "text": "Universal Design for Learning"
+  },
+  {
+    "id": "home.exhibits.span8.object-based-learning",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "span",
+    "classes": [
+      "-obl",
+      "ped-chip"
+    ],
+    "text": "Object-Based Learning"
+  },
+  {
+    "id": "home.exhibits.span9.edge",
+    "file": "site-home-template.html",
+    "section": "exhibits",
+    "tag": "span",
+    "classes": [
+      "-edge",
+      "ped-chip"
+    ],
+    "text": "EDGE"
+  },
+  {
+    "id": "home.timeline.span1.career-at-a-glance",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "eyebrow"
+    ],
+    "text": "Career, at a Glance"
+  },
+  {
+    "id": "home.timeline.h21.nineteen-years-one-throughline",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "h2",
+    "classes": [],
+    "text": "Nineteen years, one throughline"
+  },
+  {
+    "id": "home.timeline.p1.long-before-the-ma",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "p",
+    "classes": [],
+    "text": "Long before the MA, I was already doing versions of this work — the shape is on the left, the story is on the right."
+  },
+  {
+    "id": "home.timeline.p2.bars-show-duration-dots",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "p",
+    "classes": [
+      "tl-scale-note"
+    ],
+    "text": "Bars show duration; dots mark a single moment. Height is to scale — most recent at top, 2007 at bottom."
+  },
+  {
+    "id": "home.timeline.span2.teaching-assistant-cu-denver",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-title"
+    ],
+    "text": "Teaching Assistant, CU Denver"
+  },
+  {
+    "id": "home.timeline.span3.fall-2025-present",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-dates"
+    ],
+    "text": "Fall 2025 – present"
+  },
+  {
+    "id": "home.timeline.p3.supporting-undergraduate-history-instruction",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "p",
+    "classes": [
+      "tl-reading-detail"
+    ],
+    "text": "Supporting undergraduate history instruction. Providing feedback on student writing."
+  },
+  {
+    "id": "home.timeline.span4.ma-candidate-public-history",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-title"
+    ],
+    "text": "MA Candidate, Public History"
+  },
+  {
+    "id": "home.timeline.span5.cu-denver-2025-present",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-dates"
+    ],
+    "text": "CU Denver · 2025 – present"
+  },
+  {
+    "id": "home.timeline.p4.my-immediate-goal-is",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "p",
+    "classes": [
+      "tl-reading-detail"
+    ],
+    "text": "My immediate goal is to learn more about creating multimedia historical content that educates, engages, and broadens perspectives."
+  },
+  {
+    "id": "home.timeline.span6.historical-studies-journal-editor",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-title"
+    ],
+    "text": "Historical Studies Journal — Editor, then Chief Editor"
+  },
+  {
+    "id": "home.timeline.span7.cu-denver-history-department",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-dates"
+    ],
+    "text": "CU Denver History Department · 2026 – present"
+  },
+  {
+    "id": "home.timeline.p5.reviewing-and-editing-submissions",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "p",
+    "classes": [
+      "tl-reading-detail"
+    ],
+    "text": "Reviewing and editing submissions for CU Denver's student-run, peer-reviewed history journal, publishing since 1986, then stepping up to lead the graduate editorial board as chief editor."
+  },
+  {
+    "id": "home.timeline.span8.educational-intern-denver-firefighters",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-title"
+    ],
+    "text": "Educational Intern, Denver Firefighters Museum"
+  },
+  {
+    "id": "home.timeline.span9.jan-may-2026",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-dates"
+    ],
+    "text": "Jan–May 2026"
+  },
+  {
+    "id": "home.timeline.p6.contributed-to-education-programming",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "p",
+    "classes": [
+      "tl-reading-detail"
+    ],
+    "text": "Contributed to education programming including storytimes for younger children, STEM education for older children, and outreach programs. Designed and installed the exhibit \"Built to Protect,\" an object-based learning experience about the development of safety equipment over time."
+  },
+  {
+    "id": "home.timeline.span10.unlikely-explanations",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-title"
+    ],
+    "text": "Unlikely Explanations"
+  },
+  {
+    "id": "home.timeline.span11.history-podcast-blog-2019",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-dates"
+    ],
+    "text": "History podcast & blog · 2019–2025"
+  },
+  {
+    "id": "home.timeline.p7.my-passion-for-history",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "p",
+    "classes": [
+      "tl-reading-detail"
+    ],
+    "text": "My passion for history remained unfulfilled in my professional work, so in 2019 I started \"Unlikely Explanations.\" It let me connect with my love of interpretation and conducting original research while still creating."
+  },
+  {
+    "id": "home.timeline.span12.freelance-content-manager-creator",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-title"
+    ],
+    "text": "Freelance Content Manager/Creator"
+  },
+  {
+    "id": "home.timeline.span13.2018-2025",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-dates"
+    ],
+    "text": "2018–2025"
+  },
+  {
+    "id": "home.timeline.p8.executing-long-term-content",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "p",
+    "classes": [
+      "tl-reading-detail"
+    ],
+    "text": "Executing long-term content strategies with digital marketing agencies and their clients, including high-tech, B2B, and real estate clients. Using search data to identify audience opportunities and creating targeted content for search niches."
+  },
+  {
+    "id": "home.timeline.span14.lou-was-a-butterfly",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-title"
+    ],
+    "text": "\"Lou was a Butterfly\" published"
+  },
+  {
+    "id": "home.timeline.span15.kaytell-ink-publishing-nov",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-dates"
+    ],
+    "text": "KayTell Ink Publishing · Nov 2024"
+  },
+  {
+    "id": "home.timeline.p9.short-fiction",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "p",
+    "classes": [
+      "tl-reading-detail"
+    ],
+    "text": "Short fiction."
+  },
+  {
+    "id": "home.timeline.span16.leafy-waters-published",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-title"
+    ],
+    "text": "\"Leafy Waters\" published"
+  },
+  {
+    "id": "home.timeline.span17.eunoia-review-nov-2023",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-dates"
+    ],
+    "text": "Eunoia Review · Nov 2023"
+  },
+  {
+    "id": "home.timeline.p10.short-fiction",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "p",
+    "classes": [
+      "tl-reading-detail"
+    ],
+    "text": "Short fiction."
+  },
+  {
+    "id": "home.timeline.span18.certified-interpretive-guide",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-title"
+    ],
+    "text": "Certified Interpretive Guide"
+  },
+  {
+    "id": "home.timeline.span19.national-association-for-interpretation",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-dates"
+    ],
+    "text": "National Association for Interpretation · 2022"
+  },
+  {
+    "id": "home.timeline.p11.obtained-as-a-first",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "p",
+    "classes": [
+      "tl-reading-detail"
+    ],
+    "text": "Obtained as a first step toward transitioning into public history."
+  },
+  {
+    "id": "home.timeline.span20.content-marketing-manager-netgain",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-title"
+    ],
+    "text": "Content Marketing Manager, Netgain Solutions"
+  },
+  {
+    "id": "home.timeline.span21.2021-2022",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-dates"
+    ],
+    "text": "2021–2022"
+  },
+  {
+    "id": "home.timeline.p12.led-50-subject-matter",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "p",
+    "classes": [
+      "tl-reading-detail"
+    ],
+    "text": "Led 50+ subject matter experts to create weekly articles that drove inbound traffic, leads, and conversion. Developed product pages, email campaigns, videos, guides, and webinars for quarterly product releases."
+  },
+  {
+    "id": "home.timeline.span22.hot-to-trot-published",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-title"
+    ],
+    "text": "\"Hot to Trot\" published"
+  },
+  {
+    "id": "home.timeline.span23.we-cryptids-an-urban",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-dates"
+    ],
+    "text": "We Cryptids: An Urban Fantasy Anthology · 2021"
+  },
+  {
+    "id": "home.timeline.p13.short-fiction-urban-fantasy",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "p",
+    "classes": [
+      "tl-reading-detail"
+    ],
+    "text": "Short fiction, urban fantasy."
+  },
+  {
+    "id": "home.timeline.span24.integer-group-technical-copywriter",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-title"
+    ],
+    "text": "Integer Group — Technical Copywriter, then Copywriter"
+  },
+  {
+    "id": "home.timeline.span25.2014-2019",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-dates"
+    ],
+    "text": "2014–2019"
+  },
+  {
+    "id": "home.timeline.p14.developed-e-commerce-content",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "p",
+    "classes": [
+      "tl-reading-detail"
+    ],
+    "text": "Developed e-commerce content for national and multinational clients, including Starbucks, P&G, and Mars/Wrigley. Created product pages, landing pages, case studies, e-storefronts, videos, social posts, email campaigns, and banner ads. Managed freelance writers and studio designers."
+  },
+  {
+    "id": "home.timeline.span26.technical-writer-transaction-network",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-title"
+    ],
+    "text": "Technical Writer, Transaction Network Services"
+  },
+  {
+    "id": "home.timeline.span27.2011-2013",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-dates"
+    ],
+    "text": "2011–2013"
+  },
+  {
+    "id": "home.timeline.p15.managed-500-page-manuals",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "p",
+    "classes": [
+      "tl-reading-detail"
+    ],
+    "text": "Managed 500+ page manuals for telecommunication software. Worked with software engineers to keep documentation up to date."
+  },
+  {
+    "id": "home.timeline.span28.ba-english-history",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-title"
+    ],
+    "text": "BA, English & History"
+  },
+  {
+    "id": "home.timeline.span29.university-of-colorado-2007",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "span",
+    "classes": [
+      "tl-reading-dates"
+    ],
+    "text": "University of Colorado · 2007–2010"
+  },
+  {
+    "id": "home.timeline.p16.i-discovered-i-had",
+    "file": "site-home-template.html",
+    "section": "timeline",
+    "tag": "p",
+    "classes": [
+      "tl-reading-detail"
+    ],
+    "text": "I discovered I had accumulated enough history credits for a second major while completing my English Literature degree."
+  },
+  {
+    "id": "home.about.span1.explore-the-site",
+    "file": "site-home-template.html",
+    "section": "about",
+    "tag": "span",
+    "classes": [
+      "eyebrow"
+    ],
+    "text": "Explore the Site"
+  },
+  {
+    "id": "home.about.h21.keep-going",
+    "file": "site-home-template.html",
+    "section": "about",
+    "tag": "h2",
+    "classes": [],
+    "text": "Keep going"
+  },
+  {
+    "id": "home.about.p1.the-timeline-and-the",
+    "file": "site-home-template.html",
+    "section": "about",
+    "tag": "p",
+    "classes": [],
+    "text": "The timeline and the exhibit previews are the short version. Here's where the rest of the argument lives."
+  },
+  {
+    "id": "home.about.span2.exhibits",
+    "file": "site-home-template.html",
+    "section": "about",
+    "tag": "span",
+    "classes": [
+      "eyebrow"
+    ],
+    "text": "Exhibits"
+  },
+  {
+    "id": "home.about.h31.full-case-studies",
+    "file": "site-home-template.html",
+    "section": "about",
+    "tag": "h3",
+    "classes": [],
+    "text": "Full Case Studies"
+  },
+  {
+    "id": "home.about.p2.big-idea-planning-concept",
+    "file": "site-home-template.html",
+    "section": "about",
+    "tag": "p",
+    "classes": [],
+    "text": "Big Idea, planning, concept & content, design, and install/outcome — for both Built to Protect and Speaking Through the Dead, with exhibit reproductions alongside commentary."
+  },
+  {
+    "id": "home.about.span3.about",
+    "file": "site-home-template.html",
+    "section": "about",
+    "tag": "span",
+    "classes": [
+      "eyebrow"
+    ],
+    "text": "About"
+  },
+  {
+    "id": "home.about.h32.bio-credentials",
+    "file": "site-home-template.html",
+    "section": "about",
+    "tag": "h3",
+    "classes": [],
+    "text": "Bio & Credentials"
+  },
+  {
+    "id": "home.about.p3.the-full-throughline-in",
+    "file": "site-home-template.html",
+    "section": "about",
+    "tag": "p",
+    "classes": [],
+    "text": "The full throughline in prose, and a skills-bridge table mapping fifteen years of content-marketing work onto museum practice."
+  },
+  {
+    "id": "home.contact.h21.let-s-talk",
+    "file": "site-home-template.html",
+    "section": "contact",
+    "tag": "h2",
+    "classes": [],
+    "text": "Let's talk."
+  },
+  {
+    "id": "home.contact.div1.petermcguiremusic-gmail-com-mailto",
+    "file": "site-home-template.html",
+    "section": "contact",
+    "tag": "div",
+    "classes": [],
+    "text": "[petermcguiremusic@gmail.com](mailto:petermcguiremusic@gmail.com)"
+  },
+  {
+    "id": "home.contact.div2.303-521-8754",
+    "file": "site-home-template.html",
+    "section": "contact",
+    "tag": "div",
+    "classes": [],
+    "text": "303-521-8754"
+  },
+  {
+    "id": "home.contact.div3.denver-colorado",
+    "file": "site-home-template.html",
+    "section": "contact",
+    "tag": "div",
+    "classes": [],
+    "text": "Denver, Colorado"
+  },
+  {
+    "id": "about.root.a1.p-mcguire",
+    "file": "site-about-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [
+      "nav-name"
+    ],
+    "text": "P. McGuire"
+  },
+  {
+    "id": "about.root.a2.exhibits",
+    "file": "site-about-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [],
+    "text": "Exhibits"
+  },
+  {
+    "id": "about.root.a3.home",
+    "file": "site-about-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [],
+    "text": "Home"
+  },
+  {
+    "id": "about.about.span1.content-strategist-public-historian",
+    "file": "site-about-template.html",
+    "section": "about",
+    "tag": "span",
+    "classes": [
+      "eyebrow"
+    ],
+    "text": "Content Strategist → Public Historian · Denver, Colorado"
+  },
+  {
+    "id": "about.about.h11.about",
+    "file": "site-about-template.html",
+    "section": "about",
+    "tag": "h1",
+    "classes": [],
+    "text": "About"
+  },
+  {
+    "id": "about.about.p1.people-learn-more-and",
+    "file": "site-about-template.html",
+    "section": "about",
+    "tag": "p",
+    "classes": [
+      "manifesto"
+    ],
+    "text": "People learn more, and more honestly, outside a classroom than in one — in a museum corner, on a podcast, scrolling a page they didn't have to click. Fifteen years of professional writing taught me how to hold someone's attention without a syllabus. A Master's in Public History gave that instinct a name: informal learning. I'm not leaving what I've done. I'm pointing it at something I actually believe in."
+  },
+  {
+    "id": "about.throughline.span1.the-throughline",
+    "file": "site-about-template.html",
+    "section": "throughline",
+    "tag": "span",
+    "classes": [
+      "eyebrow"
+    ],
+    "text": "The Throughline"
+  },
+  {
+    "id": "about.throughline.h21.two-careers-one-instinct",
+    "file": "site-about-template.html",
+    "section": "throughline",
+    "tag": "h2",
+    "classes": [],
+    "text": "Two careers, one instinct"
+  },
+  {
+    "id": "about.throughline.p1.fifteen-years-of-professional",
+    "file": "site-about-template.html",
+    "section": "throughline",
+    "tag": "p",
+    "classes": [],
+    "text": "Fifteen years of professional writing taught me the same lesson in four different jobs: know who's reading, then write for them. Five hundred pages of telecom documentation at Transaction Network Services had to work for engineers who needed it accurate, not impressed. E-commerce copy for Starbucks, P&G, and Mars/Wrigley at Integer Group had to work on a stranger scrolling past it. Fifty-plus subject matter experts at Netgain needed weekly content that justified itself in real inbound traffic. Different audiences, same instinct: translate expert knowledge for someone who didn't ask for a lecture."
+  },
+  {
+    "id": "about.throughline.p2.in-2019-i-started",
+    "file": "site-about-template.html",
+    "section": "throughline",
+    "tag": "p",
+    "classes": [],
+    "text": "In 2019, I started [Unlikely Explanations](https://www.unlikelyexplanation.com/) because that instinct had no outlet in the day job. I wanted to do original historical research and tell people about it — pieces like \"Why Did Steamboat Springs Blow Up The Steamboat Spring?,\" which used a local land dispute to explore differing Ute and white-settler attitudes toward the land itself, and \"How Do We Cope With Gender?,\" which traced eunuchs, proto-trans figures, and third genders across history. It wasn't a career move. It was the first time in a decade that writing felt like the point instead of the deliverable."
+  },
+  {
+    "id": "about.throughline.p3.through-the-interviews-i",
+    "file": "site-about-template.html",
+    "section": "throughline",
+    "tag": "p",
+    "classes": [],
+    "text": "Through the interviews I did for those stories — including one with Dr. Michael Barkun about his book *A Culture of Conspiracy* — I kept running into the same idea: that educators can act as a kind of inoculation against radicalization and bigotry, simply by giving people a place to encounter complexity instead of certainty. That's when public history stopped being a hobby and started being the plan. A Certified Interpretive Guide credential in 2022 was the first formal step. An MA in Public History at CU Denver, starting in 2025, is the real one."
+  },
+  {
+    "id": "about.throughline.p4.built-to-protect-exhibit",
+    "file": "site-about-template.html",
+    "section": "throughline",
+    "tag": "p",
+    "classes": [],
+    "text": "[Built to Protect](__EXHIBIT_URL__#built-to-protect) and [Speaking Through the Dead](__EXHIBIT_URL__#speaking-through-the-dead), on the Exhibits page, are the proof this actually transfers — that the same instinct behind fifteen years of audience-first writing is the instinct behind a good museum label. This page is where I say the belief behind it outright: I think people learn best when nobody's making them, and I want to spend my career building the places where that happens."
+  },
+  {
+    "id": "about.skills-bridge.span1.skills-bridge",
+    "file": "site-about-template.html",
+    "section": "skills-bridge",
+    "tag": "span",
+    "classes": [
+      "eyebrow"
+    ],
+    "text": "Skills Bridge"
+  },
+  {
+    "id": "about.skills-bridge.h21.what-fifteen-years-of",
+    "file": "site-about-template.html",
+    "section": "skills-bridge",
+    "tag": "h2",
+    "classes": [],
+    "text": "What fifteen years of writing actually taught me"
+  },
+  {
+    "id": "about.skills-bridge.th1.from-the-content-career",
+    "file": "site-about-template.html",
+    "section": "skills-bridge",
+    "tag": "th",
+    "classes": [],
+    "text": "From the content career"
+  },
+  {
+    "id": "about.skills-bridge.th2.museum-relevant-equivalent",
+    "file": "site-about-template.html",
+    "section": "skills-bridge",
+    "tag": "th",
+    "classes": [],
+    "text": "Museum-relevant equivalent"
+  },
+  {
+    "id": "about.skills-bridge.td1.technical-writing-for-engineers",
+    "file": "site-about-template.html",
+    "section": "skills-bridge",
+    "tag": "td",
+    "classes": [
+      "from"
+    ],
+    "text": "**Technical writing for engineers**\nTransaction Network Services · 2011–2013"
+  },
+  {
+    "id": "about.skills-bridge.td2.working-with-subject-matter",
+    "file": "site-about-template.html",
+    "section": "skills-bridge",
+    "tag": "td",
+    "classes": [
+      "to"
+    ],
+    "text": "Working with subject-matter experts — curators, historians — to keep interpretive content accurate without losing the audience."
+  },
+  {
+    "id": "about.skills-bridge.td3.e-commerce-copywriting-for",
+    "file": "site-about-template.html",
+    "section": "skills-bridge",
+    "tag": "td",
+    "classes": [
+      "from"
+    ],
+    "text": "**E-commerce copywriting for national & multinational clients**\nInteger Group · 2014–2019"
+  },
+  {
+    "id": "about.skills-bridge.td4.audience-level-translation-of",
+    "file": "site-about-template.html",
+    "section": "skills-bridge",
+    "tag": "td",
+    "classes": [
+      "to"
+    ],
+    "text": "Audience-level translation of expert content — the exact skill behind every object label and panel in *Built to Protect*."
+  },
+  {
+    "id": "about.skills-bridge.td5.leading-50-subject-matter",
+    "file": "site-about-template.html",
+    "section": "skills-bridge",
+    "tag": "td",
+    "classes": [
+      "from"
+    ],
+    "text": "**Leading 50+ subject matter experts to a publishing deadline**\nNetgain Solutions · 2021–2022"
+  },
+  {
+    "id": "about.skills-bridge.td6.coordinating-a-graduate-editorial",
+    "file": "site-about-template.html",
+    "section": "skills-bridge",
+    "tag": "td",
+    "classes": [
+      "to"
+    ],
+    "text": "Coordinating a graduate editorial board, or a multi-station exhibit install, toward one fixed public deadline."
+  },
+  {
+    "id": "about.skills-bridge.td7.search-data-driven-content",
+    "file": "site-about-template.html",
+    "section": "skills-bridge",
+    "tag": "td",
+    "classes": [
+      "from"
+    ],
+    "text": "**Search-data-driven content strategy**\nFreelance Content Manager/Creator · 2018–2025"
+  },
+  {
+    "id": "about.skills-bridge.td8.the-same-instinct-behind",
+    "file": "site-about-template.html",
+    "section": "skills-bridge",
+    "tag": "td",
+    "classes": [
+      "to"
+    ],
+    "text": "The same instinct behind the *Built to Protect* prototype test — the original mechanism got cut because families weren't engaging with it, not because the research was wrong."
+  },
+  {
+    "id": "about.root.span1.next",
+    "file": "site-about-template.html",
+    "section": "root",
+    "tag": "span",
+    "classes": [
+      "eyebrow"
+    ],
+    "text": "Next"
+  },
+  {
+    "id": "about.root.a4.exhibits",
+    "file": "site-about-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [],
+    "text": "Exhibits"
+  },
+  {
+    "id": "about.root.a5.home",
+    "file": "site-about-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [],
+    "text": "Home"
+  },
+  {
+    "id": "exhibit.root.a1.p-mcguire",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [
+      "nav-name"
+    ],
+    "text": "P. McGuire"
+  },
+  {
+    "id": "exhibit.root.a2.built-to-protect",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [],
+    "text": "Built to Protect"
+  },
+  {
+    "id": "exhibit.root.a3.speaking-through-the-dead",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [],
+    "text": "Speaking Through the Dead"
+  },
+  {
+    "id": "exhibit.root.a4.about",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [],
+    "text": "About"
+  },
+  {
+    "id": "exhibit.root.a5.home",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [],
+    "text": "Home"
+  },
+  {
+    "id": "exhibit.built-to-protect.span1.exhibit-no-01-denver",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "built-to-protect",
+    "tag": "span",
+    "classes": [
+      "plate"
+    ],
+    "text": "Exhibit No. 01 — Denver Firefighters Museum — Educational Intern, 2026"
+  },
+  {
+    "id": "exhibit.built-to-protect.h11.built-to-protect",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "built-to-protect",
+    "tag": "h1",
+    "classes": [],
+    "text": "Built to Protect"
+  },
+  {
+    "id": "exhibit.built-to-protect.p1.engineering-is-never-finished",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "built-to-protect",
+    "tag": "p",
+    "classes": [
+      "big-idea"
+    ],
+    "text": "\"Engineering is never finished. Every solution is the starting point for the next problem.\""
+  },
+  {
+    "id": "exhibit.built-to-protect.p2.on-site-for-kids",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "built-to-protect",
+    "tag": "p",
+    "classes": [
+      "big-idea-note"
+    ],
+    "text": "On-site, for kids: \"Safety Isn't Solved\""
+  },
+  {
+    "id": "exhibit.built-to-protect.dt1.role",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "built-to-protect",
+    "tag": "dt",
+    "classes": [],
+    "text": "Role"
+  },
+  {
+    "id": "exhibit.built-to-protect.dd1.concept-content-design-install",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "built-to-protect",
+    "tag": "dd",
+    "classes": [],
+    "text": "Concept, content, design, install"
+  },
+  {
+    "id": "exhibit.built-to-protect.dt2.audience",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "built-to-protect",
+    "tag": "dt",
+    "classes": [],
+    "text": "Audience"
+  },
+  {
+    "id": "exhibit.built-to-protect.dd2.families-k-8-school",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "built-to-protect",
+    "tag": "dd",
+    "classes": [],
+    "text": "Families, K–8 school groups, general visitors"
+  },
+  {
+    "id": "exhibit.built-to-protect.dt3.timeframe",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "built-to-protect",
+    "tag": "dt",
+    "classes": [],
+    "text": "Timeframe"
+  },
+  {
+    "id": "exhibit.built-to-protect.dd3.2026-educational-internship",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "built-to-protect",
+    "tag": "dd",
+    "classes": [],
+    "text": "2026, educational internship"
+  },
+  {
+    "id": "exhibit.built-to-protect.dt4.platform",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "built-to-protect",
+    "tag": "dt",
+    "classes": [],
+    "text": "Platform"
+  },
+  {
+    "id": "exhibit.built-to-protect.dd4.corner-installation-helmet-jacket",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "built-to-protect",
+    "tag": "dd",
+    "classes": [],
+    "text": "Corner installation — helmet, jacket, and mask/SCBA try-on stations, a drawing activity, and five adult panels"
+  },
+  {
+    "id": "exhibit.big-idea.span1.the-big-idea-research",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "big-idea",
+    "tag": "span",
+    "classes": [
+      "eyebrow"
+    ],
+    "text": "The Big Idea & Research Foundation"
+  },
+  {
+    "id": "exhibit.big-idea.h21.grounded-before-it-was",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "big-idea",
+    "tag": "h2",
+    "classes": [],
+    "text": "Grounded before it was designed"
+  },
+  {
+    "id": "exhibit.big-idea.p1.engineering-is-never-finished",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "big-idea",
+    "tag": "p",
+    "classes": [],
+    "text": "\"Engineering is never finished\" is one idea at two reading levels: the line an adult reads on a data panel, and \"Safety Isn't Solved\" for a kid pulling on a helmet. Both point at the same lesson — how engineering actually works, not just facts about firefighting gear."
+  },
+  {
+    "id": "exhibit.big-idea.p2.before-drafting-a-single",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "big-idea",
+    "tag": "p",
+    "classes": [],
+    "text": "Before drafting a single label, I grounded the design in three research frameworks — color-coded below, and again wherever they show up on the wall:"
+  },
+  {
+    "id": "exhibit.big-idea.span2.udl-universal-design-for",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "big-idea",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "UDL — Universal Design for Learning"
+  },
+  {
+    "id": "exhibit.big-idea.p3.show-information-more-than",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "big-idea",
+    "tag": "p",
+    "classes": [],
+    "text": "Show information more than one way: visually, tactilely, through data. **Here:** the same Big Idea reaches a visitor as a try-on prompt, a printed question, and a data panel, not just one of those."
+  },
+  {
+    "id": "exhibit.big-idea.span3.obl-object-based-learning",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "big-idea",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "OBL — Object-Based Learning"
+  },
+  {
+    "id": "exhibit.big-idea.p4.lead-with-the-object",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "big-idea",
+    "tag": "p",
+    "classes": [],
+    "text": "Lead with the object, layer the labels — tombstone, thematic, extended — so the object generates the question before any text answers it. **Here:** every station puts a real or replica object in reach first; adult panels layer from headline down to full data for the visitor who wants to go deeper."
+  },
+  {
+    "id": "exhibit.big-idea.span4.edge-framework",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "big-idea",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "EDGE Framework"
+  },
+  {
+    "id": "exhibit.big-idea.p5.the-exploratorium-s-9",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "big-idea",
+    "tag": "p",
+    "classes": [],
+    "text": "The Exploratorium's 9 design attributes proven to engage girls in STEM exhibits without alienating boys. **Here:** two-person try-on stations, open questions with no single right answer, and Heather Larson featured as a named protagonist rather than a footnote."
+  },
+  {
+    "id": "exhibit.big-idea.p6.the-research-held-up",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "big-idea",
+    "tag": "p",
+    "classes": [],
+    "text": "The research held up; the original mechanism didn't. I first designed four stations, each built around a flip-panel \"decision tree\" — a real historical fork, three possible paths, a reveal connecting the choice to what actually happened. I printed one full-size and watched families use it in the gallery. By that point in a visit, they already had **reading fatigue** from the rest of the museum — what worked was **handling the objects** and **talking to each other**, not solving a text puzzle. So I changed the mechanism and kept the Big Idea."
+  },
+  {
+    "id": "exhibit.final-design.span1.the-final-design-its",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "eyebrow"
+    ],
+    "text": "The Final Design & Its Pedagogy"
+  },
+  {
+    "id": "exhibit.final-design.h21.what-s-actually-on",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "h2",
+    "classes": [],
+    "text": "What's actually on the wall"
+  },
+  {
+    "id": "exhibit.final-design.p1.same-big-idea-built",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "p",
+    "classes": [],
+    "text": "Same Big Idea, built twice for two different readers standing in the same corner. **Kid stations** run on EDGE's body-movement and collaboration engagement — do first, ask questions, no reading required to participate. **Adult panels** run on Object-Based Learning's layered, extended-interpretation labels — for the visitor with time to read data and history."
+  },
+  {
+    "id": "exhibit.final-design.h31.kid-register",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "h3",
+    "classes": [],
+    "text": "Kid Register"
+  },
+  {
+    "id": "exhibit.final-design.span2.do-first-read-second",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "register-sub"
+    ],
+    "text": "do first, read second"
+  },
+  {
+    "id": "exhibit.final-design.span3.exhibit-as-installed-the",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "frame-tag"
+    ],
+    "text": "Exhibit, as installed — The Jacket"
+  },
+  {
+    "id": "exhibit.final-design.span4.body-movement",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Body Movement"
+  },
+  {
+    "id": "exhibit.final-design.p2.one-of-edge-s",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "p",
+    "classes": [],
+    "text": "One of EDGE's 9 attributes: whole-body interaction, not just hands-only manipulation. Pulling on the coat is the whole prompt — you feel the weight before you read a word about it."
+  },
+  {
+    "id": "exhibit.final-design.span5.collaboration",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Collaboration"
+  },
+  {
+    "id": "exhibit.final-design.p3.edge-design-meant-for",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "p",
+    "classes": [],
+    "text": "EDGE design meant for two people at once, not a solo visitor. A parent reading \"why do you think the jackets are so heavy\" out loud is already talking with their kid about it."
+  },
+  {
+    "id": "exhibit.final-design.span6.guide-labels",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Guide Labels"
+  },
+  {
+    "id": "exhibit.final-design.p4.edge-s-term-for",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "p",
+    "classes": [],
+    "text": "EDGE's term for labels that tell visitors what to **do**, not just what something is, so nobody has to walk up cold. The printed questions tell a kid what to look for and give a parent something to say about it."
+  },
+  {
+    "id": "exhibit.final-design.span7.object-before-label",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Object Before Label"
+  },
+  {
+    "id": "exhibit.final-design.p5.obl-s-central-rule",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "p",
+    "classes": [],
+    "text": "OBL's central rule: let the object raise the question before the label answers it. You feel the jacket's weight and stiffness first — the words about turnout gear come after."
+  },
+  {
+    "id": "exhibit.final-design.span8.object-at-eye-level",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Object at Eye Level"
+  },
+  {
+    "id": "exhibit.final-design.p6.obl-calls-for-positioning",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "p",
+    "classes": [],
+    "text": "OBL calls for positioning an object \"at eye level, well-lit, with enough space to see it from multiple angles\" before a visitor reads anything. This station is mounted at a child's eye level, not an adult's — a real, physical decision about who it's built for."
+  },
+  {
+    "id": "exhibit.final-design.span9.plain-language-first-person",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Plain-Language, First-Person Voice"
+  },
+  {
+    "id": "exhibit.final-design.p7.obl-asks-for-conversational",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "p",
+    "classes": [],
+    "text": "OBL asks for \"conversational tone... tested by reading aloud.\" The jacket talks in first person — \"My jacket has thick canvas...\" — at about a 4th-grade level, so a parent isn't stuck translating a label into kid-language on the spot. Same instinct behind [fifteen years of writing e-commerce copy for Starbucks, P&G, and Mars/Wrigley](__ABOUT_URL__#skills-bridge) — know who's reading, then write for them — aimed here at a nine-year-old instead of a shopper."
+  },
+  {
+    "id": "exhibit.final-design.p8.this-station-is-the",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "p",
+    "classes": [],
+    "text": "This station is the direct answer to what the prototype test found: ask the visitor to do something before asking them to read anything."
+  },
+  {
+    "id": "exhibit.final-design.span10.the-helmet",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "thumb-title"
+    ],
+    "text": "The Helmet"
+  },
+  {
+    "id": "exhibit.final-design.span11.two-helmets-a-century",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "thumb-desc"
+    ],
+    "text": "Two helmets, a century apart — same open questions."
+  },
+  {
+    "id": "exhibit.final-design.span12.the-mask-scba",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "thumb-title"
+    ],
+    "text": "The Mask / SCBA"
+  },
+  {
+    "id": "exhibit.final-design.span13.old-beard-filter-vs",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "thumb-desc"
+    ],
+    "text": "Old beard-filter vs. modern air tank, side by side."
+  },
+  {
+    "id": "exhibit.final-design.span14.firefighting-in-the-future",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "thumb-title"
+    ],
+    "text": "Firefighting in the Future"
+  },
+  {
+    "id": "exhibit.final-design.span15.a-blank-page-and",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "thumb-desc"
+    ],
+    "text": "A blank page and one open prompt: what would you fix?"
+  },
+  {
+    "id": "exhibit.final-design.h32.adult-register",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "h3",
+    "classes": [],
+    "text": "Adult Register"
+  },
+  {
+    "id": "exhibit.final-design.span16.read-first-reflect-second",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "register-sub"
+    ],
+    "text": "read first, reflect second"
+  },
+  {
+    "id": "exhibit.final-design.span17.exhibit-as-installed-the",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "frame-tag"
+    ],
+    "text": "Exhibit, as installed — the wall's opening argument"
+  },
+  {
+    "id": "exhibit.final-design.span18.thematic-label",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Thematic Label"
+  },
+  {
+    "id": "exhibit.final-design.p9.obl-s-middle-label",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "p",
+    "classes": [],
+    "text": "OBL's middle label tier connects several objects to one shared question, for a visitor who wants to understand rather than keep moving. Every station on this wall is really making the same argument: why does gear change?"
+  },
+  {
+    "id": "exhibit.final-design.span19.multiple-means-of-representation",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Multiple Means of Representation"
+  },
+  {
+    "id": "exhibit.final-design.p10.udl-s-first-principle",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "p",
+    "classes": [],
+    "text": "UDL's first principle: show the same idea more than one way. The kid stations argue \"safety isn't solved\" through touch; these panels make the same argument with history and data instead. Even the old-vs-new pairing repeats — the helmet and jacket become a room that burns in 29 minutes instead of 4."
+  },
+  {
+    "id": "exhibit.final-design.span20.real-world-data",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Real-World Data"
+  },
+  {
+    "id": "exhibit.final-design.p11.obl-asks-for-concrete",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "p",
+    "classes": [],
+    "text": "OBL asks for concrete language over abstraction. \"29 minutes to 4 minutes\" and a cited 1971 NFPA mandate are both checkable, sourced right on the panel — numbers a visitor can picture instead of a vague claim about things getting more dangerous."
+  },
+  {
+    "id": "exhibit.final-design.span21.object-at-eye-level",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Object at Eye Level, Recalibrated"
+  },
+  {
+    "id": "exhibit.final-design.p12.same-obl-positioning-rule",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "p",
+    "classes": [],
+    "text": "Same OBL positioning rule as the kid stations, at a different height. These panels sit at an adult's eyeline — the exhibit repositions itself physically depending on who's standing in front of it."
+  },
+  {
+    "id": "exhibit.final-design.span22.look-feel-tuned-for",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Look & Feel, Tuned for the Reader"
+  },
+  {
+    "id": "exhibit.final-design.p13.edge-s-inviting-aesthetic",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "p",
+    "classes": [],
+    "text": "EDGE's \"inviting aesthetic\" attribute isn't one fixed look. The kid stations use a warm vintage illustration; these panels use flat icons — a flame, a \"Safety First\" badge, a burst of smoke. Same attribute, a different visual language for a different reader."
+  },
+  {
+    "id": "exhibit.final-design.span23.collaboration-optional-not-required",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Collaboration — Optional, Not Required"
+  },
+  {
+    "id": "exhibit.final-design.p14.these-panels-work-two",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "p",
+    "classes": [],
+    "text": "These panels work two ways: something for an adult to relay back to a kid about gear, engineering, and change (\"hey, did you know...\"), or a complete read for someone who came in without one. Collaboration is offered here, not required."
+  },
+  {
+    "id": "exhibit.final-design.p15.between-the-two-this",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "p",
+    "classes": [],
+    "text": "Between the two, this is where the Big Idea gets stated outright: one panel says why gear keeps changing, the other proves it with a room going from 29 minutes to 4."
+  },
+  {
+    "id": "exhibit.final-design.span24.smoke-eating-what-is",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "thumb-title"
+    ],
+    "text": "Smoke Eating: What Is Acceptable Danger?"
+  },
+  {
+    "id": "exhibit.final-design.span25.why-firefighters-once-called",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "thumb-desc"
+    ],
+    "text": "Why firefighters once called themselves \"smoke eaters\" — and what it cost them."
+  },
+  {
+    "id": "exhibit.final-design.span26.osha-safety-standards-research",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "thumb-title"
+    ],
+    "text": "OSHA, Safety Standards & Research"
+  },
+  {
+    "id": "exhibit.final-design.span27.how-safety-went-from",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "thumb-desc"
+    ],
+    "text": "How safety went from \"writing rules in blood\" to research-driven."
+  },
+  {
+    "id": "exhibit.final-design.span28.women-firefighting-safety-heather",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "thumb-title"
+    ],
+    "text": "Women & Firefighting Safety — Heather Larson"
+  },
+  {
+    "id": "exhibit.final-design.span29.her-fight-against-a",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "final-design",
+    "tag": "span",
+    "classes": [
+      "thumb-desc"
+    ],
+    "text": "Her fight against a rigged strength test, and the data on what's still unequal."
+  },
+  {
+    "id": "exhibit.install-outcome.span1.install-outcome",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "install-outcome",
+    "tag": "span",
+    "classes": [
+      "eyebrow"
+    ],
+    "text": "Install & Outcome"
+  },
+  {
+    "id": "exhibit.install-outcome.h21.what-it-adds-up",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "install-outcome",
+    "tag": "h2",
+    "classes": [],
+    "text": "What it adds up to"
+  },
+  {
+    "id": "exhibit.install-outcome.figcaption1.the-corner-as-installed",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "install-outcome",
+    "tag": "figcaption",
+    "classes": [],
+    "text": "The corner as installed — the full run of panels and gear together."
+  },
+  {
+    "id": "exhibit.install-outcome.p1.every-framework-here-is",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "install-outcome",
+    "tag": "p",
+    "classes": [],
+    "text": "Every framework here is pointing at the same move: get out of the way and let the object make the argument. The jacket doesn't need a paragraph about why it's heavy — a kid finds that out with their own arms, then asks why. Object-Based Learning, Universal Design for Learning, and EDGE's body-movement attribute all land on that same design choice independently."
+  },
+  {
+    "id": "exhibit.install-outcome.p2.that-s-the-real",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "install-outcome",
+    "tag": "p",
+    "classes": [],
+    "text": "That's the real difference between the four-station concept I started with and what's on the wall now — not a smaller idea, just a shorter path between the visitor and the object doing the convincing."
+  },
+  {
+    "id": "exhibit.root.span1.exhibit-no-02",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "root",
+    "tag": "span",
+    "classes": [
+      "divider-label"
+    ],
+    "text": "Exhibit No. 02"
+  },
+  {
+    "id": "exhibit.speaking-through-the-dead.span1.exhibit-no-02-arcgis",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "speaking-through-the-dead",
+    "tag": "span",
+    "classes": [
+      "plate",
+      "violet"
+    ],
+    "text": "Exhibit No. 02 — ArcGIS StoryMaps — Survey of Feminist Thought, CU Denver, 2026"
+  },
+  {
+    "id": "exhibit.speaking-through-the-dead.h11.speaking-through-the-dead",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "speaking-through-the-dead",
+    "tag": "h1",
+    "classes": [],
+    "text": "Speaking Through the Dead"
+  },
+  {
+    "id": "exhibit.speaking-through-the-dead.p1.what-is-feminist-about",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "speaking-through-the-dead",
+    "tag": "p",
+    "classes": [
+      "big-idea",
+      "violet"
+    ],
+    "text": "\"What is Feminist about ghosts?\""
+  },
+  {
+    "id": "exhibit.speaking-through-the-dead.p2.the-exhibit-s-own",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "speaking-through-the-dead",
+    "tag": "p",
+    "classes": [
+      "big-idea-note"
+    ],
+    "text": "The exhibit's own on-screen subtitle — one audience, not two reading levels the way Built to Protect splits by age"
+  },
+  {
+    "id": "exhibit.speaking-through-the-dead.dt1.role",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "speaking-through-the-dead",
+    "tag": "dt",
+    "classes": [],
+    "text": "Role"
+  },
+  {
+    "id": "exhibit.speaking-through-the-dead.dd1.research-concept-design-build",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "speaking-through-the-dead",
+    "tag": "dd",
+    "classes": [],
+    "text": "Research, concept, design, build"
+  },
+  {
+    "id": "exhibit.speaking-through-the-dead.dt2.audience",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "speaking-through-the-dead",
+    "tag": "dt",
+    "classes": [],
+    "text": "Audience"
+  },
+  {
+    "id": "exhibit.speaking-through-the-dead.dd2.classmates-plus-the-general",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "speaking-through-the-dead",
+    "tag": "dd",
+    "classes": [],
+    "text": "Classmates, plus the general public via ArcGIS"
+  },
+  {
+    "id": "exhibit.speaking-through-the-dead.dt3.timeframe",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "speaking-through-the-dead",
+    "tag": "dt",
+    "classes": [],
+    "text": "Timeframe"
+  },
+  {
+    "id": "exhibit.speaking-through-the-dead.dd3.spring-2026-survey-of",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "speaking-through-the-dead",
+    "tag": "dd",
+    "classes": [],
+    "text": "Spring 2026, Survey of Feminist Thought"
+  },
+  {
+    "id": "exhibit.speaking-through-the-dead.dt4.platform",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "speaking-through-the-dead",
+    "tag": "dt",
+    "classes": [],
+    "text": "Platform"
+  },
+  {
+    "id": "exhibit.speaking-through-the-dead.dd4.arcgis-storymaps-with-custom",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "speaking-through-the-dead",
+    "tag": "dd",
+    "classes": [],
+    "text": "ArcGIS StoryMaps, with custom Flourish network-graph and Sankey-diagram embeds"
+  },
+  {
+    "id": "exhibit.std-big-idea.span1.the-big-idea-research",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-big-idea",
+    "tag": "span",
+    "classes": [
+      "eyebrow",
+      "violet"
+    ],
+    "text": "The Big Idea & Research Foundation"
+  },
+  {
+    "id": "exhibit.std-big-idea.h21.a-history-feminism-used",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-big-idea",
+    "tag": "h2",
+    "classes": [],
+    "text": "A history feminism used, then buried"
+  },
+  {
+    "id": "exhibit.std-big-idea.p1.spiritualism-was-a-tool",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-big-idea",
+    "tag": "p",
+    "classes": [],
+    "text": "Spiritualism was a tool feminism **\"embraced, profited from, and disposed of.\"** The exhibit makes that case through three stops and three interactives, not a lecture — built on the same three frameworks as Built to Protect, adapted for a digital, single-audience exhibit."
+  },
+  {
+    "id": "exhibit.std-big-idea.span2.udl-universal-design-for",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-big-idea",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "UDL — Universal Design for Learning"
+  },
+  {
+    "id": "exhibit.std-big-idea.p2.equitable-learning-environments-guide",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-big-idea",
+    "tag": "p",
+    "classes": [],
+    "text": "\"Equitable learning environments guide learners... by valuing and cultivating multiple ways of knowing and making meaning\" (CAST, 2024). **Here:** the one framework the reflection paper names outright — every stop and interactive offers more than one way in, unpacked below."
+  },
+  {
+    "id": "exhibit.std-big-idea.span3.obl-object-based-learning",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-big-idea",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "OBL — Object-Based Learning"
+  },
+  {
+    "id": "exhibit.std-big-idea.p3.lead-with-real-evidence",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-big-idea",
+    "tag": "p",
+    "classes": [],
+    "text": "Lead with real evidence, then let prose explain it. **Here, without a physical object:** a primary source or archival image stands in for it — a substitution that shows up twice below, in two different forms."
+  },
+  {
+    "id": "exhibit.std-big-idea.span4.edge-framework",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-big-idea",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "EDGE Framework"
+  },
+  {
+    "id": "exhibit.std-big-idea.p4.name-a-protagonist-instead",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-big-idea",
+    "tag": "p",
+    "classes": [],
+    "text": "Name a protagonist instead of a footnote, and ask questions with no single right answer instead of handing over a conclusion. **Here:** that shows up twice below too — once in who carries the story, once in how it's asked."
+  },
+  {
+    "id": "exhibit.std-method.span1.the-exhibit-its-method",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "eyebrow",
+      "violet"
+    ],
+    "text": "The Exhibit & Its Method"
+  },
+  {
+    "id": "exhibit.std-method.h21.one-framework-two-ways",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "h2",
+    "classes": [],
+    "text": "One framework, two ways in"
+  },
+  {
+    "id": "exhibit.std-method.p1.same-three-frameworks-split",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "p",
+    "classes": [],
+    "text": "Same three frameworks, split by means instead of by audience this time. **The Narrative** — text and primary-source images, read in sequence — carries the argument the way a museum label does. **The Interactives** — a map, a network graph used twice, and a flow diagram — let a visitor test that same argument themselves."
+  },
+  {
+    "id": "exhibit.std-method.h31.the-narrative",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "h3",
+    "classes": [],
+    "text": "The Narrative"
+  },
+  {
+    "id": "exhibit.std-method.span2.read-the-argument-one",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "register-sub"
+    ],
+    "text": "read the argument, one stop at a time"
+  },
+  {
+    "id": "exhibit.std-method.span3.exhibit-as-published-stop",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "frame-tag"
+    ],
+    "text": "Exhibit, as published — Stop One: The Parlor as Homosocial War Room"
+  },
+  {
+    "id": "exhibit.std-method.p2.amy-post-opens-the",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "p",
+    "classes": [],
+    "text": "Amy Post opens the exhibit as a real person — a Rochester Quaker who hosted the Fox sisters, sheltered Harriet Jacobs, and anchored a reform network from her own parlor. Leading with a character gives a visitor someone to follow before any thesis shows up. She reappears, repositioned, in the network graph below."
+  },
+  {
+    "id": "exhibit.std-method.span4.multiple-means-of-representation",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Multiple Means of Representation"
+  },
+  {
+    "id": "exhibit.std-method.p3.udl-s-first-principle",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "p",
+    "classes": [],
+    "text": "UDL's first principle: show the same idea more than one way. This stop pairs a period portrait, narrative text, and an archival photograph of the actual parlor — three routes into the same claim."
+  },
+  {
+    "id": "exhibit.std-method.span5.multiple-means-of-engagement",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Multiple Means of Engagement"
+  },
+  {
+    "id": "exhibit.std-method.p4.my-own-line-from",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "p",
+    "classes": [],
+    "text": "My own line from the reflection paper: the exhibit \"works at different levels of attention — from a casual five-minute glance or a fifteen-minute reflection to an hour-long exploration.\""
+  },
+  {
+    "id": "exhibit.std-method.span6.learner-agency",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Learner Agency"
+  },
+  {
+    "id": "exhibit.std-method.p5.udl-s-engagement-guideline",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "p",
+    "classes": [],
+    "text": "UDL's engagement guideline calls for learner autonomy and choice, not just varied formats. My own phrase: the exhibit \"encourages learner agency by declining to collapse the story of American feminism into a respectable teleology\" — no single correct reading is handed to the visitor."
+  },
+  {
+    "id": "exhibit.std-method.span7.object-before-label-digitally",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Object Before Label, Digitally"
+  },
+  {
+    "id": "exhibit.std-method.p6.obl-s-central-rule",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "p",
+    "classes": [],
+    "text": "OBL's central rule, adapted: let the real thing carry the claim before prose explains it. There's no physical object here, so a primary-source photograph and Smith-Rosenberg's scholarship do that work instead — evidence first, argument second."
+  },
+  {
+    "id": "exhibit.std-method.span8.named-protagonist-not-a",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Named Protagonist, Not a Footnote"
+  },
+  {
+    "id": "exhibit.std-method.p7.the-same-edge-move",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "p",
+    "classes": [],
+    "text": "The same EDGE move as Heather Larson in Built to Protect: Amy Post gets a name, a face, and a story, not a line in a list of \"women involved.\" A visitor follows a person, then learns the argument through her."
+  },
+  {
+    "id": "exhibit.std-method.span9.guide-labels-open-questions",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Guide Labels, Open Questions"
+  },
+  {
+    "id": "exhibit.std-method.p8.edge-s-labels-that",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "p",
+    "classes": [],
+    "text": "EDGE's labels-that-tell-you-what-to-do principle, in the same open-ended form as Built to Protect's kid-register prompts: \"What do you notice? Who remains?\" has no single right answer — it invites a look, not a correct response."
+  },
+  {
+    "id": "exhibit.std-method.span10.womanly-weakness-reframed",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "thumb-title"
+    ],
+    "text": "Womanly Weakness, Reframed"
+  },
+  {
+    "id": "exhibit.std-method.span11.spiritualism-turned-the-era",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "thumb-desc"
+    ],
+    "text": "Spiritualism turned the era's own stereotypes of feminine nervousness into a tool for public authority."
+  },
+  {
+    "id": "exhibit.std-method.span12.a-legal-cover-for",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "thumb-title"
+    ],
+    "text": "A Legal Cover for Public Speech"
+  },
+  {
+    "id": "exhibit.std-method.span13.trance-channeling-let-a",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "thumb-desc"
+    ],
+    "text": "Trance channeling let a woman speak in public without the shame 19th-century religion attached to it — a real loophole, not a metaphor."
+  },
+  {
+    "id": "exhibit.std-method.span14.appropriating-native-and-asian",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "thumb-title"
+    ],
+    "text": "Appropriating Native and Asian Voices"
+  },
+  {
+    "id": "exhibit.std-method.span15.white-spiritualists-claimed-native",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "thumb-desc"
+    ],
+    "text": "White Spiritualists claimed Native and Asian \"spirit guides\" as a source of authority — a real historical wrong the exhibit names directly, not around."
+  },
+  {
+    "id": "exhibit.std-method.h32.the-interactives",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "h3",
+    "classes": [],
+    "text": "The Interactives"
+  },
+  {
+    "id": "exhibit.std-method.span16.test-the-argument-yourself",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "register-sub"
+    ],
+    "text": "test the argument yourself"
+  },
+  {
+    "id": "exhibit.std-method.span17.exhibit-as-published-the",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "frame-tag"
+    ],
+    "text": "Exhibit, as published — the social network graph, used twice"
+  },
+  {
+    "id": "exhibit.std-method.p9.the-same-tool-reused",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "p",
+    "classes": [],
+    "text": "The same tool, reused with different labels, turns a historiographical point into something a visitor watches happen instead of reads. Relabel the rings, and the network redraws itself — Amy Post moves to the outer edge, Elizabeth Cady Stanton moves to the center. One visualization, two arguments, no new build."
+  },
+  {
+    "id": "exhibit.std-method.span18.multiple-means-of-representation",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Multiple Means of Representation"
+  },
+  {
+    "id": "exhibit.std-method.p10.my-own-line-the",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "p",
+    "classes": [],
+    "text": "My own line: the interactives \"communicate on three registers: gestalt impact, text labels, and interactive experience\" — a visitor absorbs the shape of the argument before ever clicking a name."
+  },
+  {
+    "id": "exhibit.std-method.span19.multiple-means-of-engagement",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Multiple Means of Engagement"
+  },
+  {
+    "id": "exhibit.std-method.p11.a-quick-glance-at",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "p",
+    "classes": [],
+    "text": "A quick glance at the toggle reads the argument at a distance; clicking through every biography reads it in depth. Both are legitimate ways to use the same tool."
+  },
+  {
+    "id": "exhibit.std-method.span20.maximize-transfer-generalization",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Maximize Transfer & Generalization"
+  },
+  {
+    "id": "exhibit.std-method.p12.a-specific-udl-checkpoint",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "p",
+    "classes": [],
+    "text": "A specific UDL checkpoint under Comprehension: help a learner apply a pattern they've already learned to something new. A visitor who's figured out \"closer to center means more central\" reads the second, relabeled version instantly — same skill, new argument, no re-teaching."
+  },
+  {
+    "id": "exhibit.std-method.span21.real-world-data-applied",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Real-World Data, Applied to Categories"
+  },
+  {
+    "id": "exhibit.std-method.p13.obl-calls-for-concrete",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "p",
+    "classes": [],
+    "text": "OBL calls for concrete, checkable, sourced content over abstraction. The relabeled rings aren't invented categories — \"Erased Entirely,\" \"Stripped of Spiritualism,\" \"Minimized\" come straight out of Braude, Smith-Rosenberg, and Lorde's scholarship on how this erasure actually happened."
+  },
+  {
+    "id": "exhibit.std-method.span22.optimize-access-to-tools",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Optimize Access to Tools"
+  },
+  {
+    "id": "exhibit.std-method.p14.udl-s-action-and",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "p",
+    "classes": [],
+    "text": "UDL's action-and-expression guidelines call for optimizing access to the tools themselves, not just offering several. My own footnote names the real gap plainly: \"there are some technical problems with this interactive... the tag toggling would be more intuitive... with a single click.\""
+  },
+  {
+    "id": "exhibit.std-method.span23.layered-labels-same-obl",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "ped-label"
+    ],
+    "text": "Layered Labels, Same OBL Logic"
+  },
+  {
+    "id": "exhibit.std-method.p15.click-a-node-and",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "p",
+    "classes": [],
+    "text": "Click a node and the sidebar goes deeper — name and dates first (tombstone), then tags (thematic), then a full paragraph (extended). The same three-tier layering as Built to Protect's OBL cards, rebuilt for a click instead of a wall."
+  },
+  {
+    "id": "exhibit.std-method.span24.the-map",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "thumb-title"
+    ],
+    "text": "The Map"
+  },
+  {
+    "id": "exhibit.std-method.span25.a-five-stop-pin",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "thumb-desc"
+    ],
+    "text": "A five-stop pin map tracing Spiritualism's spread from the Fox sisters' Hydesville farmhouse toward Seneca Falls."
+  },
+  {
+    "id": "exhibit.std-method.span26.the-flow-diagram",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "thumb-title"
+    ],
+    "text": "The Flow Diagram"
+  },
+  {
+    "id": "exhibit.std-method.span27.which-movements-beliefs-counted",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-method",
+    "tag": "span",
+    "classes": [
+      "thumb-desc"
+    ],
+    "text": "Which movements' beliefs counted as legitimate, charted as its own axis of exclusion alongside race, class, and sexuality."
+  },
+  {
+    "id": "exhibit.std-outcome.span1.outcome",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-outcome",
+    "tag": "span",
+    "classes": [
+      "eyebrow",
+      "violet"
+    ],
+    "text": "Outcome"
+  },
+  {
+    "id": "exhibit.std-outcome.h21.what-it-adds-up",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-outcome",
+    "tag": "h2",
+    "classes": [],
+    "text": "What it adds up to"
+  },
+  {
+    "id": "exhibit.std-outcome.figcaption1.the-exhibit-s-closing",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-outcome",
+    "tag": "figcaption",
+    "classes": [],
+    "text": "The exhibit's closing move — a slider between the respectable public face of suffrage and the séance it grew out of."
+  },
+  {
+    "id": "exhibit.std-outcome.p1.udl-obl-and-edge",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-outcome",
+    "tag": "p",
+    "classes": [],
+    "text": "UDL, OBL, and EDGE are three different vocabularies for the same instinct here: hand a visitor real evidence and more than one way into it, then get out of the way. A named person instead of a name in a list. A primary source instead of a paragraph summarizing it. A toggle to test instead of a conclusion to accept. That's the instinct behind Built to Protect's jacket station too, where a kid feels the weight of the coat before reading a word about why it matters."
+  },
+  {
+    "id": "exhibit.std-outcome.p2.that-instinct-holds-up",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-outcome",
+    "tag": "p",
+    "classes": [],
+    "text": "That instinct holds up across very different conditions: a fifteen-foot museum corner and a scrolling web page, a nine-year-old visitor and a college classroom, a physical jacket and a social-network graph. The framework changes with the medium. The underlying design judgment doesn't."
+  },
+  {
+    "id": "exhibit.std-outcome.p3.we-can-better-understand",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "std-outcome",
+    "tag": "p",
+    "classes": [
+      "compact-note"
+    ],
+    "text": "\"We can better understand our history if we find our own path through a world that is messier, stranger, and more inclusive than the story that society prefers to tell about itself.\""
+  },
+  {
+    "id": "exhibit.root.span2.next",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "root",
+    "tag": "span",
+    "classes": [
+      "eyebrow"
+    ],
+    "text": "Next"
+  },
+  {
+    "id": "exhibit.root.a6.back-to-built-to",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [],
+    "text": "↑ Back to Built to Protect"
+  },
+  {
+    "id": "exhibit.root.a7.about",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [],
+    "text": "About"
+  },
+  {
+    "id": "exhibit.root.a8.home",
+    "file": "exhibit-built-to-protect-template.html",
+    "section": "root",
+    "tag": "a",
+    "classes": [],
+    "text": "Home"
+  }
+]

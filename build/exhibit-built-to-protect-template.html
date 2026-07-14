@@ -1,0 +1,652 @@
+<title>Built to Protect — Peter McGuire</title>
+<style>
+  :root{
+    --black:      #0c0b09;
+    --wall:       #17140f;
+    --wall-line:  #2a241a;
+    --brass:      #c9a24b;
+    --brass-dim:  #8a6f38;
+    --paper:      #ece5d8;
+    --paper-dim:  #b7ac9a;
+    --ember:      #d0693f;
+    --ember-dim:  #7a3a24;
+    --sage:       #93a879;
+    --sage-dim:   #55694a;
+    --violet:     #b294d1;
+    --violet-dim: #6b5286;
+    --panel-bg:   #f3ecdd;
+    --panel-ink:  #241f18;
+
+    --font-display: 'Iowan Old Style','Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
+    --font-body:    Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+    --font-mono:    ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+  }
+  html{ background:var(--black); font-size:18.5px; }
+  *,*::before,*::after{ box-sizing:border-box; }
+  body{
+    margin:0; background:var(--black); color:var(--paper);
+    font-family:var(--font-body); line-height:1.68; -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{ color:inherit; }
+  img{ max-width:100%; display:block; }
+  ::selection{ background:var(--brass); color:var(--black); }
+  a:focus-visible{ outline:2px solid var(--brass); outline-offset:3px; }
+
+  .atmosphere{
+    position:fixed; inset:0; pointer-events:none; z-index:0;
+    background:
+      radial-gradient(ellipse 900px 600px at 50% -6%, rgba(201,162,75,0.12), transparent 60%),
+      radial-gradient(ellipse 1000px 700px at 90% 30%, rgba(193,80,46,0.06), transparent 55%);
+  }
+  .grain{
+    position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.05; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  .wrap{ max-width:940px; margin:0 auto; padding:0 clamp(20px,5vw,48px); position:relative; z-index:1; }
+  .wrap-wide{ max-width:1100px; margin:0 auto; padding:0 clamp(20px,5vw,48px); position:relative; z-index:1; }
+
+  /* ---------- nav ---------- */
+  .nav{ position:sticky; top:0; z-index:10; background:rgba(12,11,9,.85); backdrop-filter:blur(6px); border-bottom:1px solid var(--wall-line); }
+  .nav .wrap-wide{ display:flex; align-items:center; justify-content:space-between; height:64px; }
+  .nav-name{ font-family:var(--font-mono); font-size:1rem; letter-spacing:.14em; text-transform:uppercase; text-decoration:none; color:var(--paper); }
+  .nav-links{ display:flex; gap:clamp(14px,2.4vw,28px); list-style:none; margin:0; padding:0; }
+  .nav-links a{ font-family:var(--font-mono); font-size:.92rem; letter-spacing:.1em; text-transform:uppercase; text-decoration:none; color:var(--paper-dim); transition:color .2s ease; }
+  .nav-links a:hover{ color:var(--brass); }
+
+  /* ---------- eyebrow / plate ---------- */
+  .eyebrow{ font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.16em; font-size:.9rem; color:var(--brass); }
+  .plate{
+    display:inline-flex; align-items:center; gap:.6em;
+    font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.06em; font-size:.88rem;
+    color:var(--paper-dim); border:1px solid var(--wall-line);
+    background:linear-gradient(180deg, rgba(201,162,75,.06), transparent);
+    padding:.5em .85em; border-radius:2px;
+  }
+  .plate::before{ content:""; width:6px; height:6px; border-radius:50%; background:var(--ember); box-shadow:0 0 6px 1px rgba(193,80,46,.6); flex:none; }
+  .plate.violet::before{ background:var(--violet); box-shadow:0 0 6px 1px rgba(178,148,209,.6); }
+
+  /* ---------- hero ---------- */
+  .hero{ padding:56px 0 40px; }
+  .hero h1{
+    font-family:var(--font-display); font-weight:400; font-size:clamp(2.8rem,7vw,4.6rem);
+    margin:.3em 0 .15em; color:var(--paper);
+  }
+  .big-idea{
+    font-family:var(--font-display); font-style:italic; font-size:clamp(1.25rem,2.6vw,1.6rem);
+    color:var(--brass); max-width:700px; margin:0 0 .3em;
+  }
+  .big-idea-note{ font-family:var(--font-mono); font-size:.94rem; color:var(--paper-dim); letter-spacing:.02em; }
+  .big-idea.violet{ color:var(--violet); }
+  .eyebrow.violet{ color:var(--violet); }
+
+  .hero-photo{ margin:32px 0 24px; border-radius:3px; overflow:hidden; border:1px solid var(--wall-line); }
+  .hero-photo img{ width:100%; height:auto; display:block; }
+  .hero-photo figcaption{
+    font-family:var(--font-mono); font-size:.84rem; color:var(--paper-dim); letter-spacing:.03em;
+    padding:10px 2px 0; text-align:center;
+  }
+
+  .facts{ display:grid; grid-template-columns:repeat(4,1fr); gap:22px; border-top:1px solid var(--wall-line); padding-top:22px; }
+  @media (max-width:760px){ .facts{ grid-template-columns:repeat(2,1fr); } }
+  .facts dt{ font-family:var(--font-mono); font-size:.82rem; text-transform:uppercase; letter-spacing:.1em; color:var(--brass-dim); margin:0 0 .4em; }
+  .facts dd{ margin:0; font-size:1.05rem; color:var(--paper-dim); line-height:1.45; }
+
+  /* ---------- section shell ---------- */
+  section{ padding:clamp(52px,7vw,80px) 0; position:relative; border-top:1px solid var(--wall-line); }
+  .section-head{ margin-bottom:30px; }
+  .section-head h2{ font-family:var(--font-display); font-weight:400; font-size:clamp(1.85rem,3.6vw,2.5rem); margin:.3em 0 0; color:var(--paper); }
+
+  .commentary{ max-width:700px; }
+  .commentary p{ color:var(--paper-dim); font-size:1.12rem; margin:0 0 1.1em; }
+  .commentary p:last-child{ margin-bottom:0; }
+  .commentary b{ color:var(--paper); font-weight:600; }
+
+  /* ---------- pedagogy callout cards: explanation lives INSIDE the box ---------- */
+  .ped-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:22px 0 0; }
+  .ped-grid.single{ grid-template-columns:minmax(0,520px); }
+  @media (max-width:820px){ .ped-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:520px){ .ped-grid{ grid-template-columns:1fr; } }
+  .ped-card{ border:1px solid; border-left-width:4px; border-radius:3px; padding:16px 18px; background:rgba(255,255,255,.02); }
+  .ped-card .ped-label{ display:block; font-family:var(--font-mono); font-size:.9rem; text-transform:uppercase; letter-spacing:.05em; font-weight:600; margin-bottom:.55em; }
+  .ped-card p{ font-size:1.02rem; color:var(--paper-dim); margin:0; line-height:1.55; }
+  .ped-card p a{ color:var(--paper); font-weight:600; text-decoration:none; border-bottom:1px solid currentColor; opacity:.85; transition:opacity .2s ease, color .2s ease; }
+  .ped-card p a:hover{ opacity:1; color:var(--brass); }
+  .ped-card.udl{ border-color:var(--brass-dim); } .ped-card.udl .ped-label{ color:var(--brass); }
+  .ped-card.obl{ border-color:var(--ember-dim); } .ped-card.obl .ped-label{ color:var(--ember); }
+  .ped-card.edge{ border-color:var(--sage-dim); } .ped-card.edge .ped-label{ color:var(--sage); }
+  .ped-card.craft{ border-color:var(--paper-dim); } .ped-card.craft .ped-label{ color:var(--paper); }
+
+  /* ---------- framing line ---------- */
+  .framing-line{
+    max-width:780px; margin-bottom:40px;
+  }
+  .framing-line p{ color:var(--paper-dim); font-size:1.1rem; margin:0; }
+  .framing-line b{ color:var(--paper); }
+
+  /* ---------- register headers: visible, colored ---------- */
+  .register-head{
+    display:flex; align-items:baseline; gap:14px; margin:56px 0 24px;
+  }
+  .register-head:first-of-type{ margin-top:0; }
+  .register-head h3{
+    font-family:var(--font-display); font-weight:400; font-size:clamp(1.6rem,3vw,2rem); margin:0;
+  }
+  .register-head .register-sub{ font-family:var(--font-mono); font-size:.92rem; color:var(--paper-dim); letter-spacing:.03em; }
+  .register-head.kid h3{ color:var(--sage); }
+  .register-head.adult h3{ color:var(--ember); }
+  .register-head.narrative h3,
+  .register-head.interactives h3{ color:var(--violet); }
+
+  /* ---------- exhibit frame vs commentary: structurally separate ---------- */
+  .exhibit-block{ margin-bottom:20px; }
+
+  .exhibit-frame{
+    border:1px solid var(--brass-dim); border-radius:4px; overflow:hidden; background:var(--wall);
+    box-shadow: inset 0 0 0 1px rgba(201,162,75,.12);
+  }
+  .frame-tag{
+    display:flex; justify-content:space-between; align-items:baseline; gap:10px;
+    font-family:var(--font-mono); font-size:.84rem; text-transform:uppercase; letter-spacing:.1em;
+    color:var(--brass); background:rgba(201,162,75,.08); padding:.7em 1.2em; border-bottom:1px solid var(--wall-line);
+  }
+  .frame-tag .zoom-hint{ color:var(--paper-dim); letter-spacing:.05em; }
+  .exhibit-frame.violet{ border-color:var(--violet-dim); box-shadow: inset 0 0 0 1px rgba(178,148,209,.14); }
+  .exhibit-frame.violet .frame-tag{ color:var(--violet); background:rgba(178,148,209,.09); }
+  .pair-grid{ display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--wall-line); }
+  @media (max-width:640px){ .pair-grid{ grid-template-columns:1fr; } }
+  .pair-cell{ background:var(--panel-bg); display:block; cursor:zoom-in; }
+  .pair-cell.on-dark{ background:var(--black); }
+  .pair-cell img{ width:100%; height:100%; object-fit:contain; display:block; }
+
+  /* ---------- lightbox (CSS-only, via :target) ---------- */
+  .lightbox{
+    position:fixed; inset:0; z-index:50; display:flex; align-items:center; justify-content:center;
+    background:rgba(6,5,4,.95); padding:clamp(16px,5vw,60px);
+    opacity:0; visibility:hidden; transition:opacity .18s ease; cursor:zoom-out;
+  }
+  .lightbox:target{ opacity:1; visibility:visible; }
+  .lightbox img{ max-width:100%; max-height:100%; object-fit:contain; border-radius:4px; margin:0 auto; }
+  .lightbox-close{
+    position:absolute; top:18px; right:24px; font-family:var(--font-mono); font-size:.94rem;
+    letter-spacing:.08em; text-transform:uppercase; color:var(--paper); border:1px solid var(--wall-line);
+    padding:.5em .9em; border-radius:2px; background:var(--black);
+  }
+
+  /* ---------- other-components thumbnail strip ---------- */
+  .strip-label{ font-family:var(--font-mono); font-size:.88rem; text-transform:uppercase; letter-spacing:.08em; color:var(--paper-dim); margin:26px 0 12px; }
+  .thumb-strip{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  @media (max-width:640px){ .thumb-strip{ grid-template-columns:1fr; } }
+  .thumb{ border:1px solid var(--wall-line); border-radius:3px; overflow:hidden; background:var(--wall); display:block; cursor:zoom-in; }
+  .thumb .thumb-photo{ height:150px; background:var(--black); }
+  .thumb.on-paper .thumb-photo{ background:var(--panel-bg); }
+  .thumb .thumb-photo img{ width:100%; height:100%; object-fit:cover; }
+  .thumb.on-paper .thumb-photo img{ object-fit:contain; }
+  .thumb figcaption{ padding:12px 13px 14px; }
+  .thumb figcaption .thumb-title{ display:block; font-family:var(--font-mono); font-size:.85rem; text-transform:uppercase; letter-spacing:.04em; color:var(--paper); line-height:1.4; }
+  .thumb figcaption .thumb-desc{ display:block; font-family:var(--font-body); font-size:.98rem; color:var(--paper-dim); line-height:1.4; margin-top:5px; }
+
+  /* commentary sits OUTSIDE the frame, on plain dark bg — deliberately different treatment */
+  .commentary-note{ margin-top:22px; }
+  .commentary-note > p{ font-size:1.08rem; color:var(--paper-dim); margin:14px 0 0; }
+  .commentary-note b{ color:var(--paper); }
+
+  .compact-note{ font-size:1.05rem; color:var(--paper-dim); margin:18px 0 0; max-width:700px; }
+
+  .commentary ul, .commentary-note ul{ margin:10px 0 0; padding-left:1.25em; max-width:700px; color:var(--paper-dim); font-size:1.08rem; }
+  .commentary ul li, .commentary-note ul li{ margin-bottom:.5em; }
+  .commentary ul li:last-child, .commentary-note ul li:last-child{ margin-bottom:0; }
+  .list-label{ font-size:1.05rem; color:var(--paper); margin:22px 0 0; max-width:700px; }
+
+  /* ---------- exhibit-to-exhibit divider ---------- */
+  .exhibit-divider{
+    padding:76px 0; text-align:center; border-top:1px solid var(--wall-line);
+    background:radial-gradient(ellipse 800px 320px at 50% 50%, rgba(178,148,209,.12), transparent 70%);
+  }
+  .exhibit-divider .divider-label{
+    font-family:var(--font-mono); font-size:.92rem; letter-spacing:.24em; text-transform:uppercase;
+    color:var(--violet); border-top:1px solid var(--violet-dim); border-bottom:1px solid var(--violet-dim);
+    padding:16px 0; display:inline-block;
+  }
+
+  /* ---------- footer nav ---------- */
+  .closing{ text-align:center; padding:64px 0 84px; }
+  .closing-links{ display:flex; justify-content:center; gap:30px; flex-wrap:wrap; margin-top:12px; }
+  .closing a{
+    font-family:var(--font-mono); font-size:.96rem; letter-spacing:.08em; text-transform:uppercase;
+    text-decoration:none; color:var(--paper); border-bottom:1px solid var(--brass-dim); padding-bottom:3px;
+    transition:color .2s ease, border-color .2s ease;
+  }
+  .closing a:hover{ color:var(--brass); border-color:var(--brass); }
+
+  @media (prefers-reduced-motion:no-preference){
+    .exhibit-block{ animation:fade-up .6s ease both; }
+  }
+  @keyframes fade-up{ from{ opacity:0; transform:translateY(8px); } to{ opacity:1; transform:none; } }
+</style>
+
+<div class="atmosphere" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="wrap-wide">
+    <a class="nav-name" href="__HOME_URL__">Peter McGuire</a>
+    <ul class="nav-links">
+      <li><a href="#built-to-protect">Built to Protect</a></li>
+      <li><a href="#speaking-through-the-dead">Speaking Through the Dead</a></li>
+      <li><a href="__WRITING_URL__">Writing</a></li>
+      <li><a href="__HOME_URL__">Home</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="built-to-protect">
+  <div class="wrap">
+    <span class="plate">Denver Firefighters Museum — Educational Intern, 2026</span>
+    <h1>Built to Protect</h1>
+    <p class="big-idea-note">Designed for families to grasp the evolution of safety equipment. "Safety isn't Solved"</p>
+
+    <div class="hero-photo">
+      <img src="__IMG_HERO_WIDE__" alt="Corner installation of the Built to Protect exhibit, showing framed panels and firefighter gear on display" loading="lazy">
+    </div>
+
+    <dl class="facts">
+      <div><dt>Role</dt><dd>Concept, content, design, install</dd></div>
+      <div><dt>Audience</dt><dd>Families, K–8 school groups, general visitors</dd></div>
+      <div><dt>Timeframe</dt><dd>2026, educational internship</dd></div>
+      <div><dt>Platform</dt><dd>Corner installation — helmet, jacket, and mask/SCBA try-on stations, a drawing activity, and five informational panels for adults</dd></div>
+    </dl>
+  </div>
+</header>
+
+<section id="big-idea">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Enriching the museum experience</h2>
+    </div>
+    <div class="commentary">
+      <p>As the Educational Intern for spring '26, I was tasked with updating the Denver Firefighter's Museum's exhibit on firefighting gear over time, which consisted of two assembled sets of firefighter gear and a small interpretive sign pointing out the names of the gear. The DFM introduced me to the pedagogies they use, and I came back with a plan to let visitors learn about gear by wearing it themselves. To my pleasant surprise, the museum was happy with the direction.</p>
+    </div>
+    <div class="ped-grid">
+      <div class="ped-card udl">
+        <span class="ped-label">UDL — Universal Design for Learning</span>
+        <p>Show information more than one way: visually, tactilely, through data. Visitors explore the gear with their hands, bodies, noses, eyes and minds to understand its meanings.</p>
+      </div>
+      <div class="ped-card obl">
+        <span class="ped-label">OBL — Object-Based Learning</span>
+        <p>Lead with the object and layer the labels so the object generates the question before any text answers it. Visitors explore the exhibit through the objects and the questions arising from them, sparking conversation between guests and the past.</p>
+      </div>
+      <div class="ped-card edge">
+        <span class="ped-label">EDGE Framework</span>
+        <p>The Exploratorium's design principles engage girls in STEM exhibits by making them accessible. This exhibit uses two-person try-on stations, open questions with no single right answer, and Heather Larson featured as a female protagonist.</p>
+      </div>
+    </div>
+    <div class="commentary" style="margin-top:26px;">
+      <div class="strip-label" style="margin-top:0;">Testing with users</div>
+      <p>As with many projects, what seemed like a great idea on paper failed to engage visitors when the prototype went up. I first designed four stations, each built around a flip-panel "decision tree" with a real historical fork, three possible paths, and a reveal connecting the choice to what actually happened. I observed from the prototype that, by that point in a visit, guests already had <b>reading fatigue.</b> Instead, they skipped my activity and focused on <b>handling the objects</b> and <b>talking to each other.</b> So, I reworked the exhibit to focus on the interaction and conversation naturally arising from the objects.</p>
+    </div>
+  </div>
+</section>
+
+<section id="final-design">
+  <div class="wrap-wide">
+    <div class="section-head">
+      <h2>The finished exhibit</h2>
+    </div>
+
+    <div class="framing-line">
+      <p><b>Kid-oriented panels</b> use EDGE's body-movement and collaboration engagement: do first, ask questions, no reading required to participate. <b>Adult panels</b> allow parents and facilitators to answer the bigger questions about why gear changes over time, giving more meaning to the objects than simple museums labels can.</p>
+    </div>
+
+    <div class="register-head kid">
+      <h3>Kid Register</h3>
+      <span class="register-sub">do first, read second</span>
+    </div>
+
+    <div class="exhibit-block">
+      <div class="exhibit-frame">
+        <span class="frame-tag">Exhibit - The Jacket</span>
+        <div class="pair-grid">
+          <a class="pair-cell on-dark" href="#lb-jacket-photo">
+            <img src="__IMG_JACKET__" alt="Installation photo: a historic canvas fire coat and a modern turnout coat hang side by side on a handmade wooden rack, mounted in front of the adult interpretive panels." loading="lazy">
+          </a>
+          <a class="pair-cell" href="#lb-jacket-panel">
+            <img src="__IMG_JACKET_PANEL__" alt="Object label as installed, illustrated with a vintage firefighter holding a hose: My jacket has thick canvas with a rubber coating. Before I go into a fire, I soak my jacket in water. The steam from my wet jacket helps block the heat. But my jacket has problems: When it is wet, it weighs too much. The steam from my wet jacket can get too hot. I make heat from working hard in my jacket. Nearby placard, Try On Real Firefighter Gear: What do you notice about the jackets? Why does the new jacket have different layers? Were either of these jackets used in a fire? How can you tell? Why do you think the jackets are so heavy?" loading="lazy">
+          </a>
+        </div>
+      </div>
+      <div class="commentary-note">
+        <div class="ped-grid">
+          <div class="ped-card edge">
+            <span class="ped-label">Body Movement</span>
+            <p>One of EDGE's 9 attributes: whole-body interaction, not just hands-only manipulation. Pulling on the coat allows visitors feel the weight before reading about it.</p>
+          </div>
+          <div class="ped-card edge">
+            <span class="ped-label">Collaboration</span>
+            <p>EDGE design meant for two people at once, not a solo visitor. A parent reading "why do you think the jackets are so heavy" out loud sparks a facilitated conversation around the objects.</p>
+          </div>
+          <div class="ped-card edge">
+            <span class="ped-label">Guide Labels</span>
+            <p>EDGE's term for labels that tell visitors what to <b>do</b>, not just what something is. The printed questions tell a kid what to look for and give a parent something to say about it.</p>
+          </div>
+          <div class="ped-card udl">
+            <span class="ped-label">Relatable figures</span>
+            <p>The images of illustrated firefighters expressing the real problems with older gear invites younger audiences to emotionally connect with engineering problems.</p>
+          </div>
+          <div class="ped-card obl">
+            <span class="ped-label">Object at Eye Level</span>
+            <p>OBL calls for positioning an object "at eye level, well-lit, with enough space to see it from multiple angles" before a visitor reads anything. This station is mounted at a child's eye level, not an adult's, to clearly call them in.</p>
+          </div>
+          <div class="ped-card obl">
+            <span class="ped-label">Plain-Language, First-Person Voice</span>
+            <p>OBL asks for "conversational tone... tested by reading aloud." The jacket talks in first person — "My jacket has thick canvas..." — at about a 4th-grade level, so a parent isn't stuck translating a label into kid-language on the spot.</p>
+          </div>
+        </div>
+        <p>The exhibit now centers the observed behavior. There doesn't need to be an interactive because wearing the gear initiates the learning conversation.</p>
+      </div>
+    </div>
+
+    <div class="strip-label">Other kid stations</div>
+    <div class="thumb-strip">
+      <a class="thumb" href="#lb-helmet">
+        <div class="thumb-photo"><img src="__IMG_HELMET__" alt="Helmet try-on station: two historic fire helmets on stands beside a wall panel of discussion questions." loading="lazy"></div>
+        <figcaption><span class="thumb-title">The Helmet</span><span class="thumb-desc">Two helmets, a century apart.</span></figcaption>
+      </a>
+      <a class="thumb" href="#lb-mask">
+        <div class="thumb-photo"><img src="__IMG_MASK__" alt="Mask try-on station: a modern SCBA mask and air tank beside historic beard-filter imagery, with an Instagram tag-us callout and the Women and Firefighting Safety panel behind." loading="lazy"></div>
+        <figcaption><span class="thumb-title">The Mask / SCBA</span><span class="thumb-desc">Laminated cut-out beards vs. modern air mask and tank.</span></figcaption>
+      </a>
+      <a class="thumb" href="#lb-drawing">
+        <div class="thumb-photo"><img src="__IMG_CLOSING_WIDE__" alt="Firefighting in the Future drawing station: a blank flip-chart pad hung by a doorway for visitors to sketch their own answer to Safety Isn't Solved, beside a case of Denver Fire Department badges." loading="lazy"></div>
+        <figcaption><span class="thumb-title">Firefighting in the Future</span><span class="thumb-desc">A blank page with the prompt: what will change in the future?</span></figcaption>
+      </a>
+    </div>
+
+    <div class="register-head adult">
+      <h3>Adult Register</h3>
+      <span class="register-sub">facilitate the conversation</span>
+    </div>
+
+    <div class="exhibit-block">
+      <div class="exhibit-frame">
+        <span class="frame-tag">Exhibit — the wall's opening argument</span>
+        <div class="pair-grid">
+          <a class="pair-cell" href="#lb-panel-gearchange">
+            <img src="__IMG_GEARCHANGE_PANEL__" alt="Panel as installed, Why Does Firefighting Gear Change Over Time? Fire emergencies occur less often but pose greater danger to firefighters than ever before. 1. Fire emergencies change: buildings are now made from a wide range of materials that produce toxic smoke and burn faster. 2. Safety has changed: today, workers and employers are both responsible for safety, not just the individual firefighter. 3. Dangers are better understood: we now know that breathing smoke can cause cancer and heart disease; scientists have learned a lot about the dangers firefighters face." loading="lazy">
+          </a>
+          <a class="pair-cell" href="#lb-panel-fires">
+            <img src="__IMG_FIRES_PANEL__" alt="Panel as installed, Fires Are Faster Than Ever. Historical materials: whole room burning in 29 minutes. Modern materials: whole room burning in 4 minutes. Factors that have changed: synthetic materials burn fast and make toxic smoke; lightweight construction uses manufactured wood and glue instead of solid wood; open floor plans let fire spread and allow more oxygen to burn; lithium-ion batteries can go from smoke to explosion in as little as 15 seconds." loading="lazy">
+          </a>
+        </div>
+      </div>
+      <div class="commentary-note">
+        <div class="ped-grid">
+          <div class="ped-card obl">
+            <span class="ped-label">Thematic Label</span>
+            <p>Connects several objects to one shared question to facilitate an effective learning experience. Every panel offers part of the answer to the question: why does gear change?</p>
+          </div>
+          <div class="ped-card udl">
+            <span class="ped-label">Multiple Means of Representation</span>
+            <p>UDL's first principle: show the same idea more than one way. The kid stations argue "safety isn't solved" through touch and emotion; these panels make the same argument with history, images and data.</p>
+          </div>
+          <div class="ped-card obl">
+            <span class="ped-label">Real-World Data</span>
+            <p>OBL asks for concrete language over abstraction. "29 minutes to 4 minutes" and a cited 1971 NFPA mandate are both checkable, sourced right on the panel.</p>
+          </div>
+          <div class="ped-card obl">
+            <span class="ped-label">Object at Eye Level</span>
+            <p>These panels sit at an adult's eyeline. The exhibit addresses its two audiences at heights that are comfortable for them.</p>
+          </div>
+          <div class="ped-card edge">
+            <span class="ped-label">Look &amp; Feel, Tuned for the Reader</span>
+            <p>The kid stations use a warm vintage illustration while these panels use flat icons — a flame, a "Safety First" badge, a burst of smoke.</p>
+          </div>
+          <div class="ped-card edge">
+            <span class="ped-label">Collaboration</span>
+            <p>These panels work for adults with and without children accompannying them by providing complementary information to the objects and addressing the "big idea."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="strip-label">Other adult panels</div>
+    <div class="thumb-strip">
+      <a class="thumb on-paper" href="#lb-panel-smoke">
+        <div class="thumb-photo"><img src="__IMG_SMOKE_PANEL__" alt="Panel as installed, Smoke Eating: What Is Acceptable Danger? Firefighters once called themselves smoke eaters and protected against smoke only by soaking their beard in water. Resistance to Safety Equipment: early smoke masks, Self-Contained Breathing Apparatus not required by law until 1971, ear-scarring used as a badge of courage, and soot-covered gear once worn as a sign of heavy use." loading="lazy"></div>
+        <figcaption><span class="thumb-title">Smoke Eating: What Is Acceptable Danger?</span><span class="thumb-desc">Why firefighters once called themselves "smoke eaters" and how the concept of danger has changed.</span></figcaption>
+      </a>
+      <a class="thumb on-paper" href="#lb-panel-osha">
+        <div class="thumb-photo"><img src="__IMG_OSHA_PANEL__" alt="Panel as installed, OSHA, Safety Standards, and Research. Before OSHA, safety standards varied by city and state and new regulations were mostly triggered by disasters — writing rules in blood. The 1970s shifted toward evidence-based, proactive research. Barriers to safety compliance: lack of funding, training time, and speed and safety concerns for departments adopting new gear." loading="lazy"></div>
+        <figcaption><span class="thumb-title">OSHA, Safety Standards &amp; Research</span><span class="thumb-desc">How safety went from "writing rules in blood" to research-driven.</span></figcaption>
+      </a>
+      <a class="thumb on-paper" href="#lb-panel-women">
+        <div class="thumb-photo"><img src="__IMG_WOMEN_PANEL__" alt="Panel as installed, Women and Firefighting Safety. Heather Larson, who worked 1985 to 2006, challenged Denver's firefighter strength test and became the department's first female officer, retiring as Captain. Women firefighters are 1.8 times more likely to sustain an occupational injury than male firefighters; 65% report ill-fitting gear, and 37.5% report workplace harassment." loading="lazy"></div>
+        <figcaption><span class="thumb-title">Women &amp; Firefighting Safety — Heather Larson</span><span class="thumb-desc">Her fight against a rigged strength test and the data on what's still unequal.</span></figcaption>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="install-outcome">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What it adds up to</h2>
+    </div>
+    <div class="hero-photo">
+      <img src="__IMG_WIDE2__" alt="Wide view of the installed Built to Protect corner, showing the full run of panels and gear stations together" loading="lazy">
+      <figcaption>The corner as installed — the full run of panels and gear together.</figcaption>
+    </div>
+    <div class="commentary">
+      <p>This exhibit embraces modern museum pedagogy by getting out of the way and letting the objects speak for themselves. Object-Based Learning, Universal Design for Learning, and EDGE's body-movement agree that embodied learning that allows for open-ended connections create life-long learning experiences.</p>
+    </div>
+  </div>
+</section>
+
+<div class="exhibit-divider">
+  <div class="wrap"></div>
+</div>
+
+<header class="hero" id="speaking-through-the-dead">
+  <div class="wrap">
+    <span class="plate violet">ArcGIS StoryMaps — Survey of Feminist Thought, CU Denver, 2026</span>
+    <h1>Speaking Through the Dead</h1>
+    <p class="big-idea violet">"What is Feminist about ghosts?"</p>
+    <p class="big-idea-note">The exhibit's own on-screen subtitle — one audience, not two reading levels the way Built to Protect splits by age</p>
+
+    <div class="hero-photo">
+      <img src="__IMG_STD_HERO__" alt="Title card over a 1920s séance photograph: eight people sit around a table in a darkened room, hands touching at its center, as a medium in white looks upward mid-trance. Overlaid text reads Speaking Through the Dead — What is Feminist about ghosts? — by Peter McGuire, May 4, 2026." loading="lazy">
+    </div>
+
+    <dl class="facts">
+      <div><dt>Role</dt><dd>Research, concept, design, build</dd></div>
+      <div><dt>Audience</dt><dd>Classmates, plus the general public via ArcGIS</dd></div>
+      <div><dt>Timeframe</dt><dd>Spring 2026, Survey of Feminist Thought</dd></div>
+      <div><dt>Platform</dt><dd>ArcGIS StoryMaps, with custom Flourish network-graph and Sankey-diagram embeds</dd></div>
+    </dl>
+  </div>
+</header>
+
+<section id="std-big-idea">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>A history feminism used, then buried</h2>
+    </div>
+    <div class="commentary">
+      <p>Spiritualism was a tool feminism <b>"embraced, profited from, and disposed of."</b> This class had an open-ended final project, which I used to explore a passion of mine and build a portfolio piece. I am especially interested in eccentric religion and the impact of 19th-Century Upstate New York on American religion and politics.</p>
+    </div>
+    <div class="ped-grid">
+      <div class="ped-card udl">
+        <span class="ped-label">UDL — Universal Design for Learning</span>
+        <p>Valuing and cultivating multiple ways of knowing and making meaning. Every panel and interactive offers more than one way in.</p>
+      </div>
+      <div class="ped-card obl">
+        <span class="ped-label">OBL — Object-Based Learning</span>
+        <p>Lead with real evidence, then let prose explain it. Without physical objects, this exhibit uses primary sources, images, interactives, and the feeling of real space to draw visitors in.</p>
+      </div>
+      <div class="ped-card edge">
+        <span class="ped-label">EDGE Framework</span>
+        <p>Name a protagonist and ask questions with no single right answer instead of handing over a conclusion. This exhibit keeps meaning-making approachable and personal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="std-method">
+  <div class="wrap-wide">
+    <div class="section-head">
+      <h2>One framework, two ways in</h2>
+    </div>
+
+    <div class="framing-line">
+      <p><b>The Narrative</b> — text and primary-source images carry the argument through like a museum exhibit. <b>The Interactives</b> — a map, a network graphs, and a flow diagram — let a visitor explore the argument for themselves.</p>
+    </div>
+
+    <div class="register-head narrative">
+      <h3>The Narrative</h3>
+      <span class="register-sub">understand the time and place through named individuals</span>
+    </div>
+
+    <div class="exhibit-block">
+      <div class="exhibit-frame violet">
+        <span class="frame-tag">Exhibit — The Parlor as Homosocial War Room</span>
+        <div class="pair-grid">
+          <a class="pair-cell" href="#lb-std-foxsisters">
+            <img src="__IMG_STD_FOXSISTERS__" alt="StoryMap stop titled Upstate New York, 1848: The birth of Feminism and ghost communication. Text: How did ghosts contribute to power-building in the parlor? Kate and Margaret Fox were eleven and fourteen years old when the rappings began on the night of March 31, 1848, in a rented farmhouse in Hydesville, New York. The mysterious knocking or rapping gave yes/no answers or numbers on request. Their mother called the neighbors. The neighbors called more neighbors. Within weeks the story had spread to nearby Rochester, where Amy and Isaac Post, friends of the Fox family, welcomed them in. Within eighteen months, the Posts' reform network hosted the first congregation of American Spiritualism. Spiritualism spread through reformer circles like wildfire. This exhibit explores Spiritualism's crucial role in Feminism and how Feminists seeking respectability wrote Spiritualism out of their own history. Beside the text, an oval studio portrait captioned The Fox Sisters: Miss Margaretta Fox, Miss Catharine Fox, and Mrs. Fish." loading="lazy">
+          </a>
+          <a class="pair-cell" href="#lb-std-parlor">
+            <img src="__IMG_STD_PARLOR__" alt="StoryMap stop titled Amy and Isaac Post tied radical reform together. Text: Welcome to the parlor of Amy and Isaac Post. Take a moment to notice all the furniture. This room served many functions: eating, resting, knitting, creating art, reading, discussing, and organizing. When families visited each other, they did all their usual domestic work and child-raising in these spaces. Amy and Isaac were Quakers in Upstate New York, and their parlor hosted many luminaries of radical religion and politics. As a final stop on the Underground Railroad, the Posts personally helped formerly enslaved people start new lives, including Frederick Douglass and Harriet Jacobs. For radical reformers like the Posts, religious belief went hand-in-hand with feminist and racial social justice. Below, a subheading reads Explore the Posts' social world, with the prompt: Click on the toggle to erase Spiritualists from the social network. What do you notice? Who remains? Are there any names that you recognize? Beside the text, an archival photo captioned Parlor of the old Post Residence — In this room Douglass held meetings with his friends and planned the safety of runaway slaves, credited to the Rochester Public Library, Division of Local History." loading="lazy">
+          </a>
+        </div>
+      </div>
+      <div class="commentary-note">
+        <p>Amy Post ties the exhibit together as she tied together the social network that combined abolition, feminism, and radical visions of religion. She provides an emotional core and provides a clear example of the thesis: a Spiritualist who became marginalized (until the relatively recent publication of her papers shed light on the radical reform networks of New York).</p>
+        <div class="ped-grid">
+          <div class="ped-card udl">
+            <span class="ped-label">Multiple Means of Engagement</span>
+            <p>Works at different levels of attention — from a casual five-minute glance or a fifteen-minute reflection to an hour-long exploration.</p>
+          </div>
+          <div class="ped-card obl">
+            <span class="ped-label">Object Before Label, Digitally</span>
+            <p>There's no physical object here, so I encourge connection with objects and primary sources by asking visitors to imagine themselves inside the Post parlor.</p>
+          </div>
+          <div class="ped-card edge">
+            <span class="ped-label">Guide Labels, Open Questions</span>
+            <p>Labels that tell you what to do, not what to think. This exhibit asks "What do you notice? Who remains?" and has no single right answer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="strip-label">Other stops</div>
+    <div class="thumb-strip">
+      <a class="thumb" href="#lb-std-womanly">
+        <div class="thumb-photo"><img src="__IMG_STD_WOMANLY__" alt="StoryMap stop: Spiritualism made womanly weakness a strength. Text: The stereotypes of womanhood — nervousness, sensitivity, emotional excitability — became the tools that women used to channel spirits. Piety had always been the special reserve of women, but Christianity constructed women as second-class citizens. Spiritualism gave women control over piety to create a new form of agency. Quoted beneath: Women, by their peculiar organism, by the fineness of their nerves, the susceptibility of their sensations..., have always been peculiarly susceptible of impressions through the imaginative and sensational parts of their natures — Emma Hardinge Britten, The Place and Mission of Woman, 1859. Beside the text, an engraved portrait of a Victorian woman in mourning dress." loading="lazy"></div>
+        <figcaption><span class="thumb-title">Womanly Weakness, Reframed</span><span class="thumb-desc">Spiritualism turned the era's own stereotypes of feminine nervousness into a tool for public authority.</span></figcaption>
+      </a>
+      <a class="thumb" href="#lb-std-channeling">
+        <div class="thumb-photo"><img src="__IMG_STD_CHANNELING__" alt="StoryMap stop: Channeling created a cover for women's speech. Text: Sleeping preachers normalized delivering religious revelation from a trance in early 19th century America. Spiritualism allowed women to use the loophole of the trance on a wider scale. A woman didn't need to be submissive or passive when a dead man was speaking through her. Quoted beneath: If it is a shame for women to speak in the Church... woman ought to be ashamed of the church. Let woman come out of the church; and, when she comes out, the minister and all the congregation will go out with her — Lizzie Doten, Banner of Light, 11 February 1860. Beside the text, a scan of the Banner of Light newspaper masthead, subtitled An Exponent of the Spiritual Philosophy of the Nineteenth Century." loading="lazy"></div>
+        <figcaption><span class="thumb-title">A Legal Cover for Public Speech</span><span class="thumb-desc">Trance channeling let a woman speak in public without the shame 19th-century religion attached to it.</span></figcaption>
+      </a>
+      <a class="thumb" href="#lb-std-appropriation">
+        <div class="thumb-photo"><img src="__IMG_STD_APPROPRIATION__" alt="StoryMap stop: Spiritualism appropriated voices from the past. Text: While early Spiritualists channeled voices of white men — Benjamin Franklin was a favorite because of his association with electricity — later Spiritualists appropriated voices from Native Americans and Asians. The associations with lost wisdom or esoteric traditions gave added authority to white women's speech. Appropriation allowed white progressives to claim Native authority while continuing to dispossess actual Indigenous people. Quoted beneath, attributed to a channeled Native spirit guide: More than three hundred harvest moons ago my people lived where the head waters of the Shenandoah river rise... They were a peaceful people. Pure thoughts must be my white canoe. — Cora L.V. Richmond, channeling her spirit guide Ouina, in Ouina's Canoe, 1882. Beside the text, an engraved oval portrait of a young woman in Victorian dress wearing a cross necklace." loading="lazy"></div>
+        <figcaption><span class="thumb-title">Appropriating Native and Asian Voices</span><span class="thumb-desc">White Spiritualists claimed Native and Asian "spirit guides" as a source of authority.</span></figcaption>
+      </a>
+    </div>
+
+    <div class="register-head interactives">
+      <h3>The Interactives</h3>
+      <span class="register-sub">explore the argument yourself</span>
+    </div>
+
+    <div class="exhibit-block">
+      <div class="exhibit-frame violet">
+        <span class="frame-tag">Exhibit — the social network graph, used twice</span>
+        <div class="pair-grid">
+          <a class="pair-cell" href="#lb-std-graph1">
+            <img src="__IMG_STD_GRAPH1__" alt="Interactive social-network graph, first use. A toggle reads Remove Spiritualists, with a legend for Abolitionist and Feminist. Concentric rings labeled, from center outward: Post Family, At the Parlor, One Step, Two Steps, Wider Network. Amy Post glows at the center, connected to Isaac Post, Kate Fox, Margaret Fox, and outward to Frederick Douglass, Lucretia Mott, Sojourner Truth, Susan B. Anthony, Harriet Jacobs, Elizabeth Cady Stanton, William Lloyd Garrison, and others. A side panel reads: Amy Post, 1802–1889, White, tagged Spiritualist, Abolitionist, Feminist. She hosted the Fox Sisters, attended Seneca Falls, sheltered Harriet Jacobs, and preserved Sojourner Truth's letters, all in the same year and from the same Rochester parlor." loading="lazy">
+          </a>
+          <a class="pair-cell" href="#lb-std-graph2">
+            <img src="__IMG_STD_GRAPH2__" alt="The same network graph, second use, re-labeled. A toggle reads Toggle these buttons, with the same Spiritualist, Abolitionist, Feminist legend. Concentric rings now read, from center outward: Author, Included, Minimized, Stripped of Spiritualism, Erased Entirely. Elizabeth Cady Stanton now glows at the center; Amy Post has moved to the outer Erased Entirely ring. A side panel reads: Elizabeth Cady Stanton, 1815–1902, White, tagged Abolitionist, Feminist, Author. What Actually Happened: co-organized Seneca Falls; principal author of the Declaration of Sentiments; co-edited History of Woman Suffrage volumes 1 through 3; used Spiritualism's network without being of it. How History of Woman Suffrage Told It: Author. Co-wrote and edited HWS volumes 1 through 3. Primary subject of her own historical interpretation. Her framing of the movement's origins shapes what the record contains and omits." loading="lazy">
+          </a>
+        </div>
+      </div>
+      <div class="commentary-note">
+        <p>These interactive network graphs involve the visitor in the erasure of Spiritualism. Amy Post moves from a central figure to a perhipheral one. The interactive allows visitors to toggle off Spiritualists - in effect erasing them firsthand.</p>
+        <div class="ped-grid">
+          <div class="ped-card udl">
+            <span class="ped-label">Multiple Means of Representation</span>
+            <p>The interactives communicate on three registers: gestalt impact, text labels, and interactive experience.</p>
+          </div>
+          <div class="ped-card obl">
+            <span class="ped-label">Real-World Data, Applied to Categories</span>
+            <p>OBL calls for concrete, checkable, sourced content over abstraction. The relabeled rings aren't invented categories — "Erased Entirely," "Stripped of Spiritualism," "Minimized" come straight out of Braude, Smith-Rosenberg, and Lorde's scholarship on how this erasure actually happened.</p>
+          </div>
+          <div class="ped-card obl">
+            <span class="ped-label">Layered Labels</span>
+            <p>Click a node and the sidebar goes deeper — name and dates first (tombstone), then tags (thematic), then a full paragraph (extended). This three-tier layering allows visitors to explore information firsthand.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="strip-label">Other interactives</div>
+    <div class="thumb-strip" style="grid-template-columns:repeat(2,1fr);">
+      <a class="thumb" href="#lb-std-map">
+        <div class="thumb-photo"><img src="__IMG_STD_MAP__" alt="Interactive pin map of Upstate New York and the Northeast, showing a numbered five-stop route. Pin one, expanded, reads: Rented Farmhouse, Hydesville, March 1848 — Kate and Margaret Fox begin communicating with the spirit of a murdered peddler. It becomes a local sensation. A progress indicator reads 01 of 05." loading="lazy"></div>
+        <figcaption><span class="thumb-title">The Map</span><span class="thumb-desc">A five-stop pin map tracing Spiritualism's spread from the Fox sisters' Hydesville farmhouse toward Seneca Falls.</span></figcaption>
+      </a>
+      <a class="thumb" href="#lb-std-sankey">
+        <div class="thumb-photo"><img src="__IMG_STD_SANKEY__" alt="Interactive Sankey flow diagram with three source bands on the left — Women's Conventions, Abolitionism, Spiritualist Movement — flowing through a mid-column, Radical Reform in the 1850s, then splitting into NAWSA 1890, Excluded from NAWSA, and Spiritualism Disperses, before ending in outcome bands on the right: Black Women's Vote, White Women's Vote 1920, Property Rights, Birth Control 1965, Free Love 1960s, Church Leadership, Theosophy 1875, Lily Dale 1879, and New Age 1960s. Below the diagram, on-screen text reads: What is a radical idea? Who defines the line between radical and respectable? Many of the 'radical' ideas dropped in the Nineteenth Century defined the countercultures of the Twentieth." loading="lazy"></div>
+        <figcaption><span class="thumb-title">The Flow Diagram</span><span class="thumb-desc">Which movements' beliefs counted as legitimate, charted as its own axis of exclusion alongside race, class, and sexuality.</span></figcaption>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="std-outcome">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Interpreting a messy history</h2>
+    </div>
+    <div class="hero-photo">
+      <img src="__IMG_STD_SWIPE__" alt="StoryMap closing section titled What was won and what was left. Text: In 1920, the 19th Amendment passed. White women could vote after seventy-two years of organized work. The work relied on Spiritualist networks, ideas, and venues to succeed, but Spiritualism could no longer feature in respectable Feminist history. Below, in italics: Swipe to see what Feminism covered up. A before/after slider shows, on one side, a formal group portrait of respectably dressed suffragists, and on the other, the same dark séance photograph from the exhibit's title card." loading="lazy">
+      <figcaption>The exhibit's closing move — a slider between the respectable public face of suffrage and the séance it grew out of.</figcaption>
+    </div>
+    <div class="commentary">
+      <p class="compact-note">This exhibit gives visitors real evidence and more than one way to understand it. It reverses erasure by giving visitors the tools to make their own meaning out of the connections between Feminsim and Spiritualism. We can better understand our history if we find our own path through a world that is messier, stranger, and more inclusive than the story that society prefers to tell about itself.</p>
+    </div>
+  </div>
+</section>
+
+<div class="closing">
+  <div class="wrap">
+    <span class="eyebrow">Next</span>
+    <div class="closing-links">
+      <a href="#built-to-protect">↑ Back to Built to Protect</a>
+      <a href="__WRITING_URL__">Writing</a>
+      <a href="__HOME_URL__">Home</a>
+    </div>
+  </div>
+</div>
+
+<!-- lightbox targets -->
+<a href="#" id="lb-jacket-photo" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_JACKET__" alt=""></a>
+<a href="#" id="lb-jacket-panel" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_JACKET_PANEL__" alt=""></a>
+<a href="#" id="lb-panel-gearchange" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_GEARCHANGE_PANEL__" alt=""></a>
+<a href="#" id="lb-panel-fires" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_FIRES_PANEL__" alt=""></a>
+<a href="#" id="lb-helmet" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_HELMET__" alt=""></a>
+<a href="#" id="lb-mask" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_MASK__" alt=""></a>
+<a href="#" id="lb-drawing" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_CLOSING_WIDE__" alt=""></a>
+<a href="#" id="lb-panel-smoke" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_SMOKE_PANEL__" alt=""></a>
+<a href="#" id="lb-panel-osha" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_OSHA_PANEL__" alt=""></a>
+<a href="#" id="lb-panel-women" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_WOMEN_PANEL__" alt=""></a>
+<a href="#" id="lb-std-foxsisters" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_STD_FOXSISTERS__" alt=""></a>
+<a href="#" id="lb-std-parlor" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_STD_PARLOR__" alt=""></a>
+<a href="#" id="lb-std-womanly" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_STD_WOMANLY__" alt=""></a>
+<a href="#" id="lb-std-channeling" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_STD_CHANNELING__" alt=""></a>
+<a href="#" id="lb-std-appropriation" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_STD_APPROPRIATION__" alt=""></a>
+<a href="#" id="lb-std-graph1" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_STD_GRAPH1__" alt=""></a>
+<a href="#" id="lb-std-graph2" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_STD_GRAPH2__" alt=""></a>
+<a href="#" id="lb-std-map" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_STD_MAP__" alt=""></a>
+<a href="#" id="lb-std-sankey" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="__IMG_STD_SANKEY__" alt=""></a>

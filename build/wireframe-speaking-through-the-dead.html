@@ -1,0 +1,206 @@
+<title>WIREFRAME — Speaking Through the Dead (Part 2 of combined Exhibits page)</title>
+<style>
+  :root{ --line:#000; --gray1:#f4f4f4; --gray2:#e2e2e2; --gray3:#c9c9c9; --text:#111; --dim:#666; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--text); background:#fff; line-height:1.4; }
+  .wrap{ max-width:900px; margin:0 auto; padding:0 24px; }
+  .block{ border:2px dashed var(--line); margin:14px 0; padding:16px; background:var(--gray1); }
+  .block.exhibit{ background:repeating-linear-gradient(45deg,#fff8dc,#fff8dc 10px,#fdf1b8 10px,#fdf1b8 20px); border-style:solid; }
+  .block.commentary{ background:var(--gray1); border-style:dashed; }
+  .block.photo{ background:var(--gray3); text-align:center; padding:40px 16px; font-weight:bold; }
+  .block.decision{ background:#f3e8ff; border:2px solid #6b3fa0; }
+  .tag{
+    display:inline-block; font-size:11px; font-weight:bold; text-transform:uppercase;
+    letter-spacing:.05em; padding:2px 8px; border:1px solid var(--line); margin-bottom:8px; background:#fff;
+  }
+  .tag.exhibit-tag{ background:#fdf1b8; }
+  .tag.commentary-tag{ background:#dbe9ff; }
+  .tag.decision-tag{ background:#6b3fa0; color:#fff; border-color:#6b3fa0; }
+  .ped{
+    display:inline-block; font-size:10.5px; font-weight:bold; text-transform:uppercase;
+    letter-spacing:.03em; padding:2px 7px; border:1px solid #8a6f1f; margin:2px 4px 2px 0; background:#f6ecd8; color:#6b5410;
+  }
+  h1,h2,h3{ font-family:Georgia,serif; margin:0 0 6px; }
+  .section-num{ color:var(--dim); font-size:12px; font-family:monospace; margin:26px 0 4px; text-transform:uppercase; letter-spacing:.08em; }
+  .note{ font-size:13px; color:var(--dim); font-style:italic; }
+  .grid2{ display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+  .grid3{ display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+  ul{ margin:6px 0 0; padding-left:20px; font-size:14px; }
+  .facts{ display:flex; flex-wrap:wrap; gap:16px; font-size:13px; font-family:monospace; margin-top:10px; }
+  .facts span b{ display:block; font-family:Arial,sans-serif; font-size:14px; }
+  header.top{ background:#111; color:#fff; padding:10px 0; text-align:center; font-family:monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; }
+  .quote{ font-style:italic; border-left:3px solid #6b3fa0; padding-left:12px; margin:8px 0; }
+  .pedcard{ border:1px solid #8a6f1f; border-left:4px solid #8a6f1f; border-radius:3px; padding:8px 10px; background:#fff; font-size:11.5px; }
+  .pedcard b{ display:block; font-size:11px; text-transform:uppercase; margin-bottom:3px; color:#6b5410; }
+  .thumbrow{ display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:8px; }
+  .thumbrow .block.photo{ padding:16px 8px; font-size:11px; margin:0; }
+</style>
+
+<header class="top">WIREFRAME — Speaking Through the Dead — appends as Part 2, same page as Built to Protect — updated 2026-07-13 to match evolved template</header>
+
+<div class="wrap">
+
+  <div class="block decision">
+    <span class="tag decision-tag">Structural decision — flagging for confirmation</span>
+    <p><b>This combined page effectively replaces the separate "Exhibits hub" stub.</b> Since both case studies now live on one page for ease of navigation, there's no need for a thin hub page that just links out to two others — this page <i>is</i> the Exhibits page. Top nav becomes in-page anchors ("Built to Protect" / "Speaking Through the Dead") instead of "← Exhibits" pointing elsewhere. Flag if you want the hub kept as a separate landing page anyway.</p>
+  </div>
+
+  <div class="block decision">
+    <span class="tag decision-tag">Framework color decision</span>
+    <p>Built to Protect used 3 frameworks (UDL/OBL/EDGE), each its own color. This exhibit's reflection paper only explicitly cites <b>UDL</b> — so it reuses <span class="ped">brass = UDL</span> from the shared site-wide key, and does <i>not</i> invent OBL/EDGE equivalents that don't apply. <b>Violet</b> — already reserved in the site plan for this exhibit's séance/spiritualist thread — becomes this section's page-identity accent (plate dot, headers, atmosphere glow) rather than a second framework color.</p>
+  </div>
+
+  <div class="block decision">
+    <span class="tag decision-tag">Structural split decision</span>
+    <p>Built to Protect split Kid Register / Adult Register (two audiences). This exhibit has one audience — so instead it splits by <b>UDL's own "multiple means of representation" logic</b>: <b>The Narrative</b> (text + primary-source images, the "stops") and <b>The Interactives</b> (map, network graph ×2, Sankey diagram). Same UDL grounding, two different means.</p>
+  </div>
+
+  <div class="block decision">
+    <span class="tag decision-tag">Pattern update — 6 pedagogy cards per deep example</span>
+    <p>Built to Protect settled on <b>6 pedagogy cards per deep example</b> (3×2 grid), each naming a distinct concept and connecting it specifically to the exhibit — not 1–2 thin tags. Applying the same "search for other connections" exercise to this exhibit below. Since only one framework (UDL) is really in play, cards here draw on UDL's specific sub-principles, informal-learning/historiographical craft observations, and — where relevant — his own un-cited design moves (reusing the network graph is his innovation, not a textbook technique). Not everything needs a framework citation to be worth a card.</p>
+  </div>
+
+  <div class="block decision">
+    <span class="tag decision-tag">Pattern update — enlargeable images, no visible caption text, full text in alt</span>
+    <p>Both deep examples below show two real screenshots side by side, enlargeable via the same CSS-only <code>:target</code> lightbox as Built to Protect. No paraphrased caption text sits visibly on the page — on-screen text (quotes, labels) transcribes into full alt attributes instead.</p>
+  </div>
+
+  <div class="block decision">
+    <span class="tag decision-tag">Pattern update — commentary is plain text, thumbnail strips added</span>
+    <p>Commentary drops the "My notes" tag, dashed indent, and italics used in earlier drafts — plain text right after the frame, matching Built to Protect's latest treatment. Both "Narrative" and "Interactives" now get a labeled thumbnail strip of the other stops/tools afterward (title + one-line description each, enlargeable), not just a single summary sentence.</p>
+  </div>
+
+  <div class="block decision">
+    <span class="tag decision-tag">Language-pass reminder</span>
+    <p>Use his exact reflection-paper wording wherever it exists (his Big Idea lines, the UDL rationale, both footnotes are already extracted verbatim — see below). Active voice ("I chose ArcGIS StoryMaps," not "StoryMaps was chosen"). No invented fake-precise details. Don't reuse the same construction more than once. <b>New:</b> don't quote the historical/theoretical sources (Smith-Rosenberg, Welter, Braude, Lorde, Britten, Goody, Buszek) directly — name them as sources, paraphrase their arguments, but keep direct quotation for his own words only.</p>
+  </div>
+
+  <div class="block decision">
+    <span class="tag decision-tag">Cut per feedback — Section 3, "The Platform &amp; the Constraint"</span>
+    <p>Removed entirely. Platform info (ArcGIS StoryMaps + Flourish) stays in the hero facts row, which already covers it. The tag-toggle honest-constraint line survives as one pedagogy card in the Interactives example instead of its own section.</p>
+  </div>
+
+  <div class="block decision">
+    <span class="tag decision-tag">Moved per feedback — the method argument</span>
+    <p>"We can better understand our history if we find our own path..." no longer sits in section 2 as a bookend alongside the content argument. It's now the actual closing line of the Outcome section, doing real concluding work instead of being restated.</p>
+  </div>
+
+  <div class="block decision">
+    <span class="tag decision-tag">Added per feedback — a real Sankey diagram image</span>
+    <p>The Sankey flow diagram now gets an actual screenshot slot in the Interactives thumbnail row, not just a prose mention — placed where its own argument (whose beliefs counted as legitimate is an axis of exclusion, same as race/class/sexuality) is already being discussed just above it.</p>
+  </div>
+
+  <hr style="margin:32px 0; border:none; border-top:2px solid #000;">
+
+  <div class="section-num">Part 2 begins — section divider</div>
+  <div class="block" style="text-align:center; background:#1a1420; color:#fff; padding:30px;">
+    [ Full-width divider, dark violet-tinted, breaking visually from Built to Protect's ember-tinted section above ]
+  </div>
+
+  <div class="section-num">1 — Hero (mid-page, same treatment tier as Built to Protect's)</div>
+  <div class="block">
+    <span class="tag">Plate</span><br>
+    Exhibit No. 02 — ArcGIS StoryMaps — Survey of Feminist Thought, CU Denver, 2026
+    <h1>Speaking Through the Dead</h1>
+    <p class="quote">"What is feminist about ghosts?"</p>
+    <span class="note">(the exhibit's own on-screen subtitle — used as-is; single audience, not two reading levels like Built to Protect)</span>
+    <div class="block photo">[ SCREENSHOT — hero: séance photo + title card ]</div>
+    <div class="facts">
+      <span><b>Role</b>Research, concept, design, build</span>
+      <span><b>Audience</b>Classmates + general public via ArcGIS</span>
+      <span><b>Timeframe</b>Spring 2026, Survey of Feminist Thought</span>
+      <span><b>Platform</b>ArcGIS StoryMaps + Flourish interactive embeds</span>
+    </div>
+  </div>
+
+  <div class="section-num">2 — The Big Idea &amp; Research Foundation <span class="note">(revised: content argument only — the method argument now closes the page instead)</span></div>
+  <div class="block commentary">
+    <span class="tag commentary-tag">Commentary — active voice</span>
+    <p style="font-size:13px; margin-bottom:4px;"><b>The content argument</b> (what actually happened, historically) — his own words, tightened:</p>
+    <p class="quote">Spiritualism was a tool feminism "embraced, profited from, and disposed of."</p>
+    <span class="note">— from his closing paragraph: "The exhibit does not mourn Spiritualism or romanticize the women who wielded it. Instead, it explores the ways in which feminism embraced, profited from, and disposed of Spiritualism."</span>
+    <p style="font-size:13px; margin-top:14px;">Framework key (one entry, reused from Built to Protect):</p>
+    <p><span class="ped">UDL</span> "Equitable learning environments that guide learners... by valuing and cultivating multiple ways of knowing and making meaning" (CAST 2024) — the exhibit's three interactives communicate on three registers: gestalt impact, text labels, interactive experience (his own words).</p>
+    <p style="font-size:13px;">Secondary, not color-coded — historiographical grounding, not a pedagogy framework: drawing on Smith-Rosenberg, Welter, Braude, Lorde, Goody, Buszek. Named as sources, not quoted directly anywhere on the page — see language-pass note below.</p>
+  </div>
+
+  <div class="section-num">3 — The Exhibit &amp; Its Method <span class="note">(main section — two deep examples, 6 pedagogy cards each. Platform/tooling section cut per feedback — Platform already covered in the hero facts.)</span></div>
+  <div class="block commentary" style="padding:12px 16px;">
+    <span class="tag commentary-tag">Commentary — framing line</span>
+    <p style="font-size:13px; margin:4px 0 0;">One framework (UDL), applied across two different means. <b>The Narrative</b> — text and primary-source images, read in sequence. <b>The Interactives</b> — three tools that let a visitor argue the thesis themselves. Same Big Idea, two ways in.</p>
+  </div>
+
+  <p class="note" style="margin-top:16px;">The Narrative — one deep example, two enlargeable screenshots side by side:</p>
+  <div class="block exhibit">
+    <span class="tag exhibit-tag">Exhibit frame — "Stop One: The Parlor as Homosocial War Room" — click to enlarge</span>
+    <div class="grid2">
+      <div class="block photo" style="padding:20px; margin:0;">[ SCREENSHOT — Fox Sisters portrait + intro text ]</div>
+      <div class="block photo" style="padding:20px; margin:0;">[ SCREENSHOT — Amy &amp; Isaac Post parlor section, Rochester parlor photo ]</div>
+    </div>
+    <p class="note" style="margin-top:8px;">Full on-screen text transcribed into alt attributes, not shown as visible caption text.</p>
+  </div>
+  <div class="block" style="background:#fff;">
+    <p style="font-size:13px;">Plain commentary, no tag/indent/italics: "Amy Post is introduced here as the emotional anchor of the whole exhibit — a real historical gatekeeper (Harriet Jacobs named her as a character reference in <i>Incidents in the Life of a Slave Girl</i>), not a stand-in. Smith-Rosenberg's research on women's close friendships in this era explains why the parlor mattered; the exhibit's own move is treating ghost communication as an extension of that closeness — women comforting each other with reports from a pleasant afterlife. Amy Post reappears, marginalized, in the second use of the network graph below. This stop sets up that payoff."</p>
+    <p style="font-size:12px; margin-top:10px;"><b>Bridge, not a third deep example — the four mechanisms (Stop Two) that connect this stop to the exclusion argument below, in his own analytical terms:</b></p>
+    <ul style="font-size:12px; margin:4px 0 10px;">
+      <li>The parlor's private network went public — Amy Post's world became the livelihood of female traveling lecturers</li>
+      <li>Channeling gave women a socially acceptable public voice, bypassing male gatekeepers</li>
+      <li>Spiritualism handed women practical control over piety, long controlled by patriarchal theology</li>
+      <li>It let women appropriate authority from outside sources — the same move that turns, next stop, into appropriating Native and Asian voices</li>
+    </ul>
+    <p style="font-size:12px;"><b>6 pedagogy cards, 3×2 grid — searching out distinct connections, not repeating "UDL again":</b></p>
+    <div class="grid3">
+      <div class="pedcard"><b>Multiple Means of Representation</b>UDL — portrait + narrative text + primary-source photo together</div>
+      <div class="pedcard"><b>Multiple Means of Engagement</b>UDL — his own line: "a casual five-minute glance... to an hour-long exploration"</div>
+      <div class="pedcard"><b>Learner Agency</b>His own phrase — "declining to collapse the story... into a respectable teleology"</div>
+      <div class="pedcard"><b>Primary-Source Grounding</b>Not UDL — historiographical rigor: Smith-Rosenberg and Harriet Jacobs cited directly in this stop</div>
+      <div class="pedcard"><b>Character-Led Narrative</b>His own craft choice — Amy Post as protagonist, not just a name in a list (ties to his fiction-writing background)</div>
+      <div class="pedcard"><b>Direct-Address Prompt</b>His own on-screen question — "What do you notice? Who remains?" — guides attention without a formal framework citation</div>
+    </div>
+  </div>
+  <p class="note">Below that: a labeled strip — "Other stops — same layered structure, not re-argued in full" — 3 real enlargeable screenshot thumbnails, with descriptions that carry real weight rather than staying neutral: "Womanly weakness" reframed as strength (Emma Hardinge Britten) / Channeling as a legal cover for women's public speech / Spiritualism appropriating Native and Asian voices for authority — "appropriation allowed white progressives to claim Native authority while continuing to dispossess actual Indigenous people," his own line, not softened.</p>
+
+  <p class="note" style="margin-top:24px;">The Interactives — one deep example, the strongest single move in the piece:</p>
+  <div class="block exhibit">
+    <span class="tag exhibit-tag">Exhibit frame — "The social network graph, used twice" — click to enlarge</span>
+    <div class="grid2">
+      <div class="block photo" style="padding:16px; margin:0;">[ SCREENSHOT — first use: rings Post Family / At the Parlor / One Step / Two Steps / Wider Network; Amy Post glowing at center; "Remove Spiritualists" toggle ]</div>
+      <div class="block photo" style="padding:16px; margin:0;">[ SCREENSHOT — second use: rings relabeled Erased Entirely / Stripped of Spiritualism / Minimized / Included / Author; Amy Post now at the marginalized edge; Elizabeth Cady Stanton at center with "what actually happened" vs. "how History of Woman Suffrage told it" ]</div>
+    </div>
+  </div>
+  <div class="block" style="background:#fff;">
+    <p style="font-size:13px;">Plain commentary: "Reusing the same tool with re-contextualized framing turns the historiographical argument into something a visitor watches happen, not just reads — the network redraws itself, and Amy Post visibly moves from center to edge, while Elizabeth Cady Stanton — who literally authored the movement's official history — moves to the center. It's a visual answer to a question Audre Lorde raised: does winning a right through respectability amount to real change, or just success on someone else's terms? Erasing Spiritualism from feminist history isn't a neutral editing choice — it's the same kind of erasure Lorde pointed to decades later, when women of color were still treated as outsiders to a movement they'd helped build."</p>
+    <p style="font-size:12px;"><b>6 pedagogy cards, 3×2 grid:</b></p>
+    <div class="grid3">
+      <div class="pedcard"><b>Multiple Means of Representation</b>UDL — his own "three registers: gestalt impact, text labels, interactive experience"</div>
+      <div class="pedcard"><b>Multiple Means of Engagement</b>UDL — a quick toggle glance vs. clicking every bio in turn</div>
+      <div class="pedcard"><b>Argument Through Re-Contextualization</b>His own design move, uncited — same tool, second use, different rings, different argument</div>
+      <div class="pedcard"><b>Historiographical Grounding</b>Ann Braude, Smith-Rosenberg, and Audre Lorde's writing on incomplete social change underlie the categories and the reconstitution argument</div>
+      <div class="pedcard"><b>Honest Technical Constraint</b>His own footnote on the tool's tag-toggle limitation, named plainly</div>
+      <div class="pedcard"><b>User-Tested</b>His own footnote — an hour of real testing, stated with real humor</div>
+    </div>
+  </div>
+  <p class="note">Below that: "Other interactives — same exploratory logic, not re-argued in full" — 3 real enlargeable thumbnails, each with an actual image, not just a description:</p>
+  <div class="thumbrow">
+    <div class="block photo">[ SCREENSHOT — geographic pin map, 1848 Hydesville → Seneca Falls ]<br><span style="font-weight:normal;">The Map</span></div>
+    <div class="block photo">[ SCREENSHOT — the Sankey flow diagram, per user request: include the real image here, not just a description ]<br><span style="font-weight:normal;">The Flow Diagram — his own argument: visualizes which movements' beliefs counted as legitimate, alongside race, class, and sexuality as axes of exclusion</span></div>
+    <div class="block photo">[ SCREENSHOT — closing before/after swipe slider ]<br><span style="font-weight:normal;">Before / After</span></div>
+  </div>
+  <p class="note">Swipe slider could instead be held back for the Outcome section as the closing image — decide once real screenshots are laid out.</p>
+
+  <div class="section-num">4 — Outcome <span class="note">(the method argument now lands here, as the actual conclusion — not repeated from section 2)</span></div>
+  <div class="block commentary">
+    <span class="tag commentary-tag">Commentary</span>
+    <div class="block photo">[ SCREENSHOT — the before/after swipe slider, if not already used above: respectable-suffragists photo vs. séance photo ]</div>
+    <p>His own footnote, used directly: <i>"At least one tester spent an hour user-testing the exhibit. For transparency, she has ADHD and is my wife."</i></p>
+    <p>His own forward-looking line, not yet used anywhere else on the page: <i>"This summer, I will be approaching institutional partners to produce a digital exhibit for my master's thesis project. Speaking Through the Dead will serve as a portfolio piece to demonstrate my technical abilities, pedagogical thinking, and historical interest."</i> Not a finished side project — the working prototype for the actual MA thesis.</p>
+    <p style="font-size:13px; margin-top:10px;"><b>Closing statement — the method argument moved here from section 2, doing the actual concluding work instead of just repeating the content argument as a bookend:</b></p>
+    <p class="quote">"We can better understand our history if we find our own path through a world that is messier, stranger, and more inclusive than the story that society prefers to tell about itself."</p>
+  </div>
+
+  <div class="section-num">5 — Closing / Next <span class="note">(no third exhibit to point to)</span></div>
+  <div class="block" style="text-align:center;">
+    ← Back to Built to Protect (top of this page) &nbsp;&nbsp;|&nbsp;&nbsp; About &nbsp;&nbsp;|&nbsp;&nbsp; Writing &nbsp;&nbsp;|&nbsp;&nbsp; Home
+  </div>
+
+</div>

@@ -1,0 +1,215 @@
+<title>TEMPLATE — Exhibit Case Study (from Built to Protect, final)</title>
+<style>
+  :root{ --line:#000; --gray1:#f4f4f4; --gray2:#e2e2e2; --gray3:#c9c9c9; --text:#111; --dim:#666; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--text); background:#fff; line-height:1.4; }
+  .wrap{ max-width:900px; margin:0 auto; padding:0 24px; }
+  .block{ border:2px dashed var(--line); margin:14px 0; padding:16px; background:var(--gray1); }
+  .block.exhibit{ background:repeating-linear-gradient(45deg,#fff8dc,#fff8dc 10px,#fdf1b8 10px,#fdf1b8 20px); border-style:solid; }
+  .block.commentary{ background:var(--gray1); border-style:dashed; }
+  .block.photo{ background:var(--gray3); text-align:center; padding:40px 16px; font-weight:bold; }
+  .block.pattern{ background:#e8f0ff; border:2px solid #2f4f8f; }
+  .tag{
+    display:inline-block; font-size:11px; font-weight:bold; text-transform:uppercase;
+    letter-spacing:.05em; padding:2px 8px; border:1px solid var(--line); margin-bottom:8px; background:#fff;
+  }
+  .tag.exhibit-tag{ background:#fdf1b8; }
+  .tag.commentary-tag{ background:#dbe9ff; }
+  .tag.pattern-tag{ background:#2f4f8f; color:#fff; border-color:#2f4f8f; }
+  .ped{
+    display:inline-block; font-size:10.5px; font-weight:bold; text-transform:uppercase;
+    letter-spacing:.03em; padding:2px 7px; border:1px solid #2f6b2f; margin:2px 4px 2px 0; background:#dff2df; color:#1d4a1d;
+  }
+  .ped.udl{ border-color:#8a6f1f; background:#f6ecd8; color:#6b5410; }
+  .ped.obl{ border-color:#a13f1f; background:#fbe3d8; color:#7a2f10; }
+  .ped.edge{ border-color:#4a6b3a; background:#e3f0da; color:#31491f; }
+  h1,h2,h3{ font-family:Georgia,serif; margin:0 0 6px; }
+  .section-num{ color:var(--dim); font-size:12px; font-family:monospace; margin:26px 0 4px; text-transform:uppercase; letter-spacing:.08em; }
+  .note{ font-size:13px; color:var(--dim); font-style:italic; }
+  .grid3{ display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+  .grid2{ display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+  ul{ margin:6px 0 0; padding-left:20px; font-size:14px; }
+  .facts{ display:flex; flex-wrap:wrap; gap:16px; font-size:13px; font-family:monospace; margin-top:10px; }
+  .facts span b{ display:block; font-family:Arial,sans-serif; font-size:14px; }
+  header.top{ background:#111; color:#fff; padding:10px 0; text-align:center; font-family:monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; }
+  .register-demo{ display:flex; gap:16px; margin-top:8px; }
+  .register-demo div{ flex:1; padding:10px; border:2px solid; text-align:center; font-weight:bold; }
+  .pedcard{ border:1px solid #999; border-left:4px solid #999; border-radius:3px; padding:8px 10px; background:#fff; font-size:11.5px; }
+  .pedcard b{ display:block; font-size:11px; text-transform:uppercase; margin-bottom:3px; }
+</style>
+
+<header class="top">TEMPLATE — matches the final Built to Protect build, 2026-07-13 — use this to scaffold Speaking Through the Dead</header>
+
+<div class="wrap">
+
+  <h1 style="margin-top:20px;">Reusable Patterns</h1>
+  <p class="note">These are the structural decisions that survived every round of revision on Built to Protect, through the enlargeable-panels, 6-card, and language-pass rounds. Reapply them to Speaking Through the Dead — but re-derive the specifics (which frameworks, which colors, how many registers/phases) from that exhibit's own content. Don't force a fit.</p>
+
+  <div class="block pattern">
+    <span class="tag pattern-tag">Pattern 1 (revised)</span>
+    <p><b>Exhibit frame vs. commentary — structurally separate, but commentary is now plain, not decorated.</b> The exhibit frame still gets a solid border and an "Exhibit, as installed" tag, and now typically holds <b>two enlargeable images side by side</b> (an installation photo + a panel scan, or two panel scans) rather than one photo plus a rendered text block. Click-to-enlarge via a CSS-only <code>:target</code> lightbox — no JS. Commentary now sits right after the frame as <b>plain flowing text, no "My notes" tag, no dashed indent, no italics</b> — the framed box alone is enough separation. Simpler reads as more confident than over-decorated.</p>
+  </div>
+
+  <div class="block pattern">
+    <span class="tag pattern-tag">Pattern 2</span>
+    <p><b>Framework color key, established once, reused everywhere.</b> Name the relevant frameworks early ("Big Idea &amp; Research Foundation") as color-coded cards. Every pedagogy card later reuses those exact colors. For Built to Protect: <span class="ped udl">brass = UDL</span> <span class="ped obl">ember = OBL</span> <span class="ped edge">sage = EDGE</span>. <b>Speaking Through the Dead needs its own key</b> — its reflection paper only explicitly cites UDL, so reuse brass for that; don't invent an OBL/EDGE equivalent that isn't really there.</p>
+  </div>
+
+  <div class="block pattern">
+    <span class="tag pattern-tag">Pattern 3 (revised)</span>
+    <p><b>One deep example per register/phase — but paired with a thumbnail strip of the rest, not just a sentence.</b> Built to Protect features exactly one station/panel-pair per register in full, then a labeled <code>strip-label</code> ("Other kid stations — same logic, not re-argued in full") followed by 3 real thumbnails, each enlargeable, each with a <b>title + one-line description</b>, not just a bare caption. This replaces the earlier, thinner pattern of "one sentence naming the rest." Coverage without diluting the argument.</p>
+  </div>
+
+  <div class="block pattern">
+    <span class="tag pattern-tag">Pattern 4 (revised)</span>
+    <p><b>Real image over HTML-retyped text — and now the full real text moves into the alt attribute, not onto the visible page.</b> The visible frame shows only the image(s), enlargeable; nothing about them is paraphrased or re-typed as visible copy. Full verbatim label/panel text (including any printed questions) lives in a complete, real <code>alt</code> string, serving accessibility without cluttering the visual design. For Speaking Through the Dead, the 16 screenshots are the highest-res source available — crop/use directly, and transcribe their on-screen text into alt attributes.</p>
+  </div>
+
+  <div class="block pattern">
+    <span class="tag pattern-tag">Pattern 5</span>
+    <p><b>Confident, achievement-framed conclusion. No "still not finished" hedging.</b> End by tying the frameworks together explicitly and naming what was proven. This is a portfolio, not a reflection paper.</p>
+  </div>
+
+  <div class="block pattern">
+    <span class="tag pattern-tag">Pattern 6</span>
+    <p><b>The design-decision section stays short — two tight paragraphs, evidence-based.</b> State the ambitious original version, the test/evidence, the finding, the change. Don't narrate the whole process.</p>
+  </div>
+
+  <div class="block pattern">
+    <span class="tag pattern-tag">Pattern 7</span>
+    <p><b>Register/phase headers are real, visible, colored typography</b> — display-serif size, colored to the dominant framework where one applies cleanly. Don't force a two-register split onto content that has one audience, not two (see Speaking Through the Dead's "Narrative / Interactives" split by <i>means</i>, not audience).</p>
+  </div>
+
+  <div class="block pattern">
+    <span class="tag pattern-tag">Pattern 8</span>
+    <p><b>Bigger type than feels necessary at first pass.</b> Root font-size increased; smallest mono/label text bumped further individually.</p>
+  </div>
+
+  <div class="block pattern">
+    <span class="tag pattern-tag">Pattern 9 (new)</span>
+    <p><b>Pedagogy callouts are substantial explanatory cards, six per deep example, laid out 3 wide × 2 rows.</b> Each card: a bolded concept name, a one-sentence definition of the concept (quoting the actual research-brief language where it exists), then a sentence connecting it specifically to what's on the wall. Six is enough to search out genuinely distinct connections (physical mounting height, reading level, voice, collaboration mode, aesthetic register) rather than repeating "here's another EDGE attribute" three times with no new observation. When two deep examples exist (kid + adult), look for at least one card in each that <b>contrasts or explicitly parallels</b> the other (e.g. "Object at Eye Level" for kids vs. "Object at Eye Level, Recalibrated" for adults) — this proves the design decisions were deliberate at every station, not incidental.</p>
+  </div>
+
+  <div class="block pattern">
+    <span class="tag pattern-tag">Pattern 10 (new)</span>
+    <p><b>Language pass, every round:</b> active first-person voice ("I printed one tree full-size") over passive constructions ("was tested"); real quoted source language over paraphrase, wherever a source document has the words already; no fabricated fake-precise details (don't invent "four seconds" or a stat that wasn't measured); don't reuse the same rhetorical construction more than once on a page (watch for repeated "not X, just Y" antithesis, or one favorite word like "calibrated" used three different ways). Read the page aloud, listen for anything that sounds like a template filled in six times.</p>
+  </div>
+
+  <div class="block pattern">
+    <span class="tag pattern-tag">Pattern 11 (new)</span>
+    <p><b>Thumbnails get a title AND a one-line description, not just a bare caption.</b> E.g. "The Helmet / Two helmets, a century apart — same open questions," not just "The Helmet."</p>
+  </div>
+
+  <div class="block pattern">
+    <span class="tag pattern-tag">Pattern 12 (new)</span>
+    <p><b>Enlargeable images use a CSS-only <code>:target</code> lightbox.</b> Each enlargeable image appears twice in the HTML source (inline + lightbox target) since there's no JS to reuse a single reference — this roughly doubles that image's embedded weight in the current base64-artifact-preview stage. Acceptable for now; disappears once this is a real GitHub Pages site with actual image files the browser can reference once and cache.</p>
+  </div>
+
+  <hr style="margin:36px 0; border:none; border-top:2px solid #000;">
+  <h1>Section-by-Section — Built to Protect, as built</h1>
+  <p class="note">This matches the live page exactly, for reference when adapting.</p>
+
+  <div class="section-num">Nav</div>
+  <div class="block" style="padding:8px 16px;">← Exhibits &nbsp;&nbsp;|&nbsp;&nbsp; P. McGuire &nbsp;&nbsp;|&nbsp;&nbsp; About · Writing · Home</div>
+
+  <div class="section-num">1 — Hero</div>
+  <div class="block">
+    <span class="tag">Plate</span><br>
+    Exhibit No. 01 — Denver Firefighters Museum — Educational Intern, 2026
+    <h1>Built to Protect</h1>
+    <p><b>Big Idea:</b> "Engineering is never finished. Every solution is the starting point for the next problem."<br>
+    <span class="note">(kid-facing translation used on-site: "Safety Isn't Solved")</span></p>
+    <div class="block photo">[ PHOTO — wide installation shot, corner alcove ]</div>
+    <div class="facts">
+      <span><b>Role</b>Concept, content, design, install</span>
+      <span><b>Audience</b>Families, K–8 school groups, general visitors</span>
+      <span><b>Timeframe</b>2026, educational internship</span>
+      <span><b>Platform</b>Corner installation — helmet, jacket, and mask/SCBA try-on stations, a drawing activity, and five adult panels</span>
+    </div>
+  </div>
+
+  <div class="section-num">2 — The Big Idea &amp; Research Foundation</div>
+  <div class="block commentary">
+    <span class="tag commentary-tag">Commentary — active voice, "I grounded..."</span>
+    <p>"Engineering is never finished" / "Safety Isn't Solved" — one idea, two reading levels, tied to the concept doc's own line about "mental models... that apply far beyond firefighting gear." Before drafting a label, I grounded the design in three frameworks — the color key, established once:</p>
+    <p><span class="ped udl">UDL</span> Multiple means of representation, engagement &amp; expression<br>
+    <span class="ped obl">OBL</span> Lead with the object, layer the labels, let objects generate the question<br>
+    <span class="ped edge">EDGE</span> Exploratorium's 9 attributes for engaging girls in STEM without alienating boys</p>
+  </div>
+
+  <div class="section-num">3 — The Prototype Test <span class="note">(half-length — 2 tight paragraphs, active voice)</span></div>
+  <div class="block commentary">
+    <span class="tag commentary-tag">Commentary</span>
+    <p>I originally designed four stations, flip-panel "decision trees," real historical forks, three real paths each, a reveal. Ambitious, grounded in research.</p>
+    <p>Testing said otherwise. I printed one tree full-size and watched families use it — noting where they paused, what they skipped, what got a parent and kid talking. Reading fatigue by this point in a visit. What worked was handling objects and talking to each other, not solving a text puzzle. I changed the mechanism, kept the Big Idea.</p>
+  </div>
+
+  <div class="section-num">4 — The Final Design &amp; Its Pedagogy</div>
+  <div class="block commentary" style="padding:12px 16px;">
+    <span class="tag commentary-tag">Commentary — framing line</span>
+    <p style="font-size:13px; margin:4px 0 0;">Same Big Idea, built twice for two different readers standing in the same corner. Kid stations run on EDGE's body-movement/collaboration engagement. Adult panels run on OBL's layered, extended-interpretation labels.</p>
+  </div>
+
+  <div class="register-demo">
+    <div style="border-color:#4a6b3a;color:#31491f;">KID REGISTER<br><span style="font-weight:normal;font-size:11px;">display type, sage-colored header, "do first, read second"</span></div>
+    <div style="border-color:#a13f1f;color:#7a2f10;">ADULT REGISTER<br><span style="font-weight:normal;font-size:11px;">display type, ember-colored header, "read first, reflect second"</span></div>
+  </div>
+
+  <p class="note" style="margin-top:16px;">Under Kid Register — one deep example, two enlargeable images side by side, no visible caption text:</p>
+  <div class="block exhibit">
+    <span class="tag exhibit-tag">Exhibit frame — "The Jacket" — click to enlarge</span>
+    <div class="grid2">
+      <div class="block photo" style="padding:20px; margin:0;">[ PHOTO — jacket station, real installation ]</div>
+      <div class="block photo" style="padding:14px; background:#fff8dc; margin:0;">[ IMAGE — full panel scan: illustration + navy speech-bubble text + "TRY ON REAL FIREFIGHTER GEAR" questions, all in one image, pulled from source PDF at full resolution ]</div>
+    </div>
+    <p class="note" style="margin-top:8px;">Full label text + all 4 printed questions live in the image's alt attribute, not as visible text on the page.</p>
+  </div>
+  <div class="block" style="background:#fff;">
+    <p style="font-size:13px;">Commentary — plain text, no tag, no indent, no italics, right after the frame:</p>
+    <p style="font-size:12px; font-style:normal;">"This station is the direct answer to what the prototype test found: ask the visitor to do something before asking them to read anything."</p>
+    <p style="font-size:12px;"><b>6 pedagogy cards, 3×2 grid:</b></p>
+    <div class="grid3">
+      <div class="pedcard" style="border-color:#4a6b3a;"><b style="color:#31491f;">Body Movement</b>EDGE — whole-body interaction</div>
+      <div class="pedcard" style="border-color:#4a6b3a;"><b style="color:#31491f;">Collaboration</b>EDGE — built for two at once</div>
+      <div class="pedcard" style="border-color:#4a6b3a;"><b style="color:#31491f;">Guide Labels</b>EDGE — questions tell you what to do</div>
+      <div class="pedcard" style="border-color:#a13f1f;"><b style="color:#7a2f10;">Object Before Label</b>OBL — object raises the question first</div>
+      <div class="pedcard" style="border-color:#a13f1f;"><b style="color:#7a2f10;">Object at Eye Level</b>OBL — mounted at a child's height</div>
+      <div class="pedcard" style="border-color:#a13f1f;"><b style="color:#7a2f10;">Plain-Language, 1st-Person Voice</b>OBL — 4th-grade level, object speaks as "I"</div>
+    </div>
+  </div>
+  <p class="note">Below that: a labeled strip — "Other kid stations — same logic, not re-argued in full" — 3 real enlargeable thumbnails (helmet, mask/SCBA, drawing activity), each with a title + one-line description.</p>
+
+  <p class="note" style="margin-top:24px;">Under Adult Register — one deep example, two panels side by side, no visible caption text:</p>
+  <div class="block exhibit">
+    <span class="tag exhibit-tag">Exhibit frame — "the wall's opening argument" — click to enlarge</span>
+    <div class="grid2">
+      <div class="block photo" style="padding:20px; background:#fff8dc; margin:0;">[ IMAGE — "Why Does Firefighting Gear Change Over Time?" full panel scan ]</div>
+      <div class="block photo" style="padding:20px; background:#fff8dc; margin:0;">[ IMAGE — "Fires Are Faster Than Ever" full panel scan ]</div>
+    </div>
+  </div>
+  <div class="block" style="background:#fff;">
+    <p style="font-size:13px;"><b>6 pedagogy cards, 3×2 grid:</b></p>
+    <div class="grid3">
+      <div class="pedcard" style="border-color:#a13f1f;"><b style="color:#7a2f10;">Thematic Label</b>OBL — connects every station's real question</div>
+      <div class="pedcard" style="border-color:#8a6f1f;"><b style="color:#6b5410;">Multiple Means of Representation</b>UDL — same idea as history + data</div>
+      <div class="pedcard" style="border-color:#a13f1f;"><b style="color:#7a2f10;">Real-World Data</b>OBL — cited, checkable numbers</div>
+      <div class="pedcard" style="border-color:#a13f1f;"><b style="color:#7a2f10;">Object at Eye Level, Recalibrated</b>OBL — same rule, adult height</div>
+      <div class="pedcard" style="border-color:#4a6b3a;"><b style="color:#31491f;">Look &amp; Feel, Tuned for the Reader</b>EDGE — icons, not illustration</div>
+      <div class="pedcard" style="border-color:#4a6b3a;"><b style="color:#31491f;">Collaboration — Optional</b>EDGE — works solo or relayed to a kid</div>
+    </div>
+  </div>
+  <p class="note">Below that: "Other adult panels — same label-layering logic, not re-argued in full" — 3 real enlargeable panel-scan thumbnails (Smoke Eating, OSHA, Women &amp; Firefighting Safety), each with a title + one-line description.</p>
+
+  <div class="section-num">5 — Install &amp; Outcome</div>
+  <div class="block commentary">
+    <span class="tag commentary-tag">Commentary</span>
+    <div class="block photo">[ PHOTO — widest available shot of the whole corner, different from the hero photo ]</div>
+    <p>Conclusion ties all 3 frameworks together one more time, ends on what the simplification achieved — not on "still not finished."</p>
+  </div>
+
+  <div class="section-num">6 — Closing / Next</div>
+  <div class="block" style="text-align:center;">
+    → Next case study: Speaking Through the Dead &nbsp;&nbsp;|&nbsp;&nbsp; ← Back to Exhibits
+  </div>
+
+</div>

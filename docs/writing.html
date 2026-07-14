@@ -1,0 +1,251 @@
+<title>Writing — Peter McGuire</title>
+<style>
+  :root{
+    --black:      #0c0b09;
+    --wall:       #17140f;
+    --wall-line:  #2a241a;
+    --brass:      #c9a24b;
+    --brass-dim:  #8a6f38;
+    --paper:      #ece5d8;
+    --paper-dim:  #b7ac9a;
+    --ember:      #d0693f;
+    --ember-dim:  #7a3a24;
+
+    --font-display: 'Iowan Old Style','Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
+    --font-body:    Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+    --font-mono:    ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+  }
+  html{ background:var(--black); font-size:18.5px; }
+  *,*::before,*::after{ box-sizing:border-box; }
+  body{
+    margin:0; background:var(--black); color:var(--paper);
+    font-family:var(--font-body); line-height:1.68; -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{ color:inherit; }
+  ::selection{ background:var(--brass); color:var(--black); }
+  a:focus-visible{ outline:2px solid var(--brass); outline-offset:3px; }
+
+  .atmosphere{
+    position:fixed; inset:0; pointer-events:none; z-index:0;
+    background:
+      radial-gradient(ellipse 900px 600px at 50% -6%, rgba(201,162,75,0.12), transparent 60%),
+      radial-gradient(ellipse 1000px 700px at 90% 30%, rgba(193,80,46,0.06), transparent 55%);
+  }
+  .grain{
+    position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.05; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  .wrap{ max-width:940px; margin:0 auto; padding:0 clamp(20px,5vw,48px); position:relative; z-index:1; }
+  .wrap-wide{ max-width:1100px; margin:0 auto; padding:0 clamp(20px,5vw,48px); position:relative; z-index:1; }
+
+  /* ---------- nav ---------- */
+  .nav{ position:sticky; top:0; z-index:10; background:rgba(12,11,9,.85); backdrop-filter:blur(6px); border-bottom:1px solid var(--wall-line); }
+  .nav .wrap-wide{ display:flex; align-items:center; justify-content:space-between; height:64px; }
+  .nav-name{ font-family:var(--font-mono); font-size:1rem; letter-spacing:.14em; text-transform:uppercase; text-decoration:none; color:var(--paper); }
+  .nav-links{ display:flex; gap:clamp(14px,2.4vw,28px); list-style:none; margin:0; padding:0; }
+  .nav-links a{ font-family:var(--font-mono); font-size:.92rem; letter-spacing:.1em; text-transform:uppercase; text-decoration:none; color:var(--paper-dim); transition:color .2s ease; }
+  .nav-links a:hover{ color:var(--brass); }
+
+  /* ---------- eyebrow ---------- */
+  .eyebrow{ font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.16em; font-size:.9rem; color:var(--brass); }
+
+  /* ---------- hero ---------- */
+  .hero{ padding:56px 0 40px; }
+  .hero h1{
+    font-family:var(--font-display); font-weight:400; font-size:clamp(2.8rem,7vw,4.6rem);
+    margin:.3em 0 .35em; color:var(--paper);
+  }
+  .manifesto{
+    font-family:var(--font-display); font-style:italic; font-size:clamp(1.3rem,2.8vw,1.65rem);
+    color:var(--brass); max-width:760px; margin:0; line-height:1.5;
+  }
+
+  /* ---------- section shell ---------- */
+  section{ padding:clamp(52px,7vw,80px) 0; position:relative; border-top:1px solid var(--wall-line); }
+  .section-head{ margin-bottom:30px; }
+  .section-head h2{ font-family:var(--font-display); font-weight:400; font-size:clamp(1.85rem,3.6vw,2.5rem); margin:.3em 0 0; color:var(--paper); }
+
+  .commentary{ max-width:700px; }
+  .commentary p{ color:var(--paper-dim); font-size:1.12rem; margin:0 0 1.1em; }
+  .commentary p:last-child{ margin-bottom:0; }
+  .commentary b{ color:var(--paper); font-weight:600; }
+  .commentary a{ color:var(--paper); font-weight:600; text-decoration:none; border-bottom:1px solid var(--brass-dim); transition:color .2s ease, border-color .2s ease; }
+  .commentary a:hover{ color:var(--brass); border-color:var(--brass); }
+
+  /* ---------- throughline line art: decorative rail beside the text ---------- */
+  .throughline-grid{ display:grid; grid-template-columns:minmax(0,700px) 160px; gap:40px; }
+  @media (max-width:860px){
+    .throughline-grid{ grid-template-columns:1fr; }
+    .throughline-art{ display:none; }
+  }
+  .throughline-art{ display:flex; flex-direction:column; justify-content:space-between; align-items:center; padding:10px 0; color:var(--brass-dim); }
+  .throughline-art .art-piece{ width:100%; height:auto; opacity:.85; }
+
+  /* ---------- proof images: two screenshots from Speaking Through the Dead ---------- */
+  .proof-images{
+    display:grid; grid-template-columns:1fr 1fr; gap:1px; max-width:700px; margin:28px 0 10px;
+    background:var(--wall-line); border:1px solid var(--wall-line); border-radius:3px; overflow:hidden;
+    text-decoration:none;
+  }
+  @media (max-width:520px){ .proof-images{ grid-template-columns:1fr; } }
+  .proof-img{ background:var(--black); aspect-ratio:4/3; overflow:hidden; }
+  .proof-img img{ width:100%; height:100%; object-fit:cover; display:block; transition:transform .3s ease; }
+  a.proof-images:hover .proof-img img{ transform:scale(1.03); }
+  .proof-caption{
+    font-family:var(--font-mono); font-size:.85rem; color:var(--paper-dim); letter-spacing:.02em;
+    max-width:700px; margin:0 0 1.1em; line-height:1.5;
+  }
+
+  /* ---------- skills bridge table ---------- */
+  .bridge-table{ width:100%; border-collapse:collapse; margin-top:8px; }
+  .bridge-table th{
+    font-family:var(--font-mono); font-size:.82rem; text-transform:uppercase; letter-spacing:.08em;
+    color:var(--brass-dim); text-align:left; padding:0 20px 12px 0; border-bottom:1px solid var(--wall-line);
+  }
+  .bridge-table td{
+    padding:20px 20px 20px 0; border-bottom:1px solid var(--wall-line); vertical-align:top;
+    color:var(--paper-dim); font-size:1.02rem; line-height:1.5;
+  }
+  .bridge-table tr:last-child td{ border-bottom:none; }
+  .bridge-table td.from{ color:var(--paper); width:38%; }
+  .bridge-table td.from b{ display:block; font-family:var(--font-display); font-size:1.1rem; font-weight:400; color:var(--paper); margin-bottom:.3em; }
+  .bridge-table td.from span{ display:block; font-family:var(--font-mono); font-size:.78rem; color:var(--paper-dim); letter-spacing:.02em; }
+  .bridge-table td.to{ position:relative; padding-left:32px; }
+  .bridge-table td.to::before{
+    content:"→"; position:absolute; left:0; top:20px; color:var(--ember); font-size:1.1rem;
+  }
+  @media (max-width:640px){
+    .bridge-table, .bridge-table thead, .bridge-table tbody, .bridge-table th, .bridge-table td, .bridge-table tr{ display:block; }
+    .bridge-table thead{ display:none; }
+    .bridge-table tr{ padding:18px 0; border-bottom:1px solid var(--wall-line); }
+    .bridge-table tr:last-child{ border-bottom:none; }
+    .bridge-table td{ padding:0; border-bottom:none; }
+    .bridge-table td.from{ width:auto; margin-bottom:10px; }
+    .bridge-table td.to{ padding-left:26px; }
+    .bridge-table td.to::before{ top:0; }
+  }
+
+  /* ---------- footer nav ---------- */
+  .closing{ text-align:center; padding:64px 0 84px; }
+  .closing-links{ display:flex; justify-content:center; gap:30px; flex-wrap:wrap; margin-top:12px; }
+  .closing a{
+    font-family:var(--font-mono); font-size:.96rem; letter-spacing:.08em; text-transform:uppercase;
+    text-decoration:none; color:var(--paper); border-bottom:1px solid var(--brass-dim); padding-bottom:3px;
+    transition:color .2s ease, border-color .2s ease;
+  }
+  .closing a:hover{ color:var(--brass); border-color:var(--brass); }
+
+  @media (prefers-reduced-motion:no-preference){
+    .hero, section{ animation:fade-up .6s ease both; }
+  }
+  @keyframes fade-up{ from{ opacity:0; transform:translateY(8px); } to{ opacity:1; transform:none; } }
+</style>
+
+<div class="atmosphere" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="wrap-wide">
+    <a class="nav-name" href="/">Peter McGuire</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/exhibits.html#built-to-protect">Exhibits</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="writing">
+  <div class="wrap">
+    <span class="eyebrow">Content Strategist → Public Historian · Denver, Colorado</span>
+    <h1>Writing</h1>
+    <p class="manifesto">My career as a writer and creator gave me the creation skills need in museums large and small.</p>
+  </div>
+</header>
+
+<section id="skills-bridge">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Diverse writing jobs taught me crucial museum skills</h2>
+    </div>
+    <table class="bridge-table">
+      <thead>
+        <tr><th>Content career</th><th>Museum relevance</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="from"><b>Technical writing for engineers</b></td>
+          <td class="to">Detail-oriented writing that carefully walks through complexity with great precision, coordinating with large numbers of stakeholders.</td>
+        </tr>
+        <tr>
+          <td class="from"><b>E-commerce copywriting for national &amp; multinational clients</b></td>
+          <td class="to">Translation of abstract ideas to be personally applicable, dealing with sensitivities of big brands with legal departments, managing digital content.</td>
+        </tr>
+        <tr>
+          <td class="from"><b>Leading 50+ subject matter experts to produce content</b></td>
+          <td class="to">Project management, sharing niche information from subject matter experts in engaging ways, using a wide variety of self-publishing platforms.</td>
+        </tr>
+        <tr>
+          <td class="from"><b>Search-data-driven content strategy</b></td>
+          <td class="to">Centering user experience as the ultimate test of a product, creating large webs of information that target general audiences in multiple ways.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="throughline">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">The Throughline</span>
+      <h2>Two careers, one instinct</h2>
+    </div>
+    <div class="throughline-grid">
+      <div class="commentary">
+        <p>Fifteen years of professional writing taught me to know who's reading and write directly to them. Whether it was five-hundred page technical documents for engineers, ads for candy like Starburst, and content marketing blogs, I learned to adapt my communication skills to the audience's needs.</p>
+        <p>In 2019, I started <a href="https://www.unlikelyexplanation.com/">Unlikely Explanations</a> to bring those skills to my real passion: history. I found original stories and followed them — pieces like "Why Did Steamboat Springs Blow Up The Steamboat Spring?," which used railroad history to explore differing Ute and white-settler attitudes toward the land itself, and "How Do We Cope With Gender?," which traced eunuchs, proto-trans figures, and third genders across history. Publishing these stories taught me about the fraught transmission and reception of history firsthand.</p>
+        <p>Through the interviews I did for those stories — including one with Dr. Michael Barkun about his book <i>A Culture of Conspiracy</i> — I kept running into the same idea: that history can act as a kind of inoculation against radicalization and bigotry by creating spaces for exploring complexity, away from the false certainty of political broadcasting. As I have learned about education through my MA, my respect for informal learning and adult education has only grown. </p>
+        <p><a href="/exhibits.html#built-to-protect">Built to Protect</a> and <a href="/exhibits.html#speaking-through-the-dead">Speaking Through the Dead</a>, on the Exhibits page, show the unification of my writing career with my new Museum Studies skills. I think people learn best when they can find their own paths and make their own connections. I built these kind of experiences for brands to drive web visitors to a point of purchase. Now, I can apply these skills to the more noble pursuit of education.</p>
+      </div>
+      <div class="throughline-art">
+        <svg class="art-piece" viewBox="0 0 160 110" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M80,34 Q47,22 15,32 Q10,55 15,78 Q47,68 80,80 L80,34"/>
+          <path d="M80,34 Q113,22 145,32 Q150,55 145,78 Q113,68 80,80 L80,34"/>
+          <line x1="30" y1="45" x2="60" y2="42" stroke-opacity="0.6"/>
+          <line x1="28" y1="55" x2="55" y2="52" stroke-opacity="0.6"/>
+          <line x1="26" y1="65" x2="50" y2="62" stroke-opacity="0.6"/>
+          <line x1="130" y1="45" x2="100" y2="42" stroke-opacity="0.6"/>
+          <line x1="132" y1="55" x2="105" y2="52" stroke-opacity="0.6"/>
+          <line x1="134" y1="65" x2="110" y2="62" stroke-opacity="0.6"/>
+        </svg>
+        <svg class="art-piece" viewBox="0 0 160 110" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true">
+          <line x1="8" y1="90" x2="152" y2="90" stroke-opacity="0.45"/>
+          <line x1="45" y1="14" x2="45" y2="88"/>
+          <line x1="115" y1="14" x2="115" y2="88"/>
+          <line x1="10" y1="88" x2="150" y2="88"/>
+          <path d="M10,88 Q45,14 80,54 Q115,14 150,88"/>
+          <line x1="25" y1="88" x2="25" y2="60"/>
+          <line x1="63" y1="88" x2="63" y2="38"/>
+          <line x1="97" y1="88" x2="97" y2="38"/>
+          <line x1="135" y1="88" x2="135" y2="60"/>
+        </svg>
+      </div>
+    </div>
+    <a class="proof-images" href="/exhibits.html#speaking-through-the-dead">
+      <div class="proof-img"><img src="img/std-graph1.jpg" alt="Interactive social-network graph from Speaking Through the Dead, showing Amy Post's Rochester reform network radiating outward through concentric rings of connection." loading="lazy"></div>
+      <div class="proof-img"><img src="img/std-sankey.jpg" alt="Interactive Sankey flow diagram from Speaking Through the Dead, tracing how nineteenth-century reform movements flowed into later social and political outcomes." loading="lazy"></div>
+    </a>
+    <p class="proof-caption">The social-network graph and flow diagram above are two of the interactives I built for Speaking Through the Dead — I learned to build sites and visualizations like these as a content creator, long before I called it public history.</p>
+  </div>
+</section>
+
+<div class="closing">
+  <div class="wrap">
+    <span class="eyebrow">Next</span>
+    <div class="closing-links">
+      <a href="/exhibits.html#built-to-protect">Exhibits</a>
+      <a href="/">Home</a>
+    </div>
+  </div>
+</div>

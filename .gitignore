@@ -1,0 +1,12 @@
+# This directory holds a lot of personal/working source material (resume,
+# reflection papers, raw photos, planning docs) that isn't meant for the
+# public site repo. Only the site source (build/) and built output (docs/)
+# are tracked here.
+/*
+!/build/
+!/docs/
+!/.gitignore
+!/README.md
+
+__pycache__/
+*.pyc

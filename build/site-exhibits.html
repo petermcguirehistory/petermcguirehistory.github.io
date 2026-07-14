@@ -1,0 +1,71 @@
+<title>Exhibits — Peter McGuire</title>
+<style>
+  :root{
+    --black:      #0c0b09;
+    --wall:       #17140f;
+    --wall-line:  #2a241a;
+    --brass:      #c9a24b;
+    --brass-dim:  #8a6f38;
+    --paper:      #ece5d8;
+    --paper-dim:  #a89d8c;
+
+    --font-display: 'Iowan Old Style','Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
+    --font-body:    Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+    --font-mono:    ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+  }
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ background:var(--black); }
+  body{
+    margin:0; min-height:100vh; background:var(--black); color:var(--paper);
+    font-family:var(--font-body); line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  a{ color:inherit; }
+  ::selection{ background:var(--brass); color:var(--black); }
+  a:focus-visible{ outline:2px solid var(--brass); outline-offset:3px; }
+
+  .atmosphere{
+    position:fixed; inset:0; pointer-events:none; z-index:0;
+    background:radial-gradient(ellipse 900px 600px at 50% -6%, rgba(201,162,75,0.14), transparent 60%);
+  }
+  .wrap{ max-width:640px; margin:0 auto; padding:0 clamp(20px,5vw,48px); position:relative; z-index:1; }
+
+  .nav{ position:sticky; top:0; z-index:10; background:rgba(12,11,9,.82); backdrop-filter:blur(6px); border-bottom:1px solid var(--wall-line); }
+  .nav .wrap{ max-width:1120px; display:flex; align-items:center; justify-content:space-between; height:64px; }
+  .nav-name{ font-family:var(--font-mono); font-size:.82rem; letter-spacing:.14em; text-transform:uppercase; text-decoration:none; color:var(--paper); }
+  .nav-back{ font-family:var(--font-mono); font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; text-decoration:none; color:var(--paper-dim); transition:color .2s ease; }
+  .nav-back:hover{ color:var(--brass); }
+
+  main{ min-height:calc(100vh - 64px); display:flex; align-items:center; padding:80px 0; }
+  .plate{
+    display:inline-flex; align-items:center; gap:.6em;
+    font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.08em; font-size:.68rem;
+    color:var(--paper-dim); border:1px solid var(--wall-line); padding:.55em .9em; border-radius:2px;
+    margin-bottom:1.6em;
+  }
+  .plate::before{ content:""; width:6px; height:6px; border-radius:50%; background:var(--brass); box-shadow:0 0 6px 1px rgba(201,162,75,.6); flex:none; }
+  h1{ font-family:var(--font-display); font-weight:400; font-size:clamp(2.2rem,6vw,3.4rem); margin:0 0 .5em; color:var(--paper); }
+  p.dek{ color:var(--paper-dim); font-size:1.05rem; max-width:520px; margin:0 0 2em; }
+  .btn{
+    display:inline-block; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.1em;
+    font-size:.74rem; text-decoration:none; padding:.9em 1.5em; border-radius:2px;
+    border:1px solid var(--wall-line); color:var(--paper); transition:all .2s ease;
+  }
+  .btn:hover{ border-color:var(--brass); color:var(--brass); }
+</style>
+
+<div class="atmosphere" aria-hidden="true"></div>
+<nav class="nav">
+  <div class="wrap">
+    <span class="nav-name">P. McGuire</span>
+    <a class="nav-back" href="https://claude.ai/code/artifact/c01b7fd9-133c-439b-9ed7-63da494cf53d">← Home</a>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+    <span class="plate">Page in progress</span>
+    <h1>Exhibits</h1>
+    <p class="dek">Full case studies for Built to Protect and Speaking Through the Dead — Big Idea, planning, concept &amp; content, design, and install/outcome — with exhibit reproductions offset from commentary, so it's always clear what's the exhibit and what's the thinking behind it.</p>
+    <a class="btn" href="https://claude.ai/code/artifact/c01b7fd9-133c-439b-9ed7-63da494cf53d">← Back to Home</a>
+  </div>
+</main>
