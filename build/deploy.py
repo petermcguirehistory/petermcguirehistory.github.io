@@ -1,4 +1,4 @@
-import os, re, shutil
+import os, re, shutil, base64
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 IMG_SRC = os.path.join(HERE, "img")
@@ -54,6 +54,19 @@ url_tokens = {
 WRITE_CNAME = True
 CUSTOM_DOMAIN = "petermcguire.info"
 
+# bold brass "P" monogram on a dark rounded square, matching the site's own
+# --black/--brass palette -- simple shapes read better than fine detail at
+# 16-32px tab size. Only used for the real deploy; the Artifact-preview tab
+# icon is set separately via the Artifact tool's own emoji favicon param.
+FAVICON_SVG = (
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">'
+    '<rect width="32" height="32" rx="6" fill="#0c0b09"/>'
+    '<text x="16" y="23" font-family="Georgia, \'Iowan Old Style\', serif" '
+    'font-size="20" font-weight="700" fill="#c9a24b" text-anchor="middle">P</text>'
+    '</svg>'
+)
+FAVICON_DATA_URI = "data:image/svg+xml;base64," + base64.b64encode(FAVICON_SVG.encode("utf-8")).decode("ascii")
+
 os.makedirs(DOCS_IMG, exist_ok=True)
 
 copied = set()
@@ -103,6 +116,7 @@ for template_name, out_name in PAGES:
         '<!DOCTYPE html>\n<html lang="en">\n<head>\n'
         '<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+        f'<link rel="icon" type="image/svg+xml" href="{FAVICON_DATA_URI}">\n'
         + html[:style_close]
         + "\n</head>\n<body>\n"
         + html[style_close:]
