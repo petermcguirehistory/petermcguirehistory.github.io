@@ -93,8 +93,8 @@
     border-bottom:1px solid var(--wall-line);
   }
   .nav .wrap{
-    display:flex; align-items:center; justify-content:space-between;
-    height:64px;
+    display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;
+    min-height:64px; gap:8px 20px; padding:10px 0;
   }
   .nav-name{
     font-family:var(--font-mono);
@@ -104,8 +104,9 @@
     text-decoration:none;
     color:var(--paper);
   }
+  @media (max-width:640px){ .nav-name{ display:none; } }
   .nav-links{
-    display:flex; gap:clamp(14px,2.4vw,32px);
+    display:flex; flex-wrap:wrap; gap:8px clamp(14px,2.4vw,32px);
     list-style:none; margin:0; padding:0;
   }
   .nav-links a{
