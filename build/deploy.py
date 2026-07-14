@@ -50,11 +50,8 @@ url_tokens = {
     "__CONTACT_FORM_ACTION__": "https://formspree.io/f/xaqrneny",
 }
 
-# temporarily off (2026-07-14): while Peter's DNS still points elsewhere, a CNAME file
-# makes GitHub Pages 301-redirect the interim petermcguirehistory.github.io URL to a
-# domain that isn't live yet. Flip back to True once DNS is pointed at GitHub Pages
-# (see SITE_PLAN.md's "Live deployment" section) and rerun this script.
-WRITE_CNAME = False
+# DNS confirmed pointed at GitHub Pages 2026-07-14 -- CNAME restored.
+WRITE_CNAME = True
 CUSTOM_DOMAIN = "petermcguire.info"
 
 os.makedirs(DOCS_IMG, exist_ok=True)
