@@ -50,6 +50,11 @@ url_tokens = {
     "__CONTACT_FORM_ACTION__": "https://formspree.io/f/xaqrneny",
 }
 
+# temporarily off (2026-07-14): while Peter's DNS still points elsewhere, a CNAME file
+# makes GitHub Pages 301-redirect the interim petermcguirehistory.github.io URL to a
+# domain that isn't live yet. Flip back to True once DNS is pointed at GitHub Pages
+# (see SITE_PLAN.md's "Live deployment" section) and rerun this script.
+WRITE_CNAME = False
 CUSTOM_DOMAIN = "petermcguire.info"
 
 os.makedirs(DOCS_IMG, exist_ok=True)
@@ -98,6 +103,13 @@ for template_name, out_name in PAGES:
 
     print("Wrote", out_path, "-", os.path.getsize(out_path), "bytes")
 
-with open(os.path.join(DOCS, "CNAME"), "w", encoding="utf-8") as f:
-    f.write(CUSTOM_DOMAIN + "\n")
-print(f"\nWrote docs/CNAME ({CUSTOM_DOMAIN})")
+cname_path = os.path.join(DOCS, "CNAME")
+if WRITE_CNAME:
+    with open(cname_path, "w", encoding="utf-8") as f:
+        f.write(CUSTOM_DOMAIN + "\n")
+    print(f"\nWrote docs/CNAME ({CUSTOM_DOMAIN})")
+elif os.path.exists(cname_path):
+    os.remove(cname_path)
+    print(f"\nWRITE_CNAME is False -- removed existing docs/CNAME")
+else:
+    print(f"\nWRITE_CNAME is False -- no docs/CNAME present, nothing to do")
