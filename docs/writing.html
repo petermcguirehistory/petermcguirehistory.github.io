@@ -92,12 +92,25 @@
   .proof-images{
     display:grid; grid-template-columns:1fr 1fr; gap:1px; max-width:700px; margin:28px 0 10px;
     background:var(--wall-line); border:1px solid var(--wall-line); border-radius:3px; overflow:hidden;
-    text-decoration:none;
   }
   @media (max-width:520px){ .proof-images{ grid-template-columns:1fr; } }
-  .proof-img{ background:var(--black); aspect-ratio:4/3; overflow:hidden; }
+  .proof-img{ display:block; background:var(--black); aspect-ratio:4/3; overflow:hidden; cursor:zoom-in; }
   .proof-img img{ width:100%; height:100%; object-fit:cover; display:block; transition:transform .3s ease; }
-  a.proof-images:hover .proof-img img{ transform:scale(1.03); }
+  .proof-img:hover img{ transform:scale(1.03); }
+
+  /* ---------- lightbox (CSS-only, via :target) ---------- */
+  .lightbox{
+    position:fixed; inset:0; z-index:50; display:flex; align-items:center; justify-content:center;
+    background:rgba(6,5,4,.95); padding:clamp(16px,5vw,60px);
+    opacity:0; visibility:hidden; transition:opacity .18s ease; cursor:zoom-out;
+  }
+  .lightbox:target{ opacity:1; visibility:visible; }
+  .lightbox img{ max-width:100%; max-height:100%; object-fit:contain; border-radius:4px; margin:0 auto; }
+  .lightbox-close{
+    position:absolute; top:18px; right:24px; font-family:var(--font-mono); font-size:.94rem;
+    letter-spacing:.08em; text-transform:uppercase; color:var(--paper); border:1px solid var(--wall-line);
+    padding:.5em .9em; border-radius:2px; background:var(--black);
+  }
   .proof-caption{
     font-family:var(--font-mono); font-size:.85rem; color:var(--paper-dim); letter-spacing:.02em;
     max-width:700px; margin:0 0 1.1em; line-height:1.5;
@@ -240,10 +253,10 @@
         </svg>
       </div>
     </div>
-    <a class="proof-images" href="/exhibits.html#speaking-through-the-dead">
-      <div class="proof-img"><img src="img/std-graph1.jpg" alt="Interactive social-network graph from Speaking Through the Dead, showing Amy Post's Rochester reform network radiating outward through concentric rings of connection." loading="lazy"></div>
-      <div class="proof-img"><img src="img/std-sankey.jpg" alt="Interactive Sankey flow diagram from Speaking Through the Dead, tracing how nineteenth-century reform movements flowed into later social and political outcomes." loading="lazy"></div>
-    </a>
+    <div class="proof-images">
+      <a class="proof-img" href="#lb-writing-graph1"><img src="img/std-graph1.jpg" alt="Interactive social-network graph from Speaking Through the Dead, showing Amy Post's Rochester reform network radiating outward through concentric rings of connection." loading="lazy"></a>
+      <a class="proof-img" href="#lb-writing-sankey"><img src="img/std-sankey.jpg" alt="Interactive Sankey flow diagram from Speaking Through the Dead, tracing how nineteenth-century reform movements flowed into later social and political outcomes." loading="lazy"></a>
+    </div>
     <p class="proof-caption">The social-network graph and flow diagram above are two of the interactives I built for Speaking Through the Dead — I learned to build sites and visualizations like these as a content creator, long before I called it public history.</p>
   </div>
 </section>
@@ -257,6 +270,10 @@
     </div>
   </div>
 </div>
+
+<!-- lightbox targets -->
+<a href="#_" id="lb-writing-graph1" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="img/std-graph1.jpg" alt=""></a>
+<a href="#_" id="lb-writing-sankey" class="lightbox"><span class="lightbox-close">✕ Close</span><img src="img/std-sankey.jpg" alt=""></a>
 
 </body>
 </html>
