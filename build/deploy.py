@@ -95,6 +95,20 @@ for template_name, out_name in PAGES:
     else:
         print("All tokens resolved.")
 
+    # templates are headless fragments (<title> + <style> + body content) meant to be
+    # auto-wrapped by the Artifact tool on publish -- GitHub Pages serves this file as-is,
+    # with no such wrapping, so deploy.py has to supply a real <html>/<head>/<body> itself.
+    style_close = html.index("</style>") + len("</style>")
+    html = (
+        '<!DOCTYPE html>\n<html lang="en">\n<head>\n'
+        '<meta charset="utf-8">\n'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+        + html[:style_close]
+        + "\n</head>\n<body>\n"
+        + html[style_close:]
+        + "\n</body>\n</html>\n"
+    )
+
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html)
 
