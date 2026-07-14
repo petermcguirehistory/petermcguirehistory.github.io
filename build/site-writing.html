@@ -140,6 +140,22 @@
     .bridge-table td.to::before{ top:0; }
   }
 
+  /* ---------- skill tags: which job taught which skill ---------- */
+  .skill-tags{ display:flex; gap:6px; flex-wrap:wrap; margin-top:10px; }
+  .skill-tag{
+    display:inline-block; font-family:var(--font-mono); font-size:.72rem; font-weight:600;
+    text-transform:uppercase; letter-spacing:.05em; padding:.25em .55em; border-radius:2px; border:1px solid;
+  }
+  .skill-tag.museum{ color:var(--brass); border-color:var(--brass-dim); background:rgba(201,162,75,.08); }
+  .skill-tag.process{ color:var(--ember); border-color:var(--ember-dim); background:rgba(208,105,63,.08); }
+  .skills-key{
+    margin-top:22px; padding-top:16px; border-top:1px solid var(--wall-line);
+    font-family:var(--font-mono); font-size:.84rem; color:var(--paper-dim); line-height:1.9;
+  }
+  .skills-key .key-group{ font-weight:600; }
+  .skills-key .key-group.museum{ color:var(--brass); }
+  .skills-key .key-group.process{ color:var(--ember); }
+
   /* ---------- footer nav ---------- */
   .closing{ text-align:center; padding:64px 0 84px; }
   .closing-links{ display:flex; justify-content:center; gap:30px; flex-wrap:wrap; margin-top:12px; }
@@ -188,23 +204,51 @@
       </thead>
       <tbody>
         <tr>
-          <td class="from"><b>Technical writing for engineers</b></td>
+          <td class="from">
+            <b>Technical writing for engineers</b>
+            <div class="skill-tags">
+              <span class="skill-tag museum">INT</span>
+              <span class="skill-tag process">SM</span>
+            </div>
+          </td>
           <td class="to">Detail-oriented writing that carefully walks through complexity with great precision, coordinating with large numbers of stakeholders.</td>
         </tr>
         <tr>
-          <td class="from"><b>E-commerce copywriting for national &amp; multinational clients</b></td>
+          <td class="from">
+            <b>E-commerce copywriting for national &amp; multinational clients</b>
+            <div class="skill-tags">
+              <span class="skill-tag museum">ACC</span>
+              <span class="skill-tag process">RC</span>
+            </div>
+          </td>
           <td class="to">Translation of abstract ideas to be personally applicable, dealing with sensitivities of big brands with legal departments, managing digital content.</td>
         </tr>
         <tr>
-          <td class="from"><b>Leading 50+ subject matter experts to produce content</b></td>
+          <td class="from">
+            <b>Leading 50+ subject matter experts to produce content</b>
+            <div class="skill-tags">
+              <span class="skill-tag museum">OBL</span>
+              <span class="skill-tag process">PM</span>
+            </div>
+          </td>
           <td class="to">Project management, sharing niche information from subject matter experts in engaging ways, using a wide variety of self-publishing platforms.</td>
         </tr>
         <tr>
-          <td class="from"><b>Search-data-driven content strategy</b></td>
+          <td class="from">
+            <b>Search-data-driven content strategy</b>
+            <div class="skill-tags">
+              <span class="skill-tag museum">UDL</span>
+              <span class="skill-tag process">UX</span>
+            </div>
+          </td>
           <td class="to">Centering user experience as the ultimate test of a product, creating large webs of information that target general audiences in multiple ways.</td>
         </tr>
       </tbody>
     </table>
+    <div class="skills-key">
+      <div><span class="key-group museum">Museum Skills</span> — INT Interpretation · ACC Accessibility · OBL Object-Based Learning · UDL Universal Design for Learning</div>
+      <div><span class="key-group process">Process Improvement</span> — SM Stakeholder Management · RC Risk &amp; Compliance · PM Project Management · UX UX Research</div>
+    </div>
   </div>
 </section>
 
