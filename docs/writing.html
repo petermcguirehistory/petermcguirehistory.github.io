@@ -15,6 +15,10 @@
     --paper-dim:  #b7ac9a;
     --ember:      #d0693f;
     --ember-dim:  #7a3a24;
+    --sage:       #93a879;
+    --sage-dim:   #55694a;
+    --violet:     #b294d1;
+    --violet-dim: #6b5286;
 
     --font-display: 'Iowan Old Style','Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
     --font-body:    Georgia, 'Iowan Old Style', 'Times New Roman', serif;
@@ -151,15 +155,19 @@
     display:inline-block; font-family:var(--font-mono); font-size:.72rem; font-weight:600;
     text-transform:uppercase; letter-spacing:.05em; padding:.25em .55em; border-radius:2px; border:1px solid;
   }
-  .skill-tag.museum{ color:var(--brass); border-color:var(--brass-dim); background:rgba(201,162,75,.08); }
-  .skill-tag.process{ color:var(--ember); border-color:var(--ember-dim); background:rgba(208,105,63,.08); }
+  .skill-tag.sm{ color:var(--brass); border-color:var(--brass-dim); background:rgba(201,162,75,.08); }
+  .skill-tag.rc{ color:var(--ember); border-color:var(--ember-dim); background:rgba(208,105,63,.08); }
+  .skill-tag.pe{ color:var(--sage); border-color:var(--sage-dim); background:rgba(147,168,121,.08); }
+  .skill-tag.cm{ color:var(--violet); border-color:var(--violet-dim); background:rgba(178,148,209,.08); }
   .skills-key{
     margin-top:22px; padding-top:16px; border-top:1px solid var(--wall-line);
     font-family:var(--font-mono); font-size:.84rem; color:var(--paper-dim); line-height:1.9;
   }
-  .skills-key .key-group{ font-weight:600; }
-  .skills-key .key-group.museum{ color:var(--brass); }
-  .skills-key .key-group.process{ color:var(--ember); }
+  .skills-key .key-term{ font-weight:600; }
+  .skills-key .key-term.sm{ color:var(--brass); }
+  .skills-key .key-term.rc{ color:var(--ember); }
+  .skills-key .key-term.pe{ color:var(--sage); }
+  .skills-key .key-term.cm{ color:var(--violet); }
 
   /* ---------- footer nav ---------- */
   .closing{ text-align:center; padding:64px 0 84px; }
@@ -215,8 +223,7 @@
           <td class="from">
             <b>Technical writing for engineers</b>
             <div class="skill-tags">
-              <span class="skill-tag museum">INT</span>
-              <span class="skill-tag process">SM</span>
+              <span class="skill-tag sm">SM</span>
             </div>
           </td>
           <td class="to">Detail-oriented writing that carefully walks through complexity with great precision, coordinating with large numbers of stakeholders.</td>
@@ -225,8 +232,7 @@
           <td class="from">
             <b>E-commerce copywriting for national &amp; multinational clients</b>
             <div class="skill-tags">
-              <span class="skill-tag museum">ACC</span>
-              <span class="skill-tag process">RC</span>
+              <span class="skill-tag rc">RC</span>
             </div>
           </td>
           <td class="to">Translation of abstract ideas to be personally applicable, dealing with sensitivities of big brands with legal departments, managing digital content.</td>
@@ -235,8 +241,7 @@
           <td class="from">
             <b>Leading 50+ subject matter experts to produce content</b>
             <div class="skill-tags">
-              <span class="skill-tag museum">OBL</span>
-              <span class="skill-tag process">PM</span>
+              <span class="skill-tag pe">PE</span>
             </div>
           </td>
           <td class="to">Project management, sharing niche information from subject matter experts in engaging ways, using a wide variety of self-publishing platforms.</td>
@@ -245,8 +250,7 @@
           <td class="from">
             <b>Search-data-driven content strategy</b>
             <div class="skill-tags">
-              <span class="skill-tag museum">UDL</span>
-              <span class="skill-tag process">UX</span>
+              <span class="skill-tag cm">CM</span>
             </div>
           </td>
           <td class="to">Centering user experience as the ultimate test of a product, creating large webs of information that target general audiences in multiple ways.</td>
@@ -254,8 +258,7 @@
       </tbody>
     </table>
     <div class="skills-key">
-      <div><span class="key-group museum">Museum Skills</span> — INT Interpretation · ACC Accessibility · OBL Object-Based Learning · UDL Universal Design for Learning</div>
-      <div><span class="key-group process">Process Improvement</span> — SM Stakeholder Management · RC Risk &amp; Compliance · PM Project Management · UX UX Research</div>
+      <div><span class="key-term sm">SM</span> Stakeholder Management &middot; <span class="key-term rc">RC</span> Risk &amp; Compliance &middot; <span class="key-term pe">PE</span> Project Efficiency &middot; <span class="key-term cm">CM</span> Collections Management</div>
     </div>
   </div>
 </section>
