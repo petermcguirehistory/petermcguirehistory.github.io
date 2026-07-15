@@ -67,6 +67,31 @@ FAVICON_SVG = (
 )
 FAVICON_DATA_URI = "data:image/svg+xml;base64," + base64.b64encode(FAVICON_SVG.encode("utf-8")).decode("ascii")
 
+# GA4 (aggregate traffic/referrers/funnels) + Microsoft Clarity (session replay/heatmaps).
+# Added 2026-07-14 per Peter's request to track user journeys on the live site.
+GA4_MEASUREMENT_ID = "G-1975K6Y3DZ"
+CLARITY_PROJECT_ID = "xmlbu1xz69"
+
+ANALYTICS_SNIPPET = f'''<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={GA4_MEASUREMENT_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+  gtag('config', '{GA4_MEASUREMENT_ID}');
+</script>
+'''
+if CLARITY_PROJECT_ID:
+    ANALYTICS_SNIPPET += f'''<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){{
+    c[a]=c[a]||function(){{(c[a].q=c[a].q||[]).push(arguments)}};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  }})(window, document, "clarity", "script", "{CLARITY_PROJECT_ID}");
+</script>
+'''
+
 os.makedirs(DOCS_IMG, exist_ok=True)
 
 copied = set()
@@ -117,6 +142,7 @@ for template_name, out_name in PAGES:
         '<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         f'<link rel="icon" type="image/svg+xml" href="{FAVICON_DATA_URI}">\n'
+        + ANALYTICS_SNIPPET
         + html[:style_close]
         + "\n</head>\n<body>\n"
         + html[style_close:]
