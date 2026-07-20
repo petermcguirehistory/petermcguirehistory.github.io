@@ -213,6 +213,29 @@
   .commentary ul li:last-child, .commentary-note ul li:last-child{ margin-bottom:0; }
   .list-label{ font-size:1.05rem; color:var(--paper); margin:22px 0 0; max-width:700px; }
 
+  /* ---------- process: "Testing with users" (text + cropped prototype photo) ---------- */
+  section.centered .testing-commentary{ max-width:none; margin-left:0; margin-right:0; text-align:left; }
+  .testing-block{ display:grid; grid-template-columns:1fr minmax(220px,320px); gap:32px; align-items:center; }
+  .testing-block .testing-text{ text-align:right; }
+  .testing-photo{ display:block; align-self:stretch; min-height:280px; border:1px solid var(--wall-line); border-radius:3px; overflow:hidden; background:var(--black); cursor:zoom-in; }
+  .testing-photo img{ width:100%; height:100%; object-fit:cover; object-position:center 45%; display:block; }
+  @media (max-width:640px){
+    .testing-block{ grid-template-columns:1fr; }
+    .testing-block .testing-text{ text-align:left; }
+    .testing-photo{ min-height:0; }
+    .testing-photo img{ height:auto; }
+  }
+
+  /* ---------- location map card (links to the museum's Google listing) ---------- */
+  .location-card{ display:block; max-width:440px; margin-top:30px; border:1px solid var(--wall-line); border-radius:4px; overflow:hidden; background:var(--wall); text-decoration:none; transition:border-color .18s ease; }
+  .location-card:hover{ border-color:var(--brass-dim); }
+  .location-card img{ width:100%; height:auto; display:block; }
+  .location-meta{ display:block; padding:13px 15px 14px; }
+  .location-name{ display:block; font-family:var(--font-mono); font-size:.9rem; text-transform:uppercase; letter-spacing:.04em; color:var(--paper); line-height:1.4; }
+  .location-addr{ display:block; font-size:1rem; color:var(--paper-dim); margin-top:5px; }
+  .location-card:hover .location-addr{ color:var(--brass); }
+  .location-attr{ display:block; font-family:var(--font-mono); font-size:.7rem; color:var(--paper-dim); opacity:.55; margin-top:9px; }
+
   /* ---------- exhibit-to-exhibit divider ---------- */
   .exhibit-divider{
     padding:76px 0; text-align:center; border-top:1px solid var(--wall-line);
@@ -299,6 +322,15 @@
       <div><dt>Timeframe</dt><dd>2026, educational internship</dd></div>
       <div><dt>Platform</dt><dd>Corner installation—helmet, jacket, and mask/SCBA try-on stations, a drawing activity, and five informational panels for adults</dd></div>
     </dl>
+
+    <a class="location-card" href="https://www.google.com/maps/search/?api=1&amp;query=Denver%20Firefighters%20Museum%2C%201326%20Tremont%20Pl%2C%20Denver%2C%20CO%2080204" target="_blank" rel="noopener">
+      <img src="__IMG_DFM_MAP__" alt="Map of downtown Denver with a marker on the Denver Firefighters Museum at 1326 Tremont Place." loading="lazy">
+      <span class="location-meta">
+        <span class="location-name">Visit the exhibit — Denver Firefighters Museum</span>
+        <span class="location-addr">1326 Tremont Pl, Denver, CO 80204 · View on Google Maps ↗</span>
+        <span class="location-attr">Map © OpenStreetMap contributors</span>
+      </span>
+    </a>
   </div>
 </header>
 
@@ -324,19 +356,22 @@
         <p>The Exploratorium's design principles engage girls in STEM exhibits by making them accessible. This exhibit uses two-person try-on stations, open questions with no single right answer, and Heather Larson featured as a female protagonist.</p>
       </div>
     </div>
-    <div class="commentary" style="margin-top:26px;">
-      <h3 class="subsection-head">Testing with users</h3>
-      <p>As with many projects, what seemed like a great idea on paper failed to engage visitors when the prototype went up. I first designed four stations, each built around a flip-panel "decision tree" with a real historical fork, three possible paths, and a reveal connecting the choice to what actually happened. I observed from the prototype that, by that point in a visit, guests already had <b>reading fatigue.</b> Instead, they skipped my activity and focused on <b>handling the objects</b> and <b>talking to each other.</b> So, I reworked the exhibit to focus on the interaction and conversation naturally arising from the objects.</p>
+    <div class="commentary testing-commentary" style="margin-top:26px;">
+      <div class="testing-block">
+        <div class="testing-text">
+          <h3 class="subsection-head">Testing with users</h3>
+          <p>As with many projects, what seemed like a great idea on paper failed to engage visitors when the prototype went up. I first designed four stations, each built around a flip-panel "decision tree" with a real historical fork, three possible paths, and a reveal connecting the choice to what actually happened. I observed from the prototype that, by that point in a visit, guests already had <b>reading fatigue.</b> Instead, they skipped my activity and focused on <b>handling the objects</b> and <b>talking to each other.</b> So, I reworked the exhibit to focus on the interaction and conversation naturally arising from the objects.</p>
+        </div>
+        <a class="testing-photo" href="#lb-process-prototype" aria-label="Enlarge the prototype photo">
+          <img src="__IMG_PROCESS_PROTOTYPE__" alt="Prototype test on the museum floor: a historic yellow turnout jacket on a wooden stand in front of the Adventures of Supersquad backdrop, with a cardboard 'What Would You Do?' mock-up panel and pros-and-cons flip cards on a small table beside it." loading="lazy">
+        </a>
+      </div>
     </div>
-    <div class="hero-photo">
-      <a href="#lb-process-sketch" style="display:block;cursor:zoom-in;"><img src="__IMG_PROCESS_SKETCH__" alt="Hand-drawn planning sketch of the exhibit layout: a row of wall panels—drone firefighting, how fast fire grows, smoke-eating, OSHA and occupational safety, women and firefighting—above four object stations for a helmet, jackets, a beard cut-out, and a breather mask, each paired with a 'What Would You Do?' decision box, annotated with case dimensions of 3 by 2.5 by 2 feet, two boxes." loading="lazy"></a>
-      <figcaption>The first plan, on paper: four object stations, each built around a flip-panel "What Would You Do?" decision tree.</figcaption>
-    </div>
-    <div class="strip-label">On the gallery floor</div>
+    <div class="strip-label">The first plan, on paper</div>
     <div class="thumb-strip">
-      <a class="thumb" href="#lb-process-prototype">
-        <div class="thumb-photo"><img src="__IMG_PROCESS_PROTOTYPE__" alt="Prototype test on the museum floor: a historic yellow turnout jacket on a wooden stand in front of the Adventures of Supersquad backdrop, with a cardboard 'What Would You Do?' mock-up panel and pros-and-cons flip cards on a small table beside it." loading="lazy"></div>
-        <figcaption><span class="thumb-title">The Prototype</span><span class="thumb-desc">The cardboard "What Would You Do?" mock-up I watched visitors walk past to reach the objects.</span></figcaption>
+      <a class="thumb on-paper" href="#lb-process-sketch">
+        <div class="thumb-photo"><img src="__IMG_PROCESS_SKETCH__" alt="Hand-drawn planning sketch of the exhibit layout: a row of wall panels—drone firefighting, how fast fire grows, smoke-eating, OSHA and occupational safety, women and firefighting—above four object stations for a helmet, jackets, a beard cut-out, and a breather mask, each paired with a 'What Would You Do?' decision box, annotated with case dimensions of 3 by 2.5 by 2 feet, two boxes." loading="lazy"></div>
+        <figcaption><span class="thumb-title">Planning sketch</span><span class="thumb-desc">The original four-station plan, before prototyping cut it back to the objects.</span></figcaption>
       </a>
     </div>
   </div>
