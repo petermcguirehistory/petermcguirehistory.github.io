@@ -28,6 +28,8 @@ tokens = {
     "__IMG_HELMET__": "helmet.jpg",
     "__IMG_MASK__": "mask.jpg",
     "__IMG_CLOSING_WIDE__": "closing.jpg",
+    "__IMG_PROCESS_SKETCH__": "process-sketch.jpg",
+    "__IMG_PROCESS_PROTOTYPE__": "process-prototype.jpg",
     "__IMG_STD_HERO__": "std-hero.jpg",
     "__IMG_STD_FOXSISTERS__": "std-foxsisters.jpg",
     "__IMG_STD_PARLOR__": "std-parlor.jpg",
