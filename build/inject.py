@@ -24,6 +24,7 @@ tokens = {
     "__IMG_MASK__": "mask.jpg",
     "__IMG_CLOSING_WIDE__": "closing.jpg",
     "__IMG_PROCESS_SKETCH__": "process-sketch.jpg",
+    "__IMG_PROCESS_PLAN__": "process-plan.jpg",
     "__IMG_PROCESS_PROTOTYPE__": "process-prototype.jpg",
     "__IMG_DFM_MAP__": "dfm-map.jpg",
     "__IMG_STD_HERO__": "std-hero.jpg",
