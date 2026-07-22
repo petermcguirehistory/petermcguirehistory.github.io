@@ -135,6 +135,7 @@
     color:var(--paper-dim); font-size:1.02rem; line-height:1.5;
   }
   .bridge-table tr:last-child td{ border-bottom:none; }
+  .bridge-table tr[id]{ scroll-margin-top:96px; }
   .bridge-table td.from{ color:var(--paper); width:38%; }
   .bridge-table td.from b{ display:block; font-family:var(--font-display); font-size:1.1rem; font-weight:400; color:var(--paper); margin-bottom:.3em; }
   .bridge-table td.from span{ display:block; font-family:var(--font-mono); font-size:.78rem; color:var(--paper-dim); letter-spacing:.02em; }
@@ -244,7 +245,7 @@
         <tr><th>Content career</th><th>Museum relevance</th></tr>
       </thead>
       <tbody>
-        <tr>
+        <tr id="bridge-technical">
           <td class="from">
             <b>Technical writing for engineers</b>
             <div class="skill-tags">
@@ -255,7 +256,7 @@
           </td>
           <td class="to">Precise, detail-oriented writing that walks a reader through complex material, coordinating across large numbers of stakeholders.</td>
         </tr>
-        <tr>
+        <tr id="bridge-ecommerce">
           <td class="from">
             <b>E-commerce copywriting for national &amp; multinational clients</b>
             <div class="skill-tags">
@@ -266,7 +267,7 @@
           </td>
           <td class="to">Making abstract ideas personally relevant, navigating the legal sensitivities of big brands, managing digital content, and building reusable template systems to speed production.</td>
         </tr>
-        <tr>
+        <tr id="bridge-experts">
           <td class="from">
             <b>Leading 50+ subject matter experts to produce content</b>
             <div class="skill-tags">
@@ -277,7 +278,7 @@
           </td>
           <td class="to">Project management, sharing niche information from subject matter experts in engaging ways, using a wide variety of self-publishing platforms.</td>
         </tr>
-        <tr>
+        <tr id="bridge-search">
           <td class="from">
             <b>Search-data-driven content strategy</b>
             <div class="skill-tags">
