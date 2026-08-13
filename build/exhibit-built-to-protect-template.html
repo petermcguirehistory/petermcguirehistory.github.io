@@ -198,14 +198,14 @@
   .strip-label{ font-family:var(--font-mono); font-size:.88rem; text-transform:uppercase; letter-spacing:.08em; color:var(--paper-dim); margin:26px 0 12px; }
   .thumb-strip{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
   @media (max-width:640px){ .thumb-strip{ grid-template-columns:1fr; } }
-  .thumb{ border:1px solid var(--wall-line); border-radius:3px; overflow:hidden; background:var(--wall); display:block; cursor:zoom-in; }
+  .thumb{ border:1px solid var(--wall-line); border-radius:3px; overflow:hidden; background:var(--wall); display:block; cursor:zoom-in; text-decoration:none; }
   .thumb .thumb-photo{ height:150px; background:var(--black); }
   .thumb.on-paper .thumb-photo{ background:var(--black); }
   .thumb .thumb-photo img{ width:100%; height:100%; object-fit:cover; }
   .thumb.on-paper .thumb-photo img{ object-fit:contain; }
   .thumb figcaption{ padding:12px 13px 14px; }
-  .thumb figcaption .thumb-title{ display:block; font-family:var(--font-mono); font-size:.85rem; text-transform:uppercase; letter-spacing:.04em; color:var(--paper); line-height:1.4; }
-  .thumb figcaption .thumb-desc{ display:block; font-family:var(--font-body); font-size:.98rem; color:var(--paper-dim); line-height:1.4; margin-top:5px; }
+  .thumb figcaption .thumb-title{ display:block; font-family:var(--font-mono); font-size:.85rem; text-transform:uppercase; letter-spacing:.04em; color:var(--paper); line-height:1.4; text-decoration:underline; text-decoration-color:var(--brass-dim); text-decoration-thickness:1px; text-underline-offset:4px; }
+  .thumb figcaption .thumb-desc{ display:block; font-family:var(--font-body); font-size:.98rem; color:var(--paper-dim); line-height:1.4; margin-top:5px; text-decoration:none; }
 
   /* commentary sits OUTSIDE the frame, on plain dark bg—deliberately different treatment */
   .commentary-note{ margin-top:22px; }
@@ -223,8 +223,13 @@
   section.centered .testing-commentary{ max-width:none; margin-left:0; margin-right:0; text-align:left; }
   .testing-block{ display:grid; grid-template-columns:1fr minmax(220px,320px); gap:32px; align-items:center; }
   .testing-block .testing-text{ text-align:left; }
-  .testing-photo{ display:block; align-self:stretch; min-height:280px; border:1px solid var(--wall-line); border-radius:3px; overflow:hidden; background:var(--black); cursor:zoom-in; }
+  .testing-figure{ display:flex; flex-direction:column; align-self:stretch; }
+  .testing-photo{ display:block; flex:1 1 auto; min-height:280px; border:1px solid var(--wall-line); border-radius:3px; overflow:hidden; background:var(--black); cursor:zoom-in; }
   .testing-photo img{ width:100%; height:100%; object-fit:cover; object-position:center 45%; display:block; }
+  .testing-cap{
+    font-family:var(--font-mono); font-size:.84rem; color:var(--paper-dim); letter-spacing:.03em;
+    line-height:1.45; padding:10px 2px 0; margin:0; text-align:center;
+  }
   @media (max-width:640px){
     .testing-block{ grid-template-columns:1fr; }
     .testing-block .testing-text{ text-align:left; }
@@ -303,10 +308,10 @@
   <div class="wrap-wide">
     <a class="nav-name" href="__HOME_URL__">Peter McGuire</a>
     <ul class="nav-links">
+      <li><a href="__HOME_URL__">Home</a></li>
       <li><a href="#built-to-protect">Built to Protect</a></li>
       <li><a href="#speaking-through-the-dead">Speaking Through the Dead</a></li>
       <li><a href="__WRITING_URL__">Content</a></li>
-      <li><a href="__HOME_URL__">Home</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -368,9 +373,12 @@
           <h3 class="subsection-head">Testing with users</h3>
           <p>As with many projects, what seemed like a great idea on paper failed to engage visitors when the prototype went up. I first designed four stations, each built around a flip-panel "decision tree" with a real historical fork, three possible paths, and a reveal connecting the choice to what actually happened. I observed from the prototype that, by that point in a visit, guests already had <b>reading fatigue.</b> Instead, they skipped my activity and focused on <b>handling the objects</b> and <b>talking to each other.</b> So, I reworked the exhibit to focus on the interaction and conversation naturally arising from the objects.</p>
         </div>
-        <label class="testing-photo" for="cb-process-prototype">
-          <img src="__IMG_PROCESS_PROTOTYPE__" alt="Prototype test on the museum floor: a historic yellow turnout jacket on a wooden stand in front of the Adventures of Supersquad backdrop, with a cardboard 'What Would You Do?' mock-up panel and pros-and-cons flip cards on a small table beside it." loading="lazy">
-        </label>
+        <div class="testing-figure">
+          <label class="testing-photo" for="cb-process-prototype">
+            <img src="__IMG_PROCESS_PROTOTYPE__" alt="Prototype test on the museum floor: a historic yellow turnout jacket on a wooden stand in front of the Adventures of Supersquad backdrop, with a cardboard 'What Would You Do?' mock-up panel and pros-and-cons flip cards on a small table beside it." loading="lazy">
+          </label>
+          <p class="testing-cap">The cardboard prototype on the gallery floor during testing — not the finished exhibit.</p>
+        </div>
       </div>
     </div>
     <div class="strip-label">The first plan, on paper</div>
@@ -426,7 +434,7 @@
           </div>
           <div class="ped-card obl">
             <span class="ped-label">Plain-Language, First-Person Voice</span>
-            <p>OBL asks for "conversational tone... tested by reading aloud." The jacket talks in first person—"My jacket has thick canvas..."—at about a 4th-grade level, so a parent isn't translating a label into kid-language on the spot.</p>
+            <p>OBL asks for "conversational tone... tested by reading aloud." A firefighter speaks to the reader in first person—"My jacket has thick canvas..."—at about a 4th-grade level, so a parent isn't translating a label into kid-language on the spot.</p>
           </div>
         </div>
         <p>The exhibit now builds on what visitors already do. It doesn't need a separate interactive: putting the gear on starts the conversation.</p>
@@ -711,11 +719,11 @@
       <button type="submit">Send</button>
     </form>
     <p class="footer-meta">This site uses Google Analytics and Microsoft Clarity to understand how visitors use it. No personal data is sold or shared.</p>
-    <span class="eyebrow">Next</span>
     <div class="closing-links">
-      <a href="#built-to-protect">↑ Back to Built to Protect</a>
-      <a href="__WRITING_URL__">Content</a>
       <a href="__HOME_URL__">Home</a>
+      <a href="#built-to-protect">Built to Protect</a>
+      <a href="#speaking-through-the-dead">Speaking Through the Dead</a>
+      <a href="__WRITING_URL__">Content</a>
     </div>
   </div>
 </footer>

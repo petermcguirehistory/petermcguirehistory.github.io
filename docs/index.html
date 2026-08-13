@@ -287,6 +287,15 @@
   .footer-location{ font-family:var(--font-mono); font-size:.88rem; color:var(--paper-dim); margin:.5em 0 0; }
   .footer-meta{ font-family:var(--font-mono); font-size:.82rem; color:var(--paper-dim); opacity:.75; max-width:440px; margin:0; }
 
+  /* ---------- footer nav (matches the Exhibits and Content pages) ---------- */
+  .closing-links{ display:flex; justify-content:center; gap:30px; flex-wrap:wrap; }
+  .closing-links a{
+    font-family:var(--font-mono); font-size:.96rem; letter-spacing:.08em; text-transform:uppercase;
+    text-decoration:none; color:var(--paper); border-bottom:1px solid var(--brass-dim); padding-bottom:3px;
+    transition:color .2s ease, border-color .2s ease;
+  }
+  .closing-links a:hover{ color:var(--brass); border-color:var(--brass); }
+
   .contact-form{ display:flex; flex-direction:column; gap:14px; max-width:440px; width:100%; text-align:left; }
   .contact-form label{
     display:flex; flex-direction:column; gap:6px;
@@ -410,8 +419,9 @@
   <div class="wrap">
     <a class="nav-name" href="#top">Peter McGuire</a>
     <ul class="nav-links">
-      <li><a href="/exhibits.html">Exhibits</a></li>
+      <li><a href="#top">Home</a></li>
       <li><a href="#timeline">Timeline</a></li>
+      <li><a href="/exhibits.html">Exhibits</a></li>
       <li><a href="/writing.html">Content</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -800,6 +810,12 @@
       <button type="submit">Send</button>
     </form>
     <p class="footer-meta">This site uses Google Analytics and Microsoft Clarity to understand how visitors use it. No personal data is sold or shared.</p>
+    <div class="closing-links">
+      <a href="#top">Home</a>
+      <a href="#timeline">Timeline</a>
+      <a href="/exhibits.html">Exhibits</a>
+      <a href="/writing.html">Content</a>
+    </div>
   </div>
 </footer>
 
