@@ -296,6 +296,11 @@
   }
   .closing-links a:hover{ color:var(--brass); border-color:var(--brass); }
 
+  /* ---------- side projects: deliberately quiet, below the footer nav ---------- */
+  .side-projects{ font-family:var(--font-mono); font-size:.82rem; color:var(--paper-dim); max-width:520px; margin:0; }
+  .side-projects a{ color:var(--paper-dim); text-decoration:none; border-bottom:1px dotted var(--brass-dim); transition:color .2s ease, border-color .2s ease; }
+  .side-projects a:hover{ color:var(--brass); border-color:var(--brass); }
+
   .contact-form{ display:flex; flex-direction:column; gap:14px; max-width:440px; width:100%; text-align:left; }
   .contact-form label{
     display:flex; flex-direction:column; gap:6px;
@@ -816,6 +821,7 @@
       <a href="/exhibits.html">Exhibits</a>
       <a href="/writing.html">Content</a>
     </div>
+    <p class="side-projects">Also made: <a href="https://petermcguire.info/election-predictor/">a 2026 midterm forecast</a> and <a href="https://petermcguire.info/carthago/">Carthago</a>, a strategy game of Carthage and Rome.</p>
   </div>
 </footer>
 
